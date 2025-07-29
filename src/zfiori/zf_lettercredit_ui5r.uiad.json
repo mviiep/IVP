@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Letter of Credit",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfletterofcredit"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_94DCDF5D6A721D641FF5BD29926713E2F8545543_TM",
+    "semanticObject": "zfletterofcredit",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_94DCDF5D6A721D641FF5BD29926713E2F8545543_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Letter of Credit",
+        "subtitle": "Custom"
+      }
+    }
+  ]
+}

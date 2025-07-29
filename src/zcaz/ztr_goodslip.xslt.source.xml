@@ -1,0 +1,80 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="header"/>
+  <tt:root name="it_final"/>
+
+
+  <tt:template>
+
+    <GOODSLIP>
+      <HEADER>
+       <material>
+          <tt:value ref=".header.materialdocument"/>
+            </material>
+        <PLANTNAME>
+          <tt:value ref=".header.PlantName"/>
+        </PLANTNAME>
+        <ISSUEDBY>
+          <tt:value ref=".header.issuedby"/>
+        </ISSUEDBY>
+        <MovementType>
+          <tt:value ref=".header.goodsmovementtype"/>
+        </MovementType>
+        <Movementypedesc>
+            <tt:value ref=".header.movementypedesc"/>
+        </Movementypedesc>
+        <RESERVATION>
+          <tt:value ref=".header.RESERVATION"/>
+        </RESERVATION>
+        <ORDERID>
+          <tt:value ref=".header.ORDERID"/>
+        </ORDERID>
+        <GOODSMOVEMENTDATE>
+          <tt:value ref=".header.POSTINGDATE"/>
+        </GOODSMOVEMENTDATE>
+        <materialdocumentitemyear>
+          <tt:value ref=".header.materialdocumentyear"/>
+        </materialdocumentitemyear>
+      </HEADER>
+
+      <Table>
+        <tt:loop name="wa_final" ref="it_final">
+          <Row>
+            <materialdocumentitem>
+              <tt:value ref="$wa_final.materialdocumentitem"/>
+            </materialdocumentitem>
+           <material>
+              <tt:value ref="$wa_final.material"/>
+            </material>
+            <productdescription>
+              <tt:value ref="$wa_final.productdesc"/>
+            </productdescription>
+
+            <requiredquantity>
+              <tt:value ref="$wa_final.requiredqty"/>
+            </requiredquantity>
+            <storagelocationname>
+              <tt:value ref="$wa_final.storagelocationname"/>
+            </storagelocationname>
+            <quantityinbaseunit>
+              <tt:value ref="$wa_final.quantityinbaseunit"/>
+            </quantityinbaseunit>
+            <materialbaseunit>
+            <tt:value ref="$wa_final.materialbaseunit"/>
+            </materialbaseunit>
+            <batch>
+              <tt:value ref="$wa_final.batch"/>
+            </batch>
+          </Row>
+        </tt:loop>
+      </Table>
+
+
+
+
+
+    </GOODSLIP>
+  </tt:template>
+
+</tt:transform>

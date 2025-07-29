@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_irn_unit_map unique;
+strict ( 2 );
+
+define behavior for Zi_irn_unit_map //alias <alias_name>
+persistent table zirn_unit_mapng
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

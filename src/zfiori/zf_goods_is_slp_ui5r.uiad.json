@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Goods Issue Slip",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfgoodsslipform"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_F87D2ABB4BE46F5898E1EA383B4006952543C788_TM",
+    "semanticObject": "ZGOODS_ISSUE_SLIP",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_F87D2ABB4BE46F5898E1EA383B4006952543C788_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Goods Issue Slip"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Maunual pay serv def'
+define service ZMANUALPAYCDS_AP_SD {
+  expose ZMANUALPAYCDS_AP;
+}

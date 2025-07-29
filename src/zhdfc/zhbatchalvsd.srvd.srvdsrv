@@ -1,0 +1,4 @@
+@EndUserText.label: 'HDFC Bank Auto Bactch log ALV Serv Defn'
+define service ZHBATCHALVSD {
+  expose ZHBBATCHALVCDS;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass - Billing Doucment  ITEM Service Binding'
+define service ZGE_BD_ITEM_SD {
+  expose ZGE_BD_ITEM;
+}

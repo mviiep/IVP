@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Manage E-Invoice and E-Way Bill",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zmeinvewaybill"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_20A4BB4FD501AD50BC20B9630AAD97B4ACF56451_TM",
+    "semanticObject": "ZMEINVEWAY",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_20A4BB4FD501AD50BC20B9630AAD97B4ACF56451_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Manage E-Invoice and E-Way Bill",
+        "subtitle": "Custom Application"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'For Outeard Header Based report'
+define service ZI_GE_OW_REPORT_SRV {
+  expose ZI_GE_OW_REPORT;
+}

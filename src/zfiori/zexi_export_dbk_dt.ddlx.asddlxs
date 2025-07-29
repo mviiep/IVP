@@ -1,0 +1,35 @@
+@Metadata.layer: #PARTNER
+annotate view ZEXI_EXPORT_DBK_DT
+    with 
+{
+ @UI                :{lineItem: [{ position: 10,label: 'SAP_UUID' }]}
+  SAP_UUID;
+@UI                :{lineItem: [{ position: 20,label: 'ID' }]}
+  ID;
+  @UI                :{lineItem: [{ position: 30,label: 'Closing Date' }]}
+  ClosingDate;
+  @UI                :{lineItem: [{ position: 40,label: 'Eligible DBK Amount' }]}
+  EligibleDBKAmount;
+  @UI                :{lineItem: [{ position: 50,label: 'DBK Amount SB' }]}
+  DBKAmountSB;
+  @UI                :{lineItem: [{ position: 60,label: 'Scroll No' }]}
+  ScrollNo;
+  @UI                :{lineItem: [{ position: 70,label: 'Scroll Date' }]}
+  ScrollDate;
+  @UI                :{lineItem: [{ position: 80,label: 'DBK Scroll Amount' }]}
+  DBKScrollAmount;
+  @UI                :{lineItem: [{ position: 90,label: 'Cheque No' }]}
+  ChequeNo;
+  @UI                :{lineItem: [{ position: 100,label: 'Cheque Date' }]}
+  ChequeDate;
+  @UI                :{lineItem: [{ position: 120,label: 'Status' }]}
+  Status; 
+    @UI                :{lineItem: [{ position: 130,label: 'Created By' }]}
+  CreatedBy;
+  @UI                :{lineItem: [{ position: 140,label: 'Created At' }]}
+  CreatedAt;
+  @UI                :{lineItem: [{ position: 150,label: 'Last Changed By' }]}
+  LastChangedBy;
+  @UI                :{lineItem: [{ position: 160,label: 'Last Changed At' }]}
+  LastChangedAt;
+ }

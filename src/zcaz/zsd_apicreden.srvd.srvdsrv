@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for zi_apicreden'
+define service Zsd_apicreden {
+  expose zi_apicreden;
+}

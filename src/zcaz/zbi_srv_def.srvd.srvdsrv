@@ -1,0 +1,4 @@
+@EndUserText.label: 'defination for lc'
+define service Zbi_srv_def {
+  expose zc_lc_report;
+}

@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_ge_trans_app unique;
+strict ( 2 );
+
+define behavior for ZI_GE_TRANS_APP //alias <alias_name>
+persistent table zge_user_trans
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

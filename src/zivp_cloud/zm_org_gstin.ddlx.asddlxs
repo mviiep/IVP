@@ -1,0 +1,31 @@
+@Metadata.layer: #PARTNER
+@EndUserText.label: 'Organization GSTIN'
+@UI:{
+headerInfo: { typeName: 'Organization GSTIN',
+              typeNamePlural: 'Organization GSTIN',
+              title: { type: #STANDARD, label: 'Purchase', value: 'CompCode' } }
+}
+annotate entity ZC_ORG_GSTIN with
+{
+  @UI.facet: [{ id : 'CompCode', purpose: #STANDARD, type: #IDENTIFICATION_REFERENCE, label: 'CompCode', position: 01 }]
+
+  @UI:{ lineItem: [{ position: 02, label: 'Company Code' }],
+  identification: [{ position: 02, label: 'Company Code' }],
+  selectionField: [{ position: 02 }] }
+  CompCode;
+  @UI:{ lineItem: [{ position: 03, label: 'Plant' }],
+  identification: [{ position: 03, label: 'Plant' }] }
+  Plant;
+  @UI:{ lineItem: [{ position: 04, label: 'Business Place' }],
+  identification: [{ position: 04, label: 'Business Place' }] }
+  BusinessPlace;
+  @UI:{ lineItem: [{ position: 05, label: 'Org GSTIN' }],
+  identification: [{ position: 05, label: 'Org GSTIN' }] }
+  Gstin;
+  @UI:{ lineItem: [{ position: 06, label: 'Retension Start Date' }],
+  identification: [{ position: 06, label: 'Retension Start Date' }] }
+  reten_st_Date;
+  @UI:{ lineItem: [{ position: 06, label: 'E-Invoice Applicable' }],
+  identification: [{ position: 06, label: 'E-Invoice Applicable' }] }
+  e_invoice;
+}

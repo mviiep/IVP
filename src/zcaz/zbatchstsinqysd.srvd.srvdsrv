@@ -1,0 +1,4 @@
+@EndUserText.label: 'Batch details Service Defination'
+define service ZBATCHSTSINQYSD {
+  expose ZBATCHSTSINQYCDS as batch;
+}

@@ -1,0 +1,19 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Job template for retention posting",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "catalogName": "ZAJC_RETENTION_POSTING"
+  },
+  "parameters": {
+    "singleValueParameters": [
+      {
+        "name": "TEXT",
+        "value": ""
+      }
+    ]
+  }
+}

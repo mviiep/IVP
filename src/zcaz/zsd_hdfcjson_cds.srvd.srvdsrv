@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for zi_hdfcjson_cds'
+define service Zsd_hdfcjson_cds {
+  expose zi_hdfcjson_cds;
+}

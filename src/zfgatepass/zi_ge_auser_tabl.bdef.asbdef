@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_ge_auser_tabl unique;
+strict ( 2 );
+
+define behavior for ZI_GE_AUSER_TABL //alias <alias_name>
+persistent table zge_auser_tab
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

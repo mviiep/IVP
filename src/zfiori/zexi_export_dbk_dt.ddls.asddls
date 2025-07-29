@@ -1,0 +1,45 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Exim for Export DBK Detail'
+@Metadata.allowExtensions: true
+define root view entity ZEXI_EXPORT_DBK_DT as select from zexi_expt_dbk_dt
+
+{
+    key sap_uuid as SAP_UUID,
+    id as ID,
+    closingdate as ClosingDate,
+    eligibledbkamount as EligibleDBKAmount,
+    dbkamountsb as DBKAmountSB,
+    scrollno as ScrollNo,
+    scrolldate as ScrollDate,
+    debkscrollamount as DBKScrollAmount,
+    chequeno as ChequeNo,
+    chequedate as ChequeDate,
+    status as Status,
+    expcloseindicat as ExpCloseIndicator,
+    cenvatfacility  as CenvatFacility,
+    dtincrsplcurrac1 as DtIncrSplCurrAc1,
+    baldbkamount as BalDBKAmount,
+    suppclaimamt as SuppClaimAmt,
+    suppclaimdate as SuppClaimDate,
+    suppclaimfileno as SuppClaimFileNo,
+    suppclaimfiledate as SuppClaimFileDate,
+    scrollno2 as ScrollNo2,
+    scrollnodate2 as ScrolNoDate2,
+    dbkscrollamt2 as DBKScrollAmt2,
+    dtincrsplcurrac2 as DtIncrSplCurrAc2,
+    chequeno2 as ChequeNo2,
+    chequedate2 as ChequeDate2,
+    baldbkamount2 as BalDBKAmount2,
+    scrollno3 as ScrollNo3,
+    scrollnodate3 as ScrollNoDate3,
+    dbkscrollamt3 as DBKScrollAmt3,
+    dtincrsplcurrac3 as DtIncrSplCurrAC3,
+    chequeno3 as ChequeNo3,
+    chequedate3 as ChequeDate3,
+    baldbkamount3 as BalDBKAmount3,
+    created_by as CreatedBy,
+    created_at as CreatedAt,
+    last_changed_by as LastChangedBy,
+    last_changed_at as LastChangedAt,
+    dbk_acount_doc as DBKAcountDoc
+}

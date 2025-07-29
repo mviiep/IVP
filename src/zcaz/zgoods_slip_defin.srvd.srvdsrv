@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for ZGOODS_SLIP'
+define service ZGOODS_SLIP_DEFIN {
+  expose ZGOODS_SLIP_CDS_APP;
+}

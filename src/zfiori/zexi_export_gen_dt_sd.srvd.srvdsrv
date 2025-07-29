@@ -1,0 +1,4 @@
+@EndUserText.label: 'Exim for Export General for service definition'
+define service ZEXI_EXPORT_GEN_DT_SD {
+  expose ZEXI_EXPORT_GEN_DT;
+}

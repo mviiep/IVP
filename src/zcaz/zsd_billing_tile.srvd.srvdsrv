@@ -1,0 +1,4 @@
+@EndUserText.label: 'Tile for Custom Commerical and Packing List'
+define service ZSD_billing_tile {
+  expose Zi_billing_tile;
+}

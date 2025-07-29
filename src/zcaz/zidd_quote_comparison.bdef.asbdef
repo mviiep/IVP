@@ -1,0 +1,27 @@
+unmanaged implementation in class zbp_idd_quote_comparison unique;
+strict ( 2 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZIDD_Quote_Comparison //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) RequestForQuotation;
+  association _RFQItem { create; }
+}
+
+define behavior for zi_dd_quotcomp_item //alias <alias_name>
+//late numbering
+lock dependent by _head
+authorization dependent by _head
+//etag master <field_name>
+{
+  update;
+  delete;
+  field ( readonly ) RequestForQuotation, RequestForQuotationItem;
+  association _head;
+}

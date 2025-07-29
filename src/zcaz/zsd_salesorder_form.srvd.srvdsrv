@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service defination for SO form'
+define service ZSD_SALESORDER_FORM {
+  expose ZI_Sales_order_form;
+}

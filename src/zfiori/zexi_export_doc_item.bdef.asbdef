@@ -1,0 +1,13 @@
+managed implementation in class zbp_exi_export_doc_item unique;
+strict ( 2 );
+
+define behavior for ZEXI_EXPORT_DOC_ITEM //alias <alias_name>
+persistent table zexi_expt_docite
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

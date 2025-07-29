@@ -1,0 +1,21 @@
+unmanaged implementation in class zbp_ce_irn_status unique;
+//strict ( 2 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZCE_IRN_STATUS //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  action ( features : instance ) DISPLAY_JSON result [1] $self; // Added by Madhuri
+  action ( features : instance ) IRN_GEN result [1] $self;
+  action ( features : instance ) IRN_CNC result [1] $self;
+  action ( features : instance ) EWAY_GEN parameter ZA_EWAY_TRANS result [1] $self;
+  action ( features : instance ) EWB_GEN parameter ZA_EWAY_TRANS result [1] $self;
+  action ( features : instance ) EWAY_CNC result [1] $self;
+  action ( features : instance ) UPDATE_EWAY result [1] $self;
+  field ( readonly : update ) BillingDocument, IRN;
+}

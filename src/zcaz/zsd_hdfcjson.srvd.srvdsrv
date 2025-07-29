@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for zi_hdfcjson_cds'
+define service ZSD_hdfcjson {
+  expose zi_hdfcjson_cds as GenericCorporateAlertRequest;
+}

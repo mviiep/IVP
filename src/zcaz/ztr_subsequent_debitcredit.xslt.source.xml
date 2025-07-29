@@ -1,0 +1,170 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="Header"/>
+  <tt:root name="SupplierAddress"/>
+  <tt:root name="ConsigneeAddress"/>
+  <tt:root name="Item"/>
+  <tt:root name="GrandTotal"/>
+    <tt:root name="HeaderText"/>
+
+  <tt:template>
+
+    <Subsequent_DebitCredit>
+
+      <SupplierInvoiceNumber>
+        <tt:value ref=".Header.AccountingDocument"/>
+      </SupplierInvoiceNumber>
+
+      <SupplierPONumber>
+        <tt:value ref=".Header.PurchasingDocument"/>
+      </SupplierPONumber>
+
+     <SupplierInvoiceReference>
+      <tt:value ref=".Header.DocumentReferenceID"/>
+      </SupplierInvoiceReference>
+
+      <InvoiceReference>
+        <tt:value ref=".Header.InvoiceReference"/>
+      </InvoiceReference>
+
+      <DateofInvoice>
+        <tt:value ref=".Header.PostingDate"/>
+      </DateofInvoice>
+
+      <Narration>
+       <tt:value ref=".Header.AccountingDocumentHeaderText"/>
+      </Narration>
+
+      <Header>
+        <tt:value ref=".HeaderText"/>
+      </Header>
+
+      <SupplierDetails>
+
+        <SupplierCode>
+          <tt:value ref=".SupplierAddress.Supplier"/>
+        </SupplierCode>
+
+        <SupplierName>
+          <tt:value ref=".SupplierAddress.SupplierName"/>
+        </SupplierName>
+
+        <SupplierAdd>
+          <tt:value ref=".SupplierAddress.SupplierAdd"/>
+        </SupplierAdd>
+
+        <SupplierState>
+          <tt:value ref=".SupplierAddress.SupplierState"/>
+        </SupplierState>
+
+        <SupplierGSTNumber>
+          <tt:value ref=".SupplierAddress.SupplierGST"/>
+        </SupplierGSTNumber>
+
+
+      </SupplierDetails>
+
+
+
+
+      <ConsigneeDetails>
+
+        <ConsigneeCode>
+          <tt:value ref=".ConsigneeAddress.Consignee"/>
+        </ConsigneeCode>
+
+        <ConsigneeName>
+          <tt:value ref=".ConsigneeAddress.ConsigneeName"/>
+        </ConsigneeName>
+
+        <ConsigneeAdd>
+          <tt:value ref=".ConsigneeAddress.ConsigneeAdd"/>
+        </ConsigneeAdd>
+
+        <ConsigneeState>
+          <tt:value ref=".ConsigneeAddress.ConsigneeState"/>
+        </ConsigneeState>
+
+        <ConsigneeGSTNumber>
+          <tt:value ref=".ConsigneeAddress.ConsigneeGST"/>
+        </ConsigneeGSTNumber>
+
+
+      </ConsigneeDetails>
+
+
+      <ItemTable>
+        <tt:loop name="wa_Item" ref="Item">
+          <ItemRow>
+
+            <SrNo>
+              <tt:value ref="$wa_Item.srno"/>
+            </SrNo>
+
+            <Material>
+              <tt:value ref="$wa_Item.material"/>
+            </Material>
+
+            <MaterialDesc>
+              <tt:value ref="$wa_Item.materialdesc"/>
+            </MaterialDesc>
+
+            <Qty>
+              <tt:value ref="$wa_Item.qty"/>
+            </Qty>
+
+            <UOM>
+              <tt:value ref="$wa_Item.uom"/>
+            </UOM>
+
+            <Rate>
+              <tt:value ref="$wa_Item.rate"/>
+            </Rate>
+
+            <TaxableAmount>
+              <tt:value ref="$wa_Item.TaxableAmount"/>
+            </TaxableAmount>
+
+            <CGSTRate>
+              <tt:value ref="$wa_Item.var_cgstrate"/>
+            </CGSTRate>
+
+            <CGSTAmount>
+              <tt:value ref="$wa_Item.CGSTAmount"/>
+            </CGSTAmount>
+
+            <SGSTRate>
+              <tt:value ref="$wa_Item.var_sgstrate"/>
+            </SGSTRate>
+
+            <SGSTAmount>
+              <tt:value ref="$wa_Item.SGSTAmount"/>
+            </SGSTAmount>
+
+            <IGSTRate>
+              <tt:value ref="$wa_Item.var_igstrate"/>
+            </IGSTRate>
+
+            <IGSTAmount>
+              <tt:value ref="$wa_Item.IGSTAmount"/>
+            </IGSTAmount>
+
+            <Total>
+              <tt:value ref="$wa_Item.Total"/>
+            </Total>
+
+          </ItemRow>
+        </tt:loop>
+      </ItemTable>
+
+      <GrandTotal>
+        <tt:value ref=".GrandTotal"/>
+      </GrandTotal>
+
+    </Subsequent_DebitCredit>
+
+
+  </tt:template>
+
+</tt:transform>

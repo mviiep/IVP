@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for FG Label'
+define service ZSD_ZI_Label_FG {
+  expose ZI_Label_FG_Tile;
+}

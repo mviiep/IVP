@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for IRN status ALV Report'
+define service ZSD_IRN_STAT {
+  expose ZCE_IRN_STATUS;
+}

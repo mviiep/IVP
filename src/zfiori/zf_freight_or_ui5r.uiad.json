@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Freight Order Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfreightorderreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_C370B83A30EC5D295620F034A756A6A851610973_TM",
+    "semanticObject": "ZFreightOrderReport",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_C370B83A30EC5D295620F034A756A6A851610973_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Freight Order Report"
+      }
+    }
+  ]
+}

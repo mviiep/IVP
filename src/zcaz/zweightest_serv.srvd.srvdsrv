@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for ZWEIGTEST'
+define service ZWEIGHTEST_SERV {
+  expose ZTEST_WEIGH;
+}

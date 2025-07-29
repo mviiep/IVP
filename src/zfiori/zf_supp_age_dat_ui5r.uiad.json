@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Supplier Ageing Invoice wise",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfsupplierageingdate"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_E8188F3AD7A77F15C0BFD13E6F1AE0A0F2A46D0E_TM",
+    "semanticObject": "ZFSUPPLIERAGEINGDATE",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_E8188F3AD7A77F15C0BFD13E6F1AE0A0F2A46D0E_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Supplier Ageing Invoice wise",
+        "subtitle": "Report"
+      }
+    }
+  ]
+}

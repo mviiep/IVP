@@ -1,0 +1,4 @@
+@EndUserText.label: 'Sales Ser'
+define service Zsalesunitser {
+  expose zsalesunit as salesunit;
+}

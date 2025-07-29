@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for FI Sales Register'
+define service ZSD_FI_SALES_Reg {
+  expose ZC_FI_SALES_REPORT;
+}

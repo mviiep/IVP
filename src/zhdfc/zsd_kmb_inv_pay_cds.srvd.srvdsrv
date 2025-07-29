@@ -1,0 +1,4 @@
+@EndUserText.label: 'kotak bank incoming payment serv def'
+define service ZSD_KMB_INV_PAY_CDS {
+  expose ZKMB_INC_PAY_CDS;
+}

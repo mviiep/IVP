@@ -1,0 +1,4 @@
+@EndUserText.label: 'EXIM DATA MASTER FOR SERVICE DEFINITION'
+define service ZEX_DBK_MASTER_SD {
+  expose ZEX_DBK_MASTER;
+}

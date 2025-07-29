@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain Communication User Credentials",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfapicredentials"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_8E08DCF5E35BE98E3C8E718B5CE70F313D3F3BC7_TM",
+    "semanticObject": "zfapicredentials",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_8E08DCF5E35BE98E3C8E718B5CE70F313D3F3BC7_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Maintain Communication User Credentials",
+        "subtitle": "custom"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Exim for Export Shipping DT for service definition'
+define service ZEXI_EXPORT_SHIP_DT_SD {
+  expose ZEXI_EXPORT_SHIP_DT;
+}

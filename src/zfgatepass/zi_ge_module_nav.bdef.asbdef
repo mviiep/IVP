@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_ge_module_nav unique;
+strict ( 2 );
+
+define behavior for ZI_GE_MODULE_NAV //alias <alias_name>
+persistent table zge_module_nav
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

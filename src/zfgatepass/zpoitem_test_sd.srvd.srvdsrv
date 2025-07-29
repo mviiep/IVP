@@ -1,0 +1,4 @@
+@EndUserText.label: 'PO ITEM Test Service Definition'
+define service ZPOITEM_TEST_SD {
+  expose ZPOITEM_TEST;
+}

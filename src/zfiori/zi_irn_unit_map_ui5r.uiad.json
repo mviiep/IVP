@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Table Zi_irn_unit_map",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "tableziirnunitmap"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_079B81181287784675BEAC98EF895855D16D2CE9_TM",
+    "semanticObject": "Zi_irn_unit_map",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_079B81181287784675BEAC98EF895855D16D2CE9_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Table Zi_irn_unit_map"
+      }
+    }
+  ]
+}

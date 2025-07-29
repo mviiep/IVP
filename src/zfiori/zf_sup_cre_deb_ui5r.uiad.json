@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Supplier Credit Debit Form",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfsuppliercreditdebitform"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_073CDD037DFA49D882B109F4906005047D5C3DB3_TM",
+    "semanticObject": "zfsupcreditdebit",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_073CDD037DFA49D882B109F4906005047D5C3DB3_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Supplier Credit Debit Form",
+        "subtitle": "print PDF"
+      }
+    }
+  ]
+}

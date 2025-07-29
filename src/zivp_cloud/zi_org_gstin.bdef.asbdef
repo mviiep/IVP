@@ -1,0 +1,24 @@
+managed implementation in class zbp_i_org_gstin unique;
+//strict ( 2 );
+define behavior for ZI_ORG_GSTIN //alias <alias_name>
+persistent table zdb_org_gstin
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) CompCode;
+  field ( readonly : update ) Plant;
+  field ( readonly : update ) BusinessPlace;
+  mapping for zdb_org_gstin
+    {
+      CompCode      = comp_code;
+      Plant         = plant;
+      BusinessPlace = business_place;
+      Gstin         = gstin;
+      reten_st_Date = gst_reten_st_dt;
+      e_invoice = e_invoice;
+    }
+}

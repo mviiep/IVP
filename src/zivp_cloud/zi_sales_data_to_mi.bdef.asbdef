@@ -1,0 +1,21 @@
+unmanaged implementation in class zbp_i_sales_data_to_mi unique;
+//strict ( 2 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZI_SALES_DATA_TO_MI //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+////action ( features : instance ) status_update result [1] $self;
+////action (features : instance ) response result [1] $self;
+//action ( features : instance ) status_upd result [1] $self;
+
+     action ( features : instance ) status_update result [1] $self;
+     field (readonly) Billing_Doc_No, GST_Invoice_No;
+     field (readonly) Item_No;
+
+  create;
+  update;
+  delete;
+}

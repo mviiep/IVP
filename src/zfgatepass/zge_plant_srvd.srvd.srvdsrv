@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass -Plant Service Definition'
+define service ZGE_PLANT_SRVD {
+  expose ZGE_PLANT;
+}

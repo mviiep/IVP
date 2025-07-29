@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for DS'
+define service ZSD_BD_DS {
+  expose ZI_BD_DS;
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Production Breakdown Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfproductionbreakdownreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_05046785921EF1461F7BDE95D9602688A5CAFD2F_TM",
+    "semanticObject": "ZF_PROD_BREAK_REPORT",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_05046785921EF1461F7BDE95D9602688A5CAFD2F_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Production Breakdown Report"
+      }
+    }
+  ]
+}

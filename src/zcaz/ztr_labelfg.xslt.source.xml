@@ -1,0 +1,77 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="wa_manufacturing"/>
+  <tt:root name="wa_Plantaddress"/>
+  <tt:root name="note"/>
+  <tt:root name="drumno"/>
+
+  <tt:template>
+
+    <LabelPrinting>
+
+      <Header>
+        <ProductDesc>
+          <tt:value ref=".wa_manufacturing.productdescription"/>
+        </ProductDesc>
+        <BATCH>
+          <tt:value ref=".wa_manufacturing.BATCH"/>
+        </BATCH>
+        <MANUFACTURINGDATE>
+          <tt:value ref=".wa_manufacturing.manufacturedate"/>
+        </MANUFACTURINGDATE>
+        <EXPIRYDATE>
+          <tt:value ref=".wa_manufacturing.shelflifeexpirationdate"/>
+        </EXPIRYDATE>
+        <GrossWeight>
+          <tt:value ref=".wa_manufacturing.Grossweight"/>
+        </GrossWeight>
+        <NetWeight>
+          <tt:value ref=".wa_manufacturing.netweight"/>
+        </NetWeight>
+        <Grade>
+          <tt:value ref=".wa_manufacturing.productionorinspectionmemotxt"/>
+        </Grade>
+        <Note>
+          <tt:value ref=".note"/>
+        </Note>
+        <DrumNo>
+          <tt:value ref=".drumno"/>
+        </DrumNo>
+        <BaseUnit>
+          <tt:value ref=".wa_manufacturing.BaseUnit"/>
+        </BaseUnit>
+      </Header>
+
+      <Address>
+
+        <STREETNAME>
+          <tt:value ref=".wa_Plantaddress.STREETNAME"/>
+        </STREETNAME>
+        <SREETPREFIXNAME1>
+          <tt:value ref=".wa_Plantaddress.StreetSuffixName1"/>
+        </SREETPREFIXNAME1>
+        <CITYNAME>
+          <tt:value ref=".wa_Plantaddress.CITYNAME"/>
+        </CITYNAME>
+        <DISTRICTNAME>
+          <tt:value ref=".wa_Plantaddress.DISTRICTNAME"/>
+        </DISTRICTNAME>
+        <POSTALCODE>
+          <tt:value ref=".wa_Plantaddress.POSTALCODE"/>
+        </POSTALCODE>
+        <INTERNATIONALPHONENUMBER>
+          <tt:value ref=".wa_Plantaddress.INTERNATIONALPHONENUMBER"/>
+        </INTERNATIONALPHONENUMBER>
+        <EMAILADDRESS>
+          <tt:value ref=".wa_Plantaddress.EMAILADDRESS"/>
+        </EMAILADDRESS>
+
+      </Address>
+
+    </LabelPrinting>
+
+
+  </tt:template>
+
+</tt:transform>

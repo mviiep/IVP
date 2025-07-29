@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass - Inward Gate Service Definition'
+define service ZI_GE_INWARD_GATE_SRV {
+  expose ZI_GE_INWARD_GATE;
+}

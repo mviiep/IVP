@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Supplier Ageing Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfcustomerageingreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_0D1A460B0045863A080D2B2D5359485331639E5C_TM",
+    "semanticObject": "zfcustomeragingreport",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_0D1A460B0045863A080D2B2D5359485331639E5C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Supplier Ageing Report",
+        "subtitle": "Custom"
+      }
+    }
+  ]
+}

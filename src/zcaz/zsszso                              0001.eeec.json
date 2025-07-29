@@ -1,0 +1,16 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "test",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "consumerClass": "ZSSCL_ZSO",
+  "descriptorClass": "/IWXBE/CL_GENERIC_CONS_DESCRIP",
+  "eventTypes": [
+    {
+      "type": "sap.s4.beh.salesorder.v1.SalesOrder.Created.v1",
+      "entityName": "ZSS_SalesOrder_Created_v1"
+    }
+  ]
+}

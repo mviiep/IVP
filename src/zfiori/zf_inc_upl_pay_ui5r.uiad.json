@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "HDFC Incoming Payment Integration",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfincomingpaymentupload"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_BED5A69E0C6DF598965438DB4128FE40ECB9B4DA_TM",
+    "semanticObject": "zfincpaymentupl",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_BED5A69E0C6DF598965438DB4128FE40ECB9B4DA_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "HDFC Incoming Payment Integration",
+        "subtitle": "Excel Upload"
+      }
+    }
+  ]
+}

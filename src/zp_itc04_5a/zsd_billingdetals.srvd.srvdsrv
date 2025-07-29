@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Definition for Billing Details'
+define service ZSD_BILLINGDETALS {
+  expose ZC_BILLINGDETAILS;
+}

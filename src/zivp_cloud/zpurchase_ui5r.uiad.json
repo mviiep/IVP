@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Purchase Report GST",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "gstpurchase.gstpurchase"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_9E484183FB122E3E4A3F5500A3BEA5166F1A4510_TM",
+    "semanticObject": "Purchase",
+    "action": "Send",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_9E484183FB122E3E4A3F5500A3BEA5166F1A4510_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Purchase Report GST",
+        "subtitle": "Purchase Report GST"
+      }
+    }
+  ]
+}

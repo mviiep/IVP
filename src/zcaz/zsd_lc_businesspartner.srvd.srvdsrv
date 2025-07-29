@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Defination for LC Business Partner'
+define service ZSD_LC_BusinessPartner {
+  expose ZI_LC_customer;
+  expose ZI_LC_Vendor;
+}

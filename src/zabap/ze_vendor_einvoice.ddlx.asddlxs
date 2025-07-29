@@ -1,0 +1,194 @@
+@Metadata.layer: #PARTNER
+@EndUserText.label: 'Vendor E-Invoice Details'
+@UI:{
+headerInfo: { typeName: 'Vendor E-Invoice',
+              typeNamePlural: 'Vendor E-Invoices',
+              title: { type: #STANDARD, label: 'Vendor E-Invoice' } }
+}
+@Search.searchable: true
+annotate entity ZC_VENDOR_EINV_GET with
+{
+
+  @UI.facet: [{ id : 'VENDOR_EINV', purpose: #STANDARD, type: #IDENTIFICATION_REFERENCE, label: 'Vendor E-Invoice Details', position: 10 }]
+
+  @UI:{ lineItem: [{ position: 01, label: 'ID' },
+        { type: #FOR_ACTION, dataAction: 'Get_Einvoice', label: 'Get Vendor E-Invoices', position: 01 } ],
+        identification: [{ position: 01, label: 'ID' },
+        { type: #FOR_ACTION, dataAction: 'Get_Einvoice', label : 'Get Vendor E-Invoices', position: 01 }] }
+  Id;
+    @UI:{ lineItem: [{ position: 1.5, label: 'Item Sl No' }],
+  identification: [{ position: 1.5, label: 'Item Sl No' }] }
+  ItemSlno;
+  @UI:{ lineItem: [{ position: 02, label: 'Ack No' }], 
+        identification: [{ position: 02, label: 'Ack No' }] }
+  AckNo;
+  @UI:{ lineItem: [{ position: 03, label: 'Ack Date' }],
+  identification: [{ position: 03, label: 'Ack Date' }] }
+  AckDt;
+  @UI:{ lineItem: [{ position: 04, label: 'IRN' }],
+  identification: [{ position: 04, label: 'IRN' }] }
+  Irn;
+  @UI:{ lineItem: [{ position: 05, label: 'Tax Sch' }],
+  identification: [{ position: 05, label: 'Tax Sch' }] }
+  TaxSch;
+  @UI:{ lineItem: [{ position: 06, label: 'Supply Type' }],
+  identification: [{ position: 06, label: 'Supply Type' }] }
+  SupTyp;
+  @UI:{ lineItem: [{ position: 07, label: 'Reg. Rev' }],
+  identification: [{ position: 07, label: 'Reg. Rev' }] }
+  RegRev;
+  @UI:{ lineItem: [{ position: 08, label: 'IGST on Intra' }],
+  identification: [{ position: 08, label: 'IGST on Intra' }] }
+  IgstOnIntra;
+  @UI:{ lineItem: [{ position: 09, label: 'Doc. Type' }],
+  identification: [{ position: 09, label: 'Doc. Type' }] }
+  DocType;
+  @UI:{ lineItem: [{ position: 10, label: 'Doc. No' }],
+  identification: [{ position: 10, label: 'Doc. No' }],
+  selectionField: [{ position: 03 }] }
+  @EndUserText.label: 'Document Number'
+  @Search.defaultSearchElement: true
+  DocNo;
+//  @Consumption.filter.mandatory: true
+  @UI:{ lineItem: [{ position: 11, label: 'Doc. Date' }],
+  identification: [{ position: 11, label: 'Doc. Date' }]
+//  selectionField: [{ position: 04 }] 
+  }
+//  @EndUserText.label: 'Document Date'
+//  @Search.defaultSearchElement: true
+  DocDate;
+  @UI:{ lineItem: [{ position: 12, label: 'Supplier GSTIN' }],
+  identification: [{ position: 12, label: 'Supplier GSTIN' }],
+  selectionField: [{ position: 01 }] }
+  @EndUserText.label: 'Supplier GSTIN'
+  SupplGstin;
+  @UI:{ lineItem: [{ position: 13, label: 'Supplier Name' }],
+  identification: [{ position: 13, label: 'Supplier Name' }] }
+  SupplLegalName;
+  @UI:{ lineItem: [{ position: 14, label: 'Supplier Address' }],
+  identification: [{ position: 14, label: 'Supplier Address' }] }
+  SupplAddr;
+  @UI:{ lineItem: [{ position: 15, label: 'Supplier Loc' }],
+  identification: [{ position: 15, label: 'Supplier Loc' }] }
+  SupplLoc;
+  @UI:{ lineItem: [{ position: 16, label: 'Supplier Pincode' }],
+  identification: [{ position: 16, label: 'Supplier Pincode' }] }
+  SupplPincode;
+  @UI:{ lineItem: [{ position: 17, label: 'Supplier Stcd' }],
+  identification: [{ position: 17, label: 'Supplier Stcd' }] }
+  SupplStcd;
+  @UI:{ lineItem: [{ position: 18, label: 'Customer GSTIN' }],
+  identification: [{ position: 18, label: 'Customer GSTIN' }],
+  selectionField: [{ position: 02 }] }
+  @EndUserText.label: 'Customer GSTIN'
+  CustGstin;
+  @UI:{ lineItem: [{ position: 19, label: 'Customer Name' }],
+  identification: [{ position: 19, label: 'Customer Name' }] }
+  CustLegalName;
+  @UI:{ lineItem: [{ position: 20, label: 'Customer Pos' }],
+  identification: [{ position: 20, label: 'Customer Pos' }] }
+  CustPos;
+  @UI:{ lineItem: [{ position: 21, label: 'Customer Address' }],
+  identification: [{ position: 21, label: 'Customer Address' }] }
+  CustAddr;
+  @UI:{ lineItem: [{ position: 22, label: 'Customer Location' }],
+  identification: [{ position: 22, label: 'Customer Location' }] }
+  CustLoc;
+  @UI:{ lineItem: [{ position: 23, label: 'Customer Pincode' }],
+  identification: [{ position: 23, label: 'Customer Pincode' }] }
+  CustPincode;
+  @UI:{ lineItem: [{ position: 24, label: 'Customer Stcd' }],
+  identification: [{ position: 24, label: 'Customer Stcd' }] }
+  CustStcd;
+  @UI:{ lineItem: [{ position: 25, label: 'Item No' }],
+  identification: [{ position: 25, label: 'Item No' }] }
+  ItemItemno;
+//  @UI:{ lineItem: [{ position: 26, label: 'Item Sl No' }],
+//  identification: [{ position: 26, label: 'Item Sl No' }] }
+//  ItemSlno;
+  @UI:{ lineItem: [{ position: 27, label: 'Item Is Servc' }],
+  identification: [{ position: 27, label: 'Item Is Servc' }] }
+  ItemIsservc;
+  @UI:{ lineItem: [{ position: 28, label: 'Item Prod. Desc' }],
+  identification: [{ position: 28, label: 'Item Prod. Desc' }] }
+  ItemProddesc;
+  @UI:{ lineItem: [{ position: 29, label: 'Item HSN Code' }],
+  identification: [{ position: 29, label: 'Item HSN Code' }] }
+  ItemHsnCode;
+  @UI:{ lineItem: [{ position: 30, label: 'Item Unit' }],
+  identification: [{ position: 30, label: 'Item Unit' }] }
+  ItemUnit;
+  @UI:{ lineItem: [{ position: 31, label: 'Item Qty' }],
+  identification: [{ position: 31, label: 'Item Qty' }] }
+  ItemQty;
+  @UI:{ lineItem: [{ position: 32, label: 'Item Free Qty' }],
+  identification: [{ position: 32, label: 'Item Free Qty' }] }
+  ItemFreeQty;
+  //  @UI:{ lineItem: [{ position: 33, label: 'Item Currency' }],
+  //  identification: [{ position: 33, label: 'Item Currency' }] }
+  //  ItemCurrency;
+  @UI:{ lineItem: [{ position: 34, label: 'Item Unit Price' }],
+  identification: [{ position: 34, label: 'Item Unit Price' }] }
+  ItemUnitprice;
+  @UI:{ lineItem: [{ position: 35, label: 'Item Tot Amt' }],
+  identification: [{ position: 35, label: 'Item Tot Amt' }] }
+  ItemTotAmt;
+  @UI:{ lineItem: [{ position: 36, label: 'Item Discount' }],
+  identification: [{ position: 36, label: 'Item Discount' }] }
+  ItemDiscount;
+  @UI:{ lineItem: [{ position: 37, label: 'Item Ass Amt' }],
+  identification: [{ position: 37, label: 'Item Ass Amt' }] }
+  ItemAssamt;
+  @UI:{ lineItem: [{ position: 38, label: 'Item GST Rate' }],
+  identification: [{ position: 38, label: 'Item GST Rate' }] }
+  ItemGstRate;
+  @UI:{ lineItem: [{ position: 39, label: 'Item IGST Amt' }],
+  identification: [{ position: 39, label: 'Item IGST Amt' }] }
+  ItemIgstAmt;
+  @UI:{ lineItem: [{ position: 40, label: 'Item CGST Amt' }],
+  identification: [{ position: 40, label: 'Item CGST Amt' }] }
+  ItemCgstAmt;
+  @UI:{ lineItem: [{ position: 41, label: 'Item SGST Amt' }],
+  identification: [{ position: 41, label: 'Item SGST Amt' }] }
+  ItemSgstAmt;
+  @UI:{ lineItem: [{ position: 42, label: 'Item Cess Rate' }],
+  identification: [{ position: 42, label: 'Item Cess Rate' }] }
+  ItemCessRate;
+  @UI:{ lineItem: [{ position: 43, label: 'Item Cess Amt' }],
+  identification: [{ position: 43, label: 'Item Cess Amt' }] }
+  ItemCessAmt;
+  @UI:{ lineItem: [{ position: 44, label: 'Item Cess Non Advl Amt' }],
+  identification: [{ position: 44, label: 'Item Cess Non Advl Amt' }] }
+  ItemCessNonAdvlAmt;
+  @UI:{ lineItem: [{ position: 45, label: 'Item Total Val' }],
+  identification: [{ position: 45, label: 'Item Total Val' }] }
+  ItemTotItemVal;
+  @UI:{ lineItem: [{ position: 46, label: 'Ass Value' }],
+  identification: [{ position: 46, label: 'Ass Value' }] }
+  Assval;
+  @UI:{ lineItem: [{ position: 47, label: 'CGST Value' }],
+  identification: [{ position: 47, label: 'CGST Value' }] }
+  Cgstval;
+  @UI:{ lineItem: [{ position: 48, label: 'SGST Value' }],
+  identification: [{ position: 48, label: 'SGST Value' }] }
+  Sgstval;
+  @UI:{ lineItem: [{ position: 49, label: 'IGST Value' }],
+  identification: [{ position: 49, label: 'IGST Value' }] }
+  Igstval;
+  @UI:{ lineItem: [{ position: 50, label: 'Cess Value' }],
+  identification: [{ position: 50, label: 'Cess Value' }] }
+  Cessval;
+  @UI:{ lineItem: [{ position: 51, label: 'Discount' }],
+  identification: [{ position: 51, label: 'Discount' }] }
+  Discount;
+  @UI:{ lineItem: [{ position: 52, label: 'Other Chrg' }],
+  identification: [{ position: 52, label: 'Other Chrg' }] }
+  OtherChrg;
+  @UI:{ lineItem: [{ position: 53, label: 'Round Off Val' }],
+  identification: [{ position: 53, label: 'Round Off Val' }] }
+  RoundoffVal;
+  @UI:{ lineItem: [{ position: 54, label: 'Tot Inv Value' }],
+  identification: [{ position: 54, label: 'Tot Inv Value' }] }
+  TotinvVal;
+
+}

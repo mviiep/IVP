@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Binding Label FG'
+define service ZSD_qmlabel_fg {
+  expose ZI_QM_FGLABEL;
+}

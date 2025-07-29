@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "FI Sales Register",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zffisalesregister"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_63D0F33A735EEDBAD8C9E92B964D5DAA589D0F67_TM",
+    "semanticObject": "ZFFISALESREGISTER",
+    "action": "DISPLAY",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_63D0F33A735EEDBAD8C9E92B964D5DAA589D0F67_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "FI Sales Register",
+        "subtitle": "Report"
+      }
+    }
+  ]
+}

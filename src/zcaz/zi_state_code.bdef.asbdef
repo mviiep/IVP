@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_state_code unique;
+strict ( 2 );
+
+define behavior for ZI_State_Code //alias <alias_name>
+persistent table zj1istatecdm
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) Region, Statecode, Statename;
+
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Digital Purchase Order",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfdigitalpurchaseorder"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_285C8F81E013D57F055B789B213BAA1E818632EA_TM",
+    "semanticObject": "ZFDIGITALPURCHASE",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_285C8F81E013D57F055B789B213BAA1E818632EA_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Digital Purchase Order"
+      }
+    }
+  ]
+}

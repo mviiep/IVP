@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Digital Invoice - Billing Document",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfdigitalinvoicebillingdoc"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_62275731A97BAFEF0C43CC17C3B85C0F71D7AA0E_TM",
+    "semanticObject": "ZFDigitalInvoice",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_62275731A97BAFEF0C43CC17C3B85C0F71D7AA0E_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Digital Invoice - Billing Document"
+      }
+    }
+  ]
+}

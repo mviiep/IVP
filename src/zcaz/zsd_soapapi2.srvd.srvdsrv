@@ -1,0 +1,5 @@
+@EndUserText.label: 'ZSD_SOAPAPI2'
+define service ZSD_SOAPAPI2 {
+  expose Zi_SOAPAPI      as header;
+  expose Zi_SOAPAPI_item as item;
+}

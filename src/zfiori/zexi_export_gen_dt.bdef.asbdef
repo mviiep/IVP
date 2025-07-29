@@ -1,0 +1,13 @@
+managed implementation in class zbp_exi_export_gen_dt unique;
+strict ( 2 );
+
+define behavior for ZEXI_EXPORT_GEN_DT //alias <alias_name>
+persistent table zexi_expt_gen_dt
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

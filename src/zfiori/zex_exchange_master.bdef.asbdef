@@ -1,0 +1,13 @@
+managed implementation in class zbp_ex_exchange_master unique;
+strict ( 2 );
+
+define behavior for ZEX_EXCHANGE_MASTER //alias <alias_name>
+persistent table zexi_exchan_mast
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

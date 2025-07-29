@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_userplant unique;
+strict ( 2 );
+
+define behavior for Zi_userplant //alias <alias_name>
+persistent table zdb_userplant
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) userid,Plant;
+}

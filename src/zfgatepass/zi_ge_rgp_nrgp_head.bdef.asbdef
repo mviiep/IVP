@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_ge_rgp_nrgp_head unique;
+strict ( 2 );
+
+define behavior for ZI_GE_RGP_NRGP_HEAD //alias <alias_name>
+persistent table zrgp_nrgp_head
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

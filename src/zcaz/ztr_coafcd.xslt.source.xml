@@ -1,0 +1,163 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+
+  <tt:root name="it_deliverydoc"/>
+  <tt:root name="it_delivery"/>
+  <tt:root name="text"/>
+  <tt:root name="it_delivery.it_batch"/>
+  <tt:root name="wa_Plantaddress"/>
+  <tt:root name="revisiontabforcoa"/>
+  <tt:root name="specificationno"/>
+  <tt:root name="it_finalinspectionresult"/>
+
+  <tt:template>
+    <COA_FCD>
+
+      <revisiontable>
+        <FormatNumber>
+          <tt:value ref=".revisiontabforcoa.Formatno"/>
+        </FormatNumber>
+        <refsopnumber>
+          <tt:value ref=".revisiontabforcoa.Refsopno"/>
+        </refsopnumber>
+        <revNumber>
+          <tt:value ref=".revisiontabforcoa.Revno"/>
+        </revNumber>
+      </revisiontable>
+
+      <SpecificationNo>
+        <tt:value ref=".specificationno"/>
+      </SpecificationNo>
+
+      <text>
+        <tt:value ref=".text"/>
+      </text>
+
+      <Address>
+
+        <STREETNAME>
+          <tt:value ref=".wa_Plantaddress.STREETNAME"/>
+        </STREETNAME>
+        <SREETPREFIXNAME1>
+          <tt:value ref=".wa_Plantaddress.StreetSuffixName1"/>
+        </SREETPREFIXNAME1>
+        <CITYNAME>
+          <tt:value ref=".wa_Plantaddress.CITYNAME"/>
+        </CITYNAME>
+        <DISTRICTNAME>
+          <tt:value ref=".wa_Plantaddress.DISTRICTNAME"/>
+        </DISTRICTNAME>
+        <POSTALCODE>
+          <tt:value ref=".wa_Plantaddress.POSTALCODE"/>
+        </POSTALCODE>
+        <INTERNATIONALPHONENUMBER>
+          <tt:value ref=".wa_Plantaddress.phone"/>
+        </INTERNATIONALPHONENUMBER>
+        <EMAILADDRESS>
+          <tt:value ref=".wa_Plantaddress.EMAILADDRESS"/>
+        </EMAILADDRESS>
+
+      </Address>
+
+
+
+
+      <DeliveryBatchTable>
+        <tt:loop name="wa_delivery" ref="it_delivery">
+          <Row>
+            <ProductDescription>
+              <tt:value ref="$wa_delivery.Product"/>
+            </ProductDescription>
+
+
+            <it_batch>
+              <tt:loop name="wa_batch" ref="$wa_delivery.it_batch">
+                <Row>
+                  <Batch>
+                    <tt:value ref="$wa_batch.Batch"/>
+                  </Batch>
+
+                  <Quantity>
+                    <tt:value ref="$wa_batch.Quantity"/>
+                  </Quantity>
+
+                  <uom>
+                    <tt:value ref="$wa_batch.uom"/>
+                  </uom>
+
+                  <DateofMfg>
+                    <tt:value ref="$wa_batch.DateofMfg"/>
+                  </DateofMfg>
+
+                  <ExpiryDate>
+                    <tt:value ref="$wa_batch.ExpiryDate"/>
+                  </ExpiryDate>
+
+                </Row>
+              </tt:loop>
+            </it_batch>
+
+          </Row>
+        </tt:loop>
+      </DeliveryBatchTable>
+
+
+
+      <DeliveryDocumentTable>
+        <tt:loop name="wa_deliverydoc" ref="it_deliverydoc">
+          <DeliveryRow>
+            <Customer_Name>
+              <tt:value ref="$wa_deliverydoc.customerfullname"/>
+            </Customer_Name>
+            <Product>
+              <tt:value ref="$wa_deliverydoc.DeliveryDocumentItemText"/>
+            </Product>
+            <Batch>
+              <tt:value ref="$wa_deliverydoc.batch"/>
+            </Batch>
+            <Quantity>
+              <tt:value ref="$wa_deliverydoc.ACTUALDELIVERYQUANTITY"/>
+            </Quantity>
+            <UOM>
+              <tt:value ref="$wa_deliverydoc.ITEMWEIGHTUNIT"/>
+            </UOM>
+            <Date_of_Mfg>
+              <tt:value ref="$wa_deliverydoc.manufacturedate"/>
+            </Date_of_Mfg>
+            <Date_of_Expiry>
+              <tt:value ref="$wa_deliverydoc.shelflifeexpirationdate"/>
+            </Date_of_Expiry>
+            <DeliveryDate>
+              <tt:value ref="$wa_deliverydoc.CreationDate"/>
+            </DeliveryDate>
+          </DeliveryRow>
+        </tt:loop>
+      </DeliveryDocumentTable>
+
+      <InspectionTable>
+        <tt:loop name="wa_finalinspectionresult" ref="it_finalinspectionresult">
+          <InspectionRow>
+            <SrNo>
+              <tt:value ref="$wa_finalinspectionresult.SrNo"/>
+            </SrNo>
+            <TestName>
+              <tt:value ref="$wa_finalinspectionresult.testname"/>
+            </TestName>
+            <Specifications>
+              <tt:value ref="$wa_finalinspectionresult.Specifications"/>
+            </Specifications>
+            <Results>
+              <tt:value ref="$wa_finalinspectionresult.Results"/>
+            </Results>
+          </InspectionRow>
+        </tt:loop>
+      </InspectionTable>
+
+    </COA_FCD>
+
+
+
+  </tt:template>
+
+</tt:transform>

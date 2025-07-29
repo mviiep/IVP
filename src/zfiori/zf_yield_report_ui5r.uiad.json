@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Yield Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfyieldreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_2D5BF52177CEEBD54E8EC4705DC307F40DE02C91_TM",
+    "semanticObject": "ZFYIELDREPOT",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_2D5BF52177CEEBD54E8EC4705DC307F40DE02C91_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Yield Report"
+      }
+    }
+  ]
+}

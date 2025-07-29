@@ -1,0 +1,55 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Gate Pass Man Fld Data Definition'
+@Metadata.allowExtensions: true
+define root view entity ZI_GE_MAN_FLD_ASGN as select from zge_man_fld_asgn
+{
+    
+    key id                    as ID,
+  userid                as UserId,
+      referencedocument     as ReferenceDocument,
+      referencedocumenttype as ReferenceDocumentType,
+      plant                 as Plant,
+      supplier              as Supplier,
+      suppliertype          as SupplierType,
+      customer              as Customer,
+      customertype          as CustomerType,
+      ewaybill              as EWayBill,
+      gateentrydate         as GateEntryDate,
+      vehicletype           as VehicleType,
+      vehicleno             as VehicleNo,
+      invoiceno             as InvoiceNo,
+      invoicedate           as InvoiceDate,
+      transporter           as Transporter,
+      transportermode       as TransporterMode,
+      lrno                  as LRNo,
+      lrdate                as LRDate,
+      grossweight           as GrossWeight,
+      tareweight            as TareWeight,
+      netweight             as NetWeight,
+      remarks               as Remarks,
+      purchaseorderno       as PurchaseOrderNo,
+      deliverydocumentno    as DeliveryDocumentNo,
+      salesreturnno         as SalesReturnNo,
+      customerreturnno      as CustomerReturnNo,
+      username              as UserName,
+      userstatus            as UserStatus,
+      moduleid              as ModuleId,
+      modulename            as ModuleName,
+      modulestatus          as ModuleStatus,
+      appid                 as AppId,
+      appname               as AppName,
+      appstatus             as AppStatus,
+      status                as Status,
+      postingdate           as PostingDate,
+      
+      noofpackages          as NoOfPackages,
+      requestor             as Requestor,
+      defaultapprove        as defaultapprove,
+      challanno             as ChallanNo,
+      challandate           as ChallanDate,
+      created_by            as CreatedBy,
+      created_at            as CreatedAt,
+      last_changed_by       as LastChangedBy,
+      last_changed_at       as LastChangedAt
+
+}

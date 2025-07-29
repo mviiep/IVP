@@ -1,0 +1,88 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="header"/>
+  <tt:root name="soapheader"/>
+  <tt:root name="created_on"/>
+
+  <tt:template>
+
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+      <soapenv:Header/>
+      <soapenv:Body>
+        <sfin:JournalEntryBulkCreateRequest>
+          <MessageHeader>
+            <CreationDateTime>
+              <tt:value ref=".created_on"/>
+            </CreationDateTime>
+            <BusinessScope>
+              <TypeCode listAgencyID="?" listID="?" listVersionID="?">?</TypeCode>
+              <InstanceID schemeAgencyID="?" schemeID="?">?</InstanceID>
+              <ID schemeAgencyID="?" schemeID="?">?</ID>
+            </BusinessScope>
+          </MessageHeader>
+          <JournalEntryCreateRequest>
+            <MessageHeader>
+              <CreationDateTime>
+                <tt:value ref=".created_on"/>
+              </CreationDateTime>
+              <SenderParty/>
+            </MessageHeader>
+            <JournalEntry>
+              <OriginalReferenceDocumentType>BKPFF</OriginalReferenceDocumentType>
+              <OriginalReferenceDocumentLogicalSystem>0M4U8SS</OriginalReferenceDocumentLogicalSystem>
+              <BusinessTransactionType>RFBU</BusinessTransactionType>
+              <AccountingDocumentType>DZ</AccountingDocumentType>
+              <DocumentReferenceID></DocumentReferenceID>
+              <DocumentHeaderText>
+                <tt:value ref=".header.Userreferencenumber"/>
+              </DocumentHeaderText>
+              <CreatedByUser>
+                <tt:value ref=".soapheader.CreatedByUser"/>
+              </CreatedByUser>
+              <CompanyCode>1000</CompanyCode>
+              <DocumentDate><tt:value ref=".header.valuedate"/></DocumentDate>
+              <PostingDate><tt:value ref=".header.valuedate"/></PostingDate>
+              <PostingFiscalPeriod/>
+              <TaxReportingDate><tt:value ref=".header.valuedate"/></TaxReportingDate>
+              <TaxDeterminationDate><tt:value ref=".header.valuedate"/></TaxDeterminationDate>
+              <Item>
+                <ReferenceDocumentItem>1</ReferenceDocumentItem>
+                <CompanyCode>1000</CompanyCode>
+                <GLAccount>0020502011</GLAccount>
+                <AmountInTransactionCurrency currencyCode="INR">
+                  <tt:value ref=".soapheader.item.amountintransactioncurrency"/>
+                </AmountInTransactionCurrency>
+                <DebitCreditCode>
+                  <tt:value ref=".soapheader.item.debitcreditcode"/>
+                </DebitCreditCode>
+                <DocumentItemText>
+                <tt:value ref=".soapheader.item.documentitemtext"/>
+                </DocumentItemText>
+                <AssignmentReference><tt:value ref=".soapheader.item.assignmentreference"/></AssignmentReference>
+                <HouseBank>HDFC1</HouseBank>
+                <HouseBankAccount>HDFC1</HouseBankAccount>
+                <AccountAssignment>
+                  <ProfitCenter>2000</ProfitCenter>
+                </AccountAssignment>
+              </Item>
+              <DebtorItem>
+                <ReferenceDocumentItem>2</ReferenceDocumentItem>
+                <Debtor>
+                  <tt:value ref=".soapheader.debtoritem.debtor"/>
+                </Debtor>
+                <AmountInTransactionCurrency currencyCode="INR">
+                  <tt:value ref=".soapheader.debtoritem.amountintransactioncurrency"/>
+                </AmountInTransactionCurrency>
+                <DebitCreditCode><tt:value ref=".soapheader.debtoritem.debitcreditcode"/></DebitCreditCode>
+                <DocumentItemText/>
+              </DebtorItem>
+            </JournalEntry>
+          </JournalEntryCreateRequest>
+        </sfin:JournalEntryBulkCreateRequest>
+      </soapenv:Body>
+    </soapenv:Envelope>
+
+  </tt:template>
+
+</tt:transform>

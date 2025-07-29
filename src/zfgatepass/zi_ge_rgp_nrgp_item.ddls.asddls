@@ -1,0 +1,46 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Gate Pass for RGP NRGP ITEM DATA DEF'
+@Metadata.allowExtensions: true
+define root view entity ZI_GE_RGP_NRGP_ITEM as select from zrgp_nrgp_item
+
+{
+    key sap_uuid as SAP_UUID,
+    id as id,
+    itemno as ItemNo,
+    product as Product,
+    productname as ProductName,
+    quantity as Quantity,
+    receivedquantity as ReceivedQuantity,
+    uom as UOM,
+    duedate as DueDate,
+    dispatchdate as DispatchDate,
+    value as Value,
+    remarks as Remarks,
+    status as Status,
+    itemsstatus as ItemsStatus,
+    approvestatus as ApproveStatus,
+    totalamount as TotalAmount,
+    gatepasstype as GatePassType,
+    requestor as Requestor,
+    plantcode as PlantCode,
+    plantname as PlantName,
+    suppliercode as SupplierCode,
+    suppliername as SupplierName,
+    suppliertype as SupplierType,
+    customercode as CustomerCode,
+    customername as CustomerName,
+    customertype as CustomerType,
+    valueininr as ValueInINR,
+    vehicletype as VehicleType,
+    vehicleno as VehicleNo,
+    transporter as Transporter,
+    transportermode as TransporterMode,
+    purchaseorder as PurchaseOrder,
+    materialdocument as MaterialDocument,
+    referencedocumentno as ReferenceDocumentNo,
+    remarkhead as RemarkHead,
+    gatestatus as GateStatus,
+    gatetype as GateType,
+    postingdate as PostingDate,
+    returndate as returndate
+}

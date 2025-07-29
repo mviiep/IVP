@@ -1,0 +1,26 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Launchpad Page for GST RECO",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "title": "GST RECO"
+  },
+  "sections": [
+    {
+      "id": "SECTION_1",
+      "title": "SECTION 1",
+      "visualizations": [
+        {
+          "id": "SECTION_1_VIZ_1",
+          "ladiAssignment": {
+            "ladiId": "ZGSTRECO_UI5R",
+            "tileId": "UI5R_96787039C2A45DF9542FDEDF996BA657DCA6283C_AL"
+          }
+        }
+      ]
+    }
+  ]
+}

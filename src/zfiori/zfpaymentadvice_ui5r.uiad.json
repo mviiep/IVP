@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Payment Advice Form",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfpaymentadviseform"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_5816A22D1202340B259B5909D095CBCC22DF40F1_TM",
+    "semanticObject": "zfpaymentadviseform",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_5816A22D1202340B259B5909D095CBCC22DF40F1_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Payment Advice Form",
+        "subtitle": "print PDF"
+      }
+    }
+  ]
+}

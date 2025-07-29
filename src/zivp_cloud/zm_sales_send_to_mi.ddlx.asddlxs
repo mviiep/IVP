@@ -1,0 +1,331 @@
+@Metadata.layer: #PARTNER
+@EndUserText.label: 'Sales'
+@UI:{
+headerInfo: { typeName: 'Sales',
+              typeNamePlural: 'Sales',
+              title: { type: #STANDARD, label: 'Sales' } }
+}
+
+annotate view ZC_SALES_DATA with
+{ 
+
+  @UI.facet: [{ id : 'GSTR1', purpose: #STANDARD, type: #IDENTIFICATION_REFERENCE, label: 'Sales', position: 10 }]
+
+  @UI:{ lineItem: [{ position: 01, label: 'Bussiness Area' }],
+  identification: [{ position: 01, label: 'Bussiness Area' }] }
+  Bussiness_area;
+
+
+  @UI:{ lineItem: [{ position: 02, label: 'Billing Doc No' },
+  { type: #FOR_ACTION, dataAction: 'status_update', label: 'Send to Portal', position: 03 }],
+  identification: [{ position: 02, label: 'Billing Doc No' },
+  { type: #FOR_ACTION, dataAction: 'status_update', label: 'Send to Portal', position: 03 }],
+  selectionField: [{ position: 02 }] }
+  Billing_Doc_No;
+
+  @UI:{ lineItem: [{ position: 03, label: 'Journal Entry No' }],
+  identification: [{ position: 03, label: 'Journal Entry No' }],
+  selectionField: [{ position: 06 }] }
+  Accounting_Doc_No;
+
+  @UI:{ lineItem: [{ position: 04, label: 'Posting Date' }],
+  identification: [{ position: 04, label: 'Posting Date' }] }
+  posting_date;
+
+  @UI:{ lineItem: [{ position: 05, label: 'GST Invoice No' }],
+  identification: [{ position: 05, label: 'GST Invoice No' }] }
+  GST_Invoice_No;
+
+  @UI:{ lineItem: [{ position: 06, label: 'ITEM NO.' }],
+  identification: [{ position: 06, label: 'ITEM NO.' }] }
+  Item_No;
+
+  @UI:{ lineItem: [{ position: 07, label: 'Billing Date' }],
+  identification: [{ position: 07, label: 'Billing Date' }],
+  selectionField: [{ position: 05 }] }
+  @Consumption.filter.mandatory: true
+  Billing_date;
+
+  @UI:{ lineItem: [{ position: 08, label: 'IS Reversal' }],
+  identification: [{ position: 08, label: 'IS Reversal' }] }
+  Is_Reversal;
+
+  @UI:{ lineItem: [{ position: 09, label: 'Reverse Doc' }],
+  identification: [{ position: 09, label: 'Reverse Doc' }] }
+  Reverse_doc;
+
+  @UI:{ lineItem: [{ position: 10, label: 'Billing Doc Type' }],
+  identification: [{ position: 10, label: 'Billing Doc Type' }],
+  selectionField: [{ position: 03 }] }
+  Billing_Type;
+
+  @UI:{ lineItem: [{ position: 11, label: 'Document Type' }],
+  identification: [{ position: 11, label: 'Document Type' }] }
+  Doc_type;
+
+  @Consumption.hidden: true
+  @UI:{ lineItem: [{ position: 12, label: 'Proceding Invoice No' }],
+  identification: [{ position: 12, label: 'Proceding Invoice No' }] }
+  Preceding_Invoice_No;
+
+  @Consumption.hidden: true
+  @UI:{ lineItem: [{ position: 13, label: 'Proceding Invoice Date' }],
+  identification: [{ position: 13, label: 'Proceding Invoice Date' }] }
+  Preceding_Invoice_date;
+
+  @UI:{ lineItem: [{ position: 14, label: 'GL Code' }],
+  identification: [{ position: 14, label: 'GL Code' }] }
+  GL_Code;
+
+  @UI:{ lineItem: [{ position: 14.5, label: 'GL Desc' }],
+  identification: [{ position: 14.5, label: 'GL Desc' }] }
+  GLDesc;
+  //not required
+  //  @UI:{ lineItem: [{ position: 15, label: 'Distribution Chnannel' }],
+  //  identification: [{ position: 15, label: 'Distribution Chnannel' }] }
+  //  Distribution_Channel;
+  //
+  //  @UI:{ lineItem: [{ position: 16, label: 'Dist Channel Desc' }],
+  //  identification: [{ position: 16, label: 'Dist Channel Desc' }] }
+  //  Dist_Channel_Desc;
+  //
+  //  @UI:{ lineItem: [{ position: 17, label: 'Division' }],
+  //  identification: [{ position: 17, label: 'Division' }],
+  //  selectionField: [{ position: 04 }] }
+  //  Division;
+  //
+  //  @UI:{ lineItem: [{ position: 18, label: 'Customer Group' }],
+  //  identification: [{ position: 18, label: 'Customer Group' }] }
+  //  Customer_Group;
+  //not required
+
+  @UI:{ lineItem: [{ position: 19, label: 'Customer No' }],
+  identification: [{ position: 19, label: 'Customer No' }] }
+  customer_number;
+
+  @UI:{ lineItem: [{ position: 20, label: 'Customer Name' }],
+  identification: [{ position: 20, label: 'Customer Name' }] }
+  Customer_Name;
+
+  @UI:{ lineItem: [{ position: 21, label: 'Customer GST No' }],
+  identification: [{ position: 21, label: 'Customer GST No' }] }
+  Customer_GSTIN_No;
+
+  //  @UI:{ lineItem: [{ position: 22, label: 'Customer PAN' }],
+  //  identification: [{ position: 22, label: 'Customer PAN' }] }
+  //  customer_pan;
+  //not required
+  //  @UI:{ lineItem: [{ position: 23, label: 'Customer State' }],  //customer state code
+  //  identification: [{ position: 23, label: 'Customer State' }] }
+  //  Region;
+  //
+  //  @UI:{ lineItem: [{ position: 24, label: 'Ship To Party' }],
+  //  identification: [{ position: 24, label: 'Ship To Party' }] }
+  //  ShipToParty;
+  //
+  //  @UI:{ lineItem: [{ position: 25, label: 'Ship To Party Name' }],
+  //  identification: [{ position: 25, label: 'Ship To Party Name' }] }
+  //  ShipToPartyName;
+  //
+  //  @UI:{ lineItem: [{ position: 26, label: 'Bill To Party' }],
+  //  identification: [{ position: 26, label: 'Bill To Party' }] }
+  //  BillToParty;
+  //
+  //  @UI:{ lineItem: [{ position: 27, label: 'Bill To Party Name' }],
+  //  identification: [{ position: 27, label: 'Bill To Party Name' }] }
+  //  BillToPartyName;
+  //
+  //  @UI:{ lineItem: [{ position: 28, label: 'Bill To Party Region' }],
+  //  identification: [{ position: 28, label: 'Bill To Party Region' }] }
+  //  BillToPartyRegion;
+  //
+  //  @UI:{ lineItem: [{ position: 29, label: 'Bill To Party Country' }],
+  //  identification: [{ position: 29, label: 'Bill To Party Country' }] }
+  //  BillToPartyCountry;
+  //
+  //  @UI:{ lineItem: [{ position: 30, label: 'Customer PO No' }],
+  //  identification: [{ position: 30, label: 'Customer PO No' }] }
+  //  Customer_PO_No;
+  //
+  //  @UI:{ lineItem: [{ position: 31, label: 'Customer PO Date' }],
+  //  identification: [{ position: 31, label: 'Customer PO Date' }] }
+  //  Customer_PO_Date;
+  //
+  //  @UI:{ lineItem: [{ position: 32, label: 'Sales Order No' }],
+  //  identification: [{ position: 32, label: 'Sales Order No' }] }
+  //  sales_order_no;
+  //
+  //  @UI:{ lineItem: [{ position: 33, label: 'Sales Order Date' }],
+  //  identification: [{ position: 33, label: 'Sales Order Date' }] }
+  //  Sales_Order_Date;
+  //
+  //  @UI:{ lineItem: [{ position: 34, label: 'Delivery No' }],
+  //  identification: [{ position: 34, label: 'Delivery No' }] }
+  //  Delivery_No;
+  //
+  //  @UI:{ lineItem: [{ position: 35, label: 'Material Code' }],
+  //  identification: [{ position: 35, label: 'Material Code' }] }
+  //  Material_COde;
+  //
+  //  @UI:{ lineItem: [{ position: 36, label: 'Material Description' }],
+  //  identification: [{ position: 36, label: 'Material Description' }] }
+  //  Material_Description;
+  //not required
+
+  @UI:{ lineItem: [{ position: 37, label: 'HSN Code' }],
+  identification: [{ position: 37, label: 'HSN Code' }] }
+  HSN_Code;
+
+  //  @UI:{ lineItem: [{ position: 38, label: 'Price Group' }],
+  //  identification: [{ position: 38, label: 'Price Group' }] }
+  //  Price_Group;
+
+  @UI:{ lineItem: [{ position: 39, label: 'Invoice Quantity' }],
+  identification: [{ position: 39, label: 'IInvoice Quantity' }] }
+  Invoice_Qty;
+
+  @UI:{ lineItem: [{ position: 40, label: 'UOM' }],
+  identification: [{ position: 40, label: 'UOM' }] }
+  Unit;
+
+  @UI:{ lineItem: [{ position: 41, label: 'Tax Code' }],
+  identification: [{ position: 41, label: 'Tax Code' }] }
+  Tax_Code;
+
+  @UI:{ lineItem: [{ position: 42, label: 'Unit Rate' }],
+  identification: [{ position: 42, label: 'Unit Rate' }] }
+  Unit_Rate;
+
+  @UI:{ lineItem: [{ position: 43, label: 'Transaction Currency' }],
+  identification: [{ position: 43, label: 'Transaction Currency' }] }
+  transactioncurrency;
+
+  @UI:{ lineItem: [{ position: 44, label: 'Base Amount' }],
+  identification: [{ position: 44, label: 'Base Amount' }] }
+  Basic_Amount;
+
+  //  @UI:{ lineItem: [{ position: 45, label: 'Amortisation Cost' }],
+  //  identification: [{ position: 45, label: 'Amortisation Cost' }] }
+  //  amortisation;
+
+  //  @UI:{ lineItem: [{ position: 46, label: 'Taxable Value In RS' }],
+  //  identification: [{ position: 46, label: 'Taxable Value In RS' }] }
+  //  taxable_value_in_rs;
+
+  @UI:{ lineItem: [{ position: 47, label: 'CGST %' }],
+  identification: [{ position: 47, label: 'CGST %' }] }
+  CGST_RATE;
+
+  @UI:{ lineItem: [{ position: 48, label: 'SGST %' }],
+  identification: [{ position: 48, label: 'SGST %' }] }
+  SGST_Rate;
+
+  @UI:{ lineItem: [{ position: 49, label: 'IGST %' }],
+  identification: [{ position: 49, label: 'IGST %' }]  }
+  IGST_Rate;
+
+  //  @UI:{ lineItem: [{ position: 50, label: 'TCS %' }],
+  //  identification: [{ position: 50, label: 'TCS %' }] }
+  //  tcs_rate;
+
+  @UI:{ lineItem: [{ position: 52, label: 'CGST Amount' }],
+  identification: [{ position: 52, label: 'CGST Amount' }] }
+  CGST;
+
+  @UI:{ lineItem: [{ position: 53, label: 'SGST Amount' }],
+  identification: [{ position: 53, label: 'SGST Amount' }] }
+  SGST;
+
+  @UI:{ lineItem: [{ position: 54, label: 'IGST Amount' }],
+  identification: [{ position: 54, label: 'IGST Amount' }] }
+  IGST;
+
+  @UI:{ lineItem: [{ position: 55, label: 'TCS Amount' }],
+  identification: [{ position: 55, label: 'TCS Amount' }] }
+  TCS;
+
+  @UI:{ lineItem: [{ position: 56, label: 'Total Tax Amount' }],
+  identification: [{ position: 56, label: 'Total Tax Amount' }] }
+  Totaltax;
+
+  @UI:{ lineItem: [{ position: 57, label: 'Roundoff Value' }],
+  identification: [{ position: 57, label: 'Roundoff Value' }] }
+  roundoffval;
+
+//  @UI:{ lineItem: [{ position: 58, label: 'Gross Value' }],
+//  identification: [{ position: 58, label: 'Gross Value' }] }
+//  Gross_Value;
+
+  //  @UI:{ lineItem: [{ position: 59, label: 'Transport Purchase Order No' }],
+  //  identification: [{ position: 59, label: 'Transport Purchase Order No' }] }
+  //  Transporter_Purchase_Doc_No;
+  //
+  //  @UI:{ lineItem: [{ position: 63, label: 'Transporter Name' }],
+  //  identification: [{ position: 63, label: 'Transporter Name' }] }
+  //  Transporter_Name;
+
+  @UI:{ lineItem: [{ position: 64, label: 'Response' }],
+  identification: [{ position: 64, label: 'Response' }] }
+  status;
+
+  //  @UI:{ lineItem: [{ position: 65, label: 'EWaybill no' }],
+  //  identification: [{ position: 65, label: 'EWaybill no' }] }
+  //  Ewaybill_no;
+  //
+  //  @UI:{ lineItem: [{ position: 66, label: 'EWaybill Date' }],
+  //  identification: [{ position: 66, label: 'EWaybill Date' }] }
+  //  Ewaybill_Date;
+  //
+  //  @UI:{ lineItem: [{ position: 67, label: 'EWaybill Status' }],
+  //  identification: [{ position: 67, label: 'EWaybill Status' }] }
+  //  Ewaybill_Status;
+  //
+  //  @UI:{ lineItem: [{ position: 68, label: 'EInvoice Status' }],
+  //  identification: [{ position: 68, label: 'EInvoice Status' }] }
+  //  Einv_Status;
+  //
+  //  @UI:{ lineItem: [{ position: 69, label: 'EInvoice City' }],
+  //  identification: [{ position: 69, label: 'EInvoice City' }] }
+  //  Einv_City;
+  //
+  //  @UI:{ lineItem: [{ position: 70, label: 'EInvoice Type' }],
+  //  identification: [{ position: 70, label: 'EInvoice Type' }] }
+  //  Einv_type;
+  //
+  //  @UI:{ lineItem: [{ position: 71, label: 'IRN' }],
+  //  identification: [{ position: 71, label: 'IRN' }] }
+  //  IRN;
+  //
+  //  @UI:{ lineItem: [{ position: 72, label: 'Acknowledgement Number' }],
+  //  identification: [{ position: 72, label: 'Acknowledgement Number' }] }
+  //  Ack_num;
+  //
+  //  @UI:{ lineItem: [{ position: 73, label: 'Acknowledgement Date' }],
+  //  identification: [{ position: 73, label: 'Acknowledgement Date' }] }
+  //  Ack_date;
+  //
+  //  @UI:{ lineItem: [{ position: 74, label: 'EInvoice Cancel Date' }],
+  //  identification: [{ position: 74, label: 'EInvoice Cancel Date' }] }
+  //  Einv_Canceldate;
+  //
+  //  @UI:{ lineItem: [{ position: 75, label: 'EInvoice Cancel Reason' }],
+  //  identification: [{ position: 75, label: 'EInvoice Cancel Reason' }] }
+  //  Einv_CancelReason;
+
+  @UI:{ lineItem: [{ position: 76, label: 'Fiscal Year' }],
+  identification: [{ position: 76, label: 'Fiscal Year' }] }
+  Fiscal_Year;
+  
+  @UI:{ lineItem: [{ position: 76.5, label: 'Business Place' }],
+  identification: [{ position: 76.5, label: 'Business Place' }] }
+  business_place;
+  
+  @UI:{ lineItem: [{ position: 76.5, label: 'Supplier GSTIN' }],
+  identification: [{ position: 76.5, label: 'Supplier GSTIN' }] }
+  SupplierGstin;
+  
+
+  @UI:{ lineItem: [{ position: 77, label: 'Accounting Exchange Rate' }],
+  identification: [{ position: 77, label: 'Accounting Exchange Rate' }] }
+  AccountingExchangeRate;
+}

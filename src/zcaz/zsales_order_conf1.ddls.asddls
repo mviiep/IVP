@@ -1,0 +1,102 @@
+@AbapCatalog.sqlViewName: 'ZZSALES_ORDER_1'
+@AbapCatalog.viewEnhancementCategory: [#NONE]
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'SO'
+@Metadata.ignorePropagatedAnnotations: true
+@ObjectModel.usageType:{
+    serviceQuality: #X,
+    sizeCategory: #S,
+    dataClass: #MIXED
+}
+define root view ZSALES_ORDER_CONF1
+  as select from ZI_SALES_ORDER_CoNF1 as A
+
+
+{
+  key  A.SalesDocument                                                   as SalesDocument,
+  key  A.SalesDocumentItem                                               as SalesDocumentItem,
+       A.Plant,
+       A.RequestedDeliveryDate,
+       A.SalesDocApprovalStatus,
+       A.PurchaseOrderByCustomer,
+       A.CreatedByUser,
+       A.Headercurrency,
+       A.DeliveryTerm                                                    as DeliveryTerm,
+       A.DeliveryTerm1                                                   as DeliveryTerm1,
+       A.PaymentTerm                                                     as PaymentTerm,
+       A.Material                                                        as Material,
+       A.SalesOrderDate                                                  as SalesOrderDate,
+       A.CustomerPONO                                                    as CustomerPONO,
+       A.PODate                                                          as PODate,
+       A.DeliveryMode                                                    as DeliveryMode,
+       A.DeliveryDate                                                    as DeliveryDate,
+       A.DeliveryPriority                                                as DeliveryPriority,
+       A.OrderByName                                                     as OrderByName,
+       A.IncotermsClassification                                         as IncotermsClassification,
+       A.OrderByAddressName                                              as OrderByAddressName,
+       A.OrderBySreet1                                                   as OrderBySreet1,
+       A.OrderByStreet2                                                  as OrderByStreet2,
+       A.OrderByStreet3                                                  as OrderByStreet3,
+       A.OrderByCity                                                     as OrderByCity,
+       A.OrderByPostalCode                                               as OrderByPostalCode,
+       A.OrderByState                                                    as OrderByState,
+       A.OrderByRegionName,
+       A.OrderByPAN                                                      as OrderByPAN,
+       A.OrderByFASSAI                                                   as OrderByFASSAI,
+       A.OrderByGST                                                      as OrderByGST,
+       A.ShipToFASSAI                                                    as ShipToFASSAI,
+       A.ShipToGST                                                       as ShipToGST,
+       A.SPCustomer                                                      as SPCustomer,
+       A.ShipToName                                                      as ShipToName,
+       A.ShipToAddressName                                               as ShipToAddressName,
+       A.ShipToSreet1                                                    as ShipToSreet1,
+       A.ShipToStreet2                                                   as ShipToStreet2,
+       A.ShipToStreet3                                                   as ShipToStreet3,
+       A.ShipToCity                                                      as ShipToCity,
+       A.ShipToPostalCode                                                as ShipToPostalCode,
+       A.ShipToState                                                     as ShipToState,
+       A.ShiptoRegionName,
+       A.ShipToPAN                                                       as ShipToPAN,
+       A.ProductDiscription                                              as ProductDiscription,
+       A.HSNCode                                                         as HSNCode,
+       A.UNIT                                                            as UNIT,
+       A.UNIT1                                                           as UNIT1,
+       A.MRP                                                             as MRP,
+       A.OrderQuantity                                                   as OrderQuantity,
+       A.TransactionCurrency                                             as TransactionCurrency,
+       A.rate                                                            as Rate,
+       A.ZDEVr                                                           as ZDEVr,
+       A.PMP0r                                                           as PMP0r,
+       A.PPR0r                                                           as PPR0r,
+       A.ZDEVamt,
+       A.PMP0amt,
+       A.PPR0amt,
+       A.Amount                                                          as Amount,
+       A.Discount                                                        as DiscountBoth,
+       A.Discount1                                                       as Discount1,
+       A.Discount2                                                       as Discount2,
+       A.Discount3                                                       as Discount3,
+       A.unitname                                                        as typeofpkgs,
+       A.deliveryqty,
+       coalesce( A.Discount1 ,0 ) + coalesce( A.Discount2 ,0 )
+        + coalesce( A.Discount3 ,0 )                                     as Discount,
+       coalesce(A.Amount ,0 ) - ( coalesce( A.Discount1 ,0 )
+        + coalesce( A.Discount2 ,0 )
+        + coalesce( A.Discount3 ,0 ) )                                   as TaxableValue,
+       A.UTGSTRate,
+       A.UTGSTValue,
+       A.CGSTValue,
+       A.CGSTRate,
+       A.SGSTValue,
+       A.SGSTRate,
+       A.IGSTValue,
+       A.IGSTRate,
+       A.freight,
+       A.insuarance,
+       A.adddutyvalue,
+       (A.Amount + A.Discount) + A.CGSTValue + A.SGSTValue + A.IGSTValue as TotalValue,
+       A.TCSAmount,
+       A.Roundoff,
+       A.CGSTValue + A.SGSTValue + A.IGSTValue                           as TotalTax
+
+}

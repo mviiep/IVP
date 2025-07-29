@@ -1,0 +1,26 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Launchpad Page for ORGGSTIN",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "title": "Organization GSTIN"
+  },
+  "sections": [
+    {
+      "id": "SECTION_1",
+      "title": "SECTION 1",
+      "visualizations": [
+        {
+          "id": "SECTION_1_VIZ_1",
+          "ladiAssignment": {
+            "ladiId": "ZORGGSTIN_UI5R",
+            "tileId": "UI5R_5DBE7A80D113131A8414347813F6988AC313B29C_AL"
+          }
+        }
+      ]
+    }
+  ]
+}

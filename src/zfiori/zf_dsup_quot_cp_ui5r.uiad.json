@@ -1,0 +1,31 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Display Compare Supplier Quotations",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "suppressTiles": true
+  },
+  "ui5AppDetails": {
+    "appId": "zfdisplaysupquotcomp"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_C97DD9039F417D0D6162CCD4AD37A5AA7F818422_TM",
+    "semanticObject": "zfdisplayquotcomp",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true,
+    "parameters": [
+      {
+        "name": "RFQ",
+        "required": true
+      }
+    ]
+  },
+  "tiles": []
+}

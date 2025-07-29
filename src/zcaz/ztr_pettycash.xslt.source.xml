@@ -1,0 +1,55 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="Header"/>
+  <tt:root name="Item"/>
+  <tt:template>
+
+    <PettyCash>
+      <Header>
+        <VoucherNo>
+          <tt:value ref=".Header.AccountingDocument"/>
+        </VoucherNo>
+        <VoucherDate>
+          <tt:value ref=".Header.PostingDate"/>
+        </VoucherDate>
+        <Narration>
+          <tt:value ref=".Header.Narration"/>
+        </Narration>
+        <LocationCode>
+          <tt:value ref=".Header.Plant"/>
+        </LocationCode>
+        <LocationName>
+          <tt:value ref=".Header.PlantName"/>
+        </LocationName>
+      </Header>
+
+
+      <ItemTable>
+        <tt:loop name="wa_Item" ref="Item">
+          <ItemRow>
+            <AccountCode>
+              <tt:value ref="$wa_Item.AccountCode"/>
+            </AccountCode>
+            <AccountDescription>
+              <tt:value ref="$wa_Item.AccountDescription"/>
+            </AccountDescription>
+            <CostCenter>
+              <tt:value ref="$wa_Item.CostCenter"/>
+            </CostCenter>
+            <CCDescription>
+              <tt:value ref="$wa_Item.CostCenterDescription"/>
+            </CCDescription>
+            <Amount>
+              <tt:value ref="$wa_Item.AmountInTransactionCurrency"/>
+            </Amount>
+          </ItemRow>
+        </tt:loop>
+      </ItemTable>
+
+
+    </PettyCash>
+
+  </tt:template>
+
+</tt:transform>

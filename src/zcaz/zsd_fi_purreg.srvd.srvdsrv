@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for FI Purchase Register'
+define service ZSD_FI_PURREG {
+  expose ZCE_FIPUR_REG;
+}

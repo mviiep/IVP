@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Defination for LC SO and PO'
+define service ZSD_LC_SOPO {
+  expose ZI_LC_PO;
+  expose ZI_LC_SO;
+}

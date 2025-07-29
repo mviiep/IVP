@@ -1,0 +1,10 @@
+@EndUserText.label: 'Service Defination for Table Maintain'
+define service ZSD_TABLE_MAINTAINANCE {
+  expose ZI_IRN_LINKS;
+  expose ZI_GSTIN_USER;
+  expose ZI_IRN_DOC_TYPE;
+  expose zi_sd_irn_cond_typ;
+  expose ZI_REGION_MAP;
+  expose Zi_irn_unit_map;
+  expose ZI_EWB_DOC_TYPE;
+}

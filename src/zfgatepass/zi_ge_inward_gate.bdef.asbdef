@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_ge_inward_gate unique;
+strict ( 2 );
+
+define behavior for ZI_GE_INWARD_GATE //alias <alias_name>
+persistent table zge_inward_gate
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

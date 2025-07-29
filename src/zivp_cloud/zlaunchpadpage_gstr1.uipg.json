@@ -1,0 +1,26 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Launchpad Page for GSTR1",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "title": "Sales GSTR1"
+  },
+  "sections": [
+    {
+      "id": "SECTION_1",
+      "title": "SECTION 1",
+      "visualizations": [
+        {
+          "id": "SECTION_1_VIZ_1",
+          "ladiAssignment": {
+            "ladiId": "ZSALESGSTR1_UI5R",
+            "tileId": "UI5R_FB205B8F4BFBD935A0FC54FF3114E52B212D8BB6_AL"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for GSTR1 Data'
+define service ZSD_GSTR1_DATA {
+  expose ZC_SALES_DATA;
+}

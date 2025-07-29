@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "KMB Incoming Payment",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfkmbincomingpayment"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_2257B495E52876263D0173852DB48916B3860AAE_TM",
+    "semanticObject": "zfkmbincomingpayment",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_2257B495E52876263D0173852DB48916B3860AAE_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "KMB Incoming Payment",
+        "subtitle": "Report"
+      }
+    }
+  ]
+}

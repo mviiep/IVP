@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_gstin_user unique;
+strict ( 2 );
+
+define behavior for ZI_GSTIN_USER //alias <alias_name>
+persistent table ztab_gstin_user
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

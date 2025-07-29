@@ -1,0 +1,4 @@
+@EndUserText.label: 'Exim for Exchange Master for service definition'
+define service ZEX_EXCHANGE_MASTER_SD {
+  expose ZEX_EXCHANGE_MASTER;
+}

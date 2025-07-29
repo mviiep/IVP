@@ -1,0 +1,15 @@
+managed implementation in class zbp_rept_irn unique;
+strict ( 2 );
+
+define behavior for ZREPT_IRN //alias <alias_name>
+persistent table ztab_j1ig_invref
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  action ( features : instance ) IRN_GEN result [1] $self;
+  field ( readonly : update ) BillingDocument, IRN;
+}

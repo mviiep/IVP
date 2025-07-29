@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "FI Debit and Credit Form",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zffidebitandcreditform"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_20CB0AC8CF963FB7E78DD9E713C8DC6D421CD385_TM",
+    "semanticObject": "zfdebitandcredit",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_20CB0AC8CF963FB7E78DD9E713C8DC6D421CD385_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "FI Debit and Credit Form",
+        "subtitle": "Print PDF"
+      }
+    }
+  ]
+}

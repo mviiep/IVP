@@ -1,0 +1,13 @@
+managed implementation in class zbp_weigb_api unique;
+strict ( 2 );
+
+define behavior for ZWEIGB_API //alias <alias_name>
+persistent table zwb_details
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+
+}

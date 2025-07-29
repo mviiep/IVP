@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Table zi_sd_irn_cond_typ",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "tablezisdirncondtyp"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_4BD12F64E86F38C5B93CD30B11F293CB2CEBBBFB_TM",
+    "semanticObject": "zi_sd_irn_cond_typ",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_4BD12F64E86F38C5B93CD30B11F293CB2CEBBBFB_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Table zi_sd_irn_cond_typ"
+      }
+    }
+  ]
+}

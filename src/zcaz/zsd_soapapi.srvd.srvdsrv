@@ -1,0 +1,4 @@
+@EndUserText.label: 'ZSD_SOAPAPI'
+define service ZSD_SOAPAPI {
+  expose ZSOAPAPI;
+}

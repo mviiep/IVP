@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Digital Signature'
+define service ZSD_Digital_Sign {
+  expose Zi_Digital_Sign;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Label RM and PM'
+define service ZSD_label_RM_PM {
+  expose ZI_Label_RM_PM;
+}

@@ -1,0 +1,8 @@
+@EndUserText.label: 'Service Def. for ZIDD_QUOTE_COMPARISON'
+define service ZSD_QUOTE_COMPARISON {
+  expose ZIDD_Quote_Comparison;
+  expose zi_dd_quotcomp_item;
+  expose ZI_DD_SUPQTPRICE;
+  expose zi_dd_quotcomp_sup;
+  expose zi_dd_rfqhelp         as RFQSearchHelp;
+}

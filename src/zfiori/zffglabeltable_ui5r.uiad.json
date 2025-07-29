@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "FG label table",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zffglabeltable"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_7166EE1AF242E8C8C3B4523BE9AC75C3078CA7EA_TM",
+    "semanticObject": "ZFGLABELTABLE",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_7166EE1AF242E8C8C3B4523BE9AC75C3078CA7EA_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "FG label table"
+      }
+    }
+  ]
+}

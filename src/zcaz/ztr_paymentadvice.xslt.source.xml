@@ -1,0 +1,132 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+
+  <tt:root name="Header"/>
+  <tt:root name="SupplierAddress"/>
+  <tt:root name="Item"/>
+  <tt:root name="SupplierBankDetails"/>
+  <tt:root name="Total"/>
+  <tt:root name="paymentdifference"/>
+  <tt:root name="totalsum"/>
+  <tt:root name="paymenttotal"/>
+  <tt:root name="wa"/>
+
+
+  <tt:template>
+
+    <PaymentAdvice>
+
+      <Header>
+        <Date>
+          <tt:value ref=".wa.postingdate"/>
+        </Date>
+
+        <paymentdifference>
+          <tt:value ref=".paymentdifference"/>
+        </paymentdifference>
+
+        <TotalSum>
+          <tt:value ref=".totalsum"/>
+        </TotalSum>
+
+        <PaymentTotal>
+          <tt:value ref=".paymenttotal"/>
+        </PaymentTotal>
+
+        <accountingdocumentheadertext>
+          <tt:value ref=".header.accountingdocumentheadertext"/>
+        </accountingdocumentheadertext>
+
+      </Header>
+
+
+      <SupplierAddress>
+
+        <SupplierCode>
+          <tt:value ref=".SupplierAddress.Supplier"/>
+        </SupplierCode>
+
+        <SupplierName>
+          <tt:value ref=".SupplierAddress.SupplierName"/>
+        </SupplierName>
+
+
+        <SupplierAdd>
+          <tt:value ref=".SupplierAddress.supplieradd"/>
+        </SupplierAdd>
+
+        <MAILID>
+          <tt:value ref=".SupplierAddress.suppliermail"/>
+        </MAILID>
+
+      </SupplierAddress>
+
+      <ItemTable>
+        <tt:loop name="wa_Item" ref="Item">
+          <ItemRow>
+            <DocumentNo>
+              <tt:value ref="$wa_Item.DocumentReferenceID"/>
+            </DocumentNo>
+            <PostingDate>
+              <tt:value ref="$wa_Item.PostingDate"/>
+            </PostingDate>
+            <Currency>
+              <tt:value ref="$wa_Item.CompanyCodeCurrency"/>
+            </Currency>
+            <GrossAmount>
+              <tt:value ref="$wa_Item.GrossAmount"/>
+            </GrossAmount>
+            <TDSDeduction>
+              <tt:value ref="$wa_Item.TDSDeduction"/>
+            </TDSDeduction>
+            <NetAmount>
+              <tt:value ref="$wa_Item.NetAmount"/>
+            </NetAmount>
+          </ItemRow>
+        </tt:loop>
+      </ItemTable>
+
+
+      <BankDetails>
+        <PaymentDocNo>
+          <tt:value ref=".Header.ClearingJournalEntry"/>
+        </PaymentDocNo>
+
+        <PaymentDate>
+          <tt:value ref=".wa.postingdate"/>
+        </PaymentDate>
+
+        <Currency>
+          <tt:value ref=".Header.CompanyCodeCurrency"/>
+        </Currency>
+
+        <Amount>
+          <tt:value ref=".paymenttotal"/>
+        </Amount>
+
+        <BenificiaryName>
+          <tt:value ref=".SupplierBankDetails.BankAccountHolderName"/>
+        </BenificiaryName>
+
+        <BankName>
+          <tt:value ref=".SupplierBankDetails.BankName"/>
+        </BankName>
+
+        <AccountNo>
+          <tt:value ref=".SupplierBankDetails.BankAccount"/>
+        </AccountNo>
+
+        <IFSCCode>
+          <tt:value ref=".SupplierBankDetails.Bank"/>
+        </IFSCCode>
+
+      </BankDetails>
+
+
+    </PaymentAdvice>
+
+
+  </tt:template>
+
+</tt:transform>

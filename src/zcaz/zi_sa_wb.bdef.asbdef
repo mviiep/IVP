@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_sa_wb unique;
+strict ( 2 );
+
+define behavior for ZI_SA_WB //alias <alias_name>
+persistent table zsa_wb
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Plant, WbNo;
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "GST RECONCILIATION",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "gstitreco.gstitreco"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_96787039C2A45DF9542FDEDF996BA657DCA6283C_TM",
+    "semanticObject": "GSTRECO",
+    "action": "Send",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_96787039C2A45DF9542FDEDF996BA657DCA6283C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "GST RECONCILIATION",
+        "subtitle": "GST RECONCILIATION"
+      }
+    }
+  ]
+}

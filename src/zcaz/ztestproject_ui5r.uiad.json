@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Test Project",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "ztestproject.ztestproject"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_FA84A2C64FBDA8802A45EE4D8AD012489A73765C_TM",
+    "semanticObject": "ztestproject",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_FA84A2C64FBDA8802A45EE4D8AD012489A73765C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Test Project"
+      }
+    }
+  ]
+}

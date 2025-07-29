@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass - Transporter Service Definition'
+define service ZGE_TRANSPORTER_SD {
+  expose ZGE_TRANSPORTER;
+}

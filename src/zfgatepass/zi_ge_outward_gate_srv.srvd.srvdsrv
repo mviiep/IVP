@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass-Outward Gate Service Definition'
+define service ZI_GE_OUTWARD_GATE_SRV {
+  expose ZI_GE_OUTWARD_GATE;
+}

@@ -1,0 +1,14 @@
+managed implementation in class zbp_xlupld_va_dtls unique;
+strict ( 2 );
+
+define behavior for ZXLUPLD_VA_DTLS //alias <alias_name>
+persistent table zdb_hdfctab
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly :update) Alertsequenceno;
+}

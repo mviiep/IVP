@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Exim Application",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "eximapp"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_8BCE643A3783C1E359C13CBB3782A3ECB513201D_TM",
+    "semanticObject": "zeximapp01",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_8BCE643A3783C1E359C13CBB3782A3ECB513201D_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Exim Application"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Z-Title_FRT",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfreighttest"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_E166060032DCCE6A47F714320946E903F5E26D24_TM",
+    "semanticObject": "Z_Semantic_Obj",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_E166060032DCCE6A47F714320946E903F5E26D24_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Z-Title_FRT",
+        "subtitle": "Z-Subtitle-frt"
+      }
+    }
+  ]
+}

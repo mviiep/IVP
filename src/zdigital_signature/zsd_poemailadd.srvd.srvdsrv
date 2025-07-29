@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for zi_poemailadd'
+define service ZSD_poemailadd {
+  expose zi_poemailadd;
+}

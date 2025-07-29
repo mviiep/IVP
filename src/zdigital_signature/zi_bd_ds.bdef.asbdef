@@ -1,0 +1,16 @@
+unmanaged implementation in class zbp_i_bd_ds unique;
+//strict ( 2 );
+
+define behavior for ZI_BD_DS //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  //  create;
+  //  update;
+  //  delete;
+
+  action ( features : instance ) BDDigitalSignature result [1] $self;
+
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'ZI_SA_WB'
+define service ZI_SA_WB {
+  expose ZI_SA_WB;
+}

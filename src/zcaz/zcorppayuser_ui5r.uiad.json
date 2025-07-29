@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Corp Pay User Creation",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zcorppay"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_DF286F60A943B91FE00450ADBF5EE46ECFBB86F5_TM",
+    "semanticObject": "ZCorpPay",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_DF286F60A943B91FE00450ADBF5EE46ECFBB86F5_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Corp Pay User Creation",
+        "subtitle": "User Report"
+      }
+    }
+  ]
+}

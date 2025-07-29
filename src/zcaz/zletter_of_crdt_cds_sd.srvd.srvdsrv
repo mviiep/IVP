@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Defination for letter of Credit'
+define service ZLETTER_OF_CRDT_CDS_SD {
+  expose zletter_of_crdt_CDS;
+  expose ZLETTER_CRDT_ITM_CDS;
+}

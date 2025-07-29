@@ -1,0 +1,4 @@
+@EndUserText.label: 'For Bank Key and Name at LC'
+define service ZBANKKEY_LC {
+  expose ZBANKKEY_LC;
+}

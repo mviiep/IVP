@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass- Empty Vehicle Service Definition'
+define service ZGE_EMPTYSVEHICLE_SRD {
+  expose ZGE_EMPTYSVEHICLE;
+}

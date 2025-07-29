@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Revision number for COAs",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfrevisionnumberforcoasreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_6853FA3B47E3A8A1C17A95548DB1E1BE47E41A15_TM",
+    "semanticObject": "zfrevnoforcoa",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_6853FA3B47E3A8A1C17A95548DB1E1BE47E41A15_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Revision number for COAs",
+        "subtitle": "Report"
+      }
+    }
+  ]
+}

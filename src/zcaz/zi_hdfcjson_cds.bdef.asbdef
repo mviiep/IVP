@@ -1,0 +1,15 @@
+managed implementation in class zbp_i_hdfcjson_cds unique;
+strict ( 1 );
+
+define behavior for zi_hdfcjson_cds //alias <alias_name>
+persistent table zdb_hdfctab
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) Alertsequenceno;
+  action ( features : instance ) createaccdoc result [1] $self;
+}

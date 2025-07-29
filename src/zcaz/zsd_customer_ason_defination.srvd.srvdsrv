@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Defination for ason date'
+define service ZSD_CUSTOMER_ASON_DEFINATION {
+  expose ZC_CUSTOMER_AGEING_NEW;
+  expose ZCHILD_CUSTOMER_AGEING_NEW;
+}

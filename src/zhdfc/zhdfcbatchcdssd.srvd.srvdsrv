@@ -1,0 +1,4 @@
+@EndUserText.label: 'HDFC Bank Batch CDS Service Defination'
+define service ZHDFCBATCHCDSSD {
+  expose ZHDFCBATCHLOGCDS;
+}

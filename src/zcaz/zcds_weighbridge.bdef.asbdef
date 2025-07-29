@@ -1,0 +1,14 @@
+unmanaged implementation in class zbp_cds_weighbridge unique;
+strict ( 2 );
+
+define behavior for zcds_Weighbridge //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Plant, Wb_No;
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Monthly Production Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfmonthlyproductionreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_CCB4C82D9292FE89C6A6AFEFAC05B963CBDD2FFE_TM",
+    "semanticObject": "ZMonthrlyProdctionRpt",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_CCB4C82D9292FE89C6A6AFEFAC05B963CBDD2FFE_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Monthly Production Report"
+      }
+    }
+  ]
+}

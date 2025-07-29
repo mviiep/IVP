@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Organization GSTIN",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "organizationgst.organizationgst"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_5DBE7A80D113131A8414347813F6988AC313B29C_TM",
+    "semanticObject": "ORGGSTIN",
+    "action": "Create",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_5DBE7A80D113131A8414347813F6988AC313B29C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Organization GSTIN",
+        "subtitle": "Organization GSTIN"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+managed implementation in class zbp_test_weigh_fr unique;
+strict ( 2 );
+
+define behavior for ZTEST_WEIGH_FR //alias <alias_name>
+persistent table zwb_detailstest
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Plant, Wbno;
+}

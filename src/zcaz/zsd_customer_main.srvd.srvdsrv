@@ -1,0 +1,5 @@
+@EndUserText.label: 'customer defination main'
+define service Zsd_customer_main {
+  expose zc_customer_main;
+  expose zmain_customer_ageing;
+}

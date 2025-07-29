@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Print Petty Cash Form",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfprintpettycashform"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_B8C47F10D238FE3EA609CF73CB20D2B159501397_TM",
+    "semanticObject": "zfpettycashform",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_B8C47F10D238FE3EA609CF73CB20D2B159501397_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Print Petty Cash Form",
+        "subtitle": "PDF"
+      }
+    }
+  ]
+}

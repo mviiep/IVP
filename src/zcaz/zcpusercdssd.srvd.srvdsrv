@@ -1,0 +1,4 @@
+@EndUserText.label: 'corp pay cds serv def'
+define service ZCPUSERCDSSD {
+  expose ZCPUSERCDS;
+}

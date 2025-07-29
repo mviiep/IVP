@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_rsrc_cap unique;
+strict ( 2 );
+
+define behavior for ZI_RSRC_CAP //alias <alias_name>
+persistent table ztb_resource_cap
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+
+  create;
+  update;
+  delete;
+}

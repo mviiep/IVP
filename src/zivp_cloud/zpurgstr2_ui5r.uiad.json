@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Purchase Register GSTR2",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "purchaseregistergstr2.purchaseregistergstr2"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_F94CB310A1FED752B40BA756158F52D772821797_TM",
+    "semanticObject": "PURGSTR2",
+    "action": "Send",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_F94CB310A1FED752B40BA756158F52D772821797_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Purchase Register GSTR2",
+        "subtitle": "Purchase Register GSTR2"
+      }
+    }
+  ]
+}

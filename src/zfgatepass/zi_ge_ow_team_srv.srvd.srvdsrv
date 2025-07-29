@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass-Outward Item Service Definition'
+define service ZI_GE_OW_TEAM_SRV {
+  expose ZI_GE_OW_TEAM;
+}

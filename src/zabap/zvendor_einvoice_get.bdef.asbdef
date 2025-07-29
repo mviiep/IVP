@@ -1,0 +1,18 @@
+unmanaged implementation in class zbp_vendor_einvoice_get unique;
+//strict ( 2 );
+
+define behavior for ZVendor_EInvoice_Get //alias <alias_name>
+
+implementation in class zbp_vendor_einvoice_get unique
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+
+  static action ( features : global ) Get_Einvoice parameter ZPOPUP_VENDOR_EINV result [1] $self;
+  field ( readonly ) Id, ItemSlno;
+  create;
+  update;
+  delete;
+}

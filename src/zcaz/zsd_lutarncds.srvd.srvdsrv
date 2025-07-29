@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for LUT ARN Table'
+define service ZSD_lutarncds {
+  expose zi_lutarncds;
+}

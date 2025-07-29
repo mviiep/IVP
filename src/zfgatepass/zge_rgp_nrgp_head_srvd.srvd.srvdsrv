@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass-RGP NRGP HEAD Service Definition'
+define service ZGE_RGP_NRGP_HEAD_SRVD {
+  expose ZI_GE_RGP_NRGP_HEAD;
+}

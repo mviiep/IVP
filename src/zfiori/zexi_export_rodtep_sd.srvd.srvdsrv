@@ -1,0 +1,4 @@
+@EndUserText.label: 'Exim for Export RODTEP Detail for service definition'
+define service ZEXI_EXPORT_RODTEP_SD {
+  expose ZEXI_EXPORT_RODTEP_DT;
+}

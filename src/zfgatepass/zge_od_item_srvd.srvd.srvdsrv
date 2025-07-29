@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass -Outbound Item Service Definition'
+define service ZGE_OD_ITEM_SRVD {
+  expose ZGE_OD_ITEM;
+}

@@ -1,0 +1,58 @@
+@Metadata.layer: #PARTNER
+annotate entity ZGE_EMPTYSVEHICLE
+    with 
+{
+@UI                :{lineItem: [{ position: 10,label: 'SAP_UUID' }]}
+  SAP_UUID;
+  
+  @UI                :{lineItem: [{ position: 20,label: 'Id' }]}
+  Id;
+  
+  @UI                :{lineItem: [{ position: 30,label: 'Plant' }]}
+  Plant;
+  
+  @UI                :{lineItem: [{ position: 40,label: 'Plant Name' }]}
+  PlantName;
+  
+  @UI                :{lineItem: [{ position: 50,label: 'Transporter' }]}
+  Transporter;
+  
+  @UI                :{lineItem: [{ position: 60,label: 'Vehicle No' }]}
+  VehicleNo;
+  
+  @UI                :{lineItem: [{ position: 70,label: 'Vehicle Type' }]}
+  VehicleType;
+  
+  @UI                :{lineItem: [{ position: 80,label: 'Weight Date' }]}
+  WeightDate;
+  
+   @UI                :{lineItem: [{ position: 90,label: 'Weight Time' }]}
+  WeightTime;
+  
+     @UI                :{lineItem: [{ position: 100,label: 'Supplier Code' }]}
+  SupplierCode;
+  
+     @UI                :{lineItem: [{ position: 110,label: 'Supplier Name' }]}
+  SupplierName;
+  
+     @UI                :{lineItem: [{ position: 120,label: 'Customer Code' }]}
+  CustomerCode;
+  
+     @UI                :{lineItem: [{ position: 130,label: 'Customer Name' }]}
+  CustomerName;
+  
+   @UI                :{lineItem: [{ position: 140,label: 'Created By' }]}
+  CreatedBy;
+
+  @UI                :{lineItem: [{ position: 150,label: 'Created At' }]}
+  CreatedAt;
+
+  @UI                :{lineItem: [{ position: 160,label: 'Last Changed By' }]}
+  LastChangedBy;
+
+  @UI                :{lineItem: [{ position: 170,label: 'Last Changed At' }]}
+  LastChangedAt;
+    
+  @UI                :{lineItem: [{ position: 180,label: 'TareWeight' }]}
+  TareWeight;
+}

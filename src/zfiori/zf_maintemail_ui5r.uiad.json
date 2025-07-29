@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain Email Address",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfmaintainemail"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_9763909864E38DA7BB475DFBA5A7084D6A88CDF1_TM",
+    "semanticObject": "maintainemail",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_9763909864E38DA7BB475DFBA5A7084D6A88CDF1_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Maintain Email Address",
+        "subtitle": "Digital Purchase Order"
+      }
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass -COMPANY SERVICE DEFINITION'
+define service ZGE_COMPANY_ADD_SRD {
+  expose ZGE_COMPANY_ADD;
+}

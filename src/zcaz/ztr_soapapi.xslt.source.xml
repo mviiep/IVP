@@ -1,0 +1,132 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="header"/>
+  <tt:root name="item"/>
+
+  <tt:template>
+
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+      <soapenv:Header/>
+      <soapenv:Body>
+        <sfin:JournalEntryBulkCreateRequest>
+          <MessageHeader>
+            <CreationDateTime>2024-07-23T12:00:00.1234567Z</CreationDateTime>
+            <BusinessScope>
+              <TypeCode listAgencyID="?" listID="?" listVersionID="?">?</TypeCode>
+              <InstanceID schemeAgencyID="?" schemeID="?">?</InstanceID>
+              <ID schemeAgencyID="?" schemeID="?">?</ID>
+            </BusinessScope>
+          </MessageHeader>
+          <JournalEntryCreateRequest>
+            <MessageHeader>
+              <CreationDateTime>2024-07-23T12:00:00.1234567Z</CreationDateTime>
+              <SenderParty/>
+            </MessageHeader>
+            <JournalEntry>
+              <OriginalReferenceDocumentType>
+                <tt:value ref=".header.originalreferencedocumenttype"/>
+              </OriginalReferenceDocumentType>
+              <OriginalReferenceDocumentLogicalSystem>
+                <tt:value ref=".header.originalrefdoclogicalsystem"/>
+              </OriginalReferenceDocumentLogicalSystem>
+              <BusinessTransactionType>
+                <tt:value ref=".header.businesstransactiontype"/>
+              </BusinessTransactionType>
+              <AccountingDocumentType>
+                <tt:value ref=".header.accountingdocumenttype"/>
+              </AccountingDocumentType>
+              <DocumentReferenceID>
+                <tt:value ref=".header.DocumentReferenceID"/>
+              </DocumentReferenceID>
+              <DocumentHeaderText/>
+              <CreatedByUser>
+                <tt:value ref=".header.createdbyuser"/>
+              </CreatedByUser>
+              <CompanyCode>
+                <tt:value ref=".header.CompanyCode"/>
+              </CompanyCode>
+              <DocumentDate>
+              <!--<tt:value ref=".header.documentdate"/>-->
+              <tt:value ref=".header.postingdate"/>
+              </DocumentDate>
+              <PostingDate>
+                <tt:value ref=".header.postingdate"/>
+              </PostingDate>
+              <PostingFiscalPeriod>
+                <tt:value ref=".header.postingfiscalperiod"/>
+              </PostingFiscalPeriod>
+              <TaxReportingDate>
+                <tt:value ref=".header.taxreportingdate"/>
+              </TaxReportingDate>
+              <TaxDeterminationDate>
+                <tt:value ref=".header.taxdeterminationdate"/>
+              </TaxDeterminationDate>
+
+              <tt:loop name="wa_Item" ref="item">
+                <Item>
+                  <ReferenceDocumentItem>
+                    <tt:value ref="$wa_Item.referencedocumentitem"/>
+                  </ReferenceDocumentItem>
+                  <CompanyCode>
+                    <tt:value ref="$wa_Item.companycode"/>
+                  </CompanyCode>
+                  <GLAccount>
+                    <tt:value ref="$wa_Item.glaccount"/>
+                  </GLAccount>
+                  <AmountInTransactionCurrency currencyCode="INR">
+                    <tt:value ref="$wa_Item.amountintransactioncurrency"/>
+                  </AmountInTransactionCurrency>
+                  <DebitCreditCode>
+                    <tt:value ref="$wa_Item.debitcreditcode"/>
+                  </DebitCreditCode>
+                  <DocumentItemText>
+                    <tt:value ref="$wa_Item.documentitemtext"/>
+                  </DocumentItemText>
+                  <HouseBank>
+                    <tt:value ref="$wa_Item.housebank"/>
+                  </HouseBank>
+                  <HouseBankAccount>
+                    <tt:value ref="$wa_Item.housebankaccount"/>
+                  </HouseBankAccount>
+                  <AccountAssignment>
+                    <ProfitCenter> <tt:value ref="$wa_Item.profitcenter"/></ProfitCenter>
+                  </AccountAssignment>
+                </Item>
+              </tt:loop>
+
+
+              <!--<Item>
+                <ReferenceDocumentItem>1</ReferenceDocumentItem>
+                <CompanyCode>1000</CompanyCode>
+                <GLAccount>0020502011</GLAccount>
+                <AmountInTransactionCurrency currencyCode="INR">30</AmountInTransactionCurrency>
+                <DebitCreditCode>S</DebitCreditCode>
+                <DocumentItemText>BOB Incoming Payment A/c</DocumentItemText>
+                <HouseBank>HDFC1</HouseBank>
+                <HouseBankAccount>HDFC1</HouseBankAccount>
+                <AccountAssignment>
+                  <ProfitCenter>2000</ProfitCenter>
+                </AccountAssignment>
+              </Item>
+              <Item>
+                <ReferenceDocumentItem>2</ReferenceDocumentItem>
+                <CompanyCode>1000</CompanyCode>
+                <GLAccount>0020701070</GLAccount>
+                <AmountInTransactionCurrency currencyCode="INR">-30</AmountInTransactionCurrency>
+                <DebitCreditCode>H</DebitCreditCode>
+                <DocumentItemText>DutyDrawBack Receivable</DocumentItemText>
+                <AccountAssignment>
+                  <ProfitCenter>2000</ProfitCenter>
+                </AccountAssignment>
+              </Item>-->
+
+            </JournalEntry>
+          </JournalEntryCreateRequest>
+        </sfin:JournalEntryBulkCreateRequest>
+      </soapenv:Body>
+    </soapenv:Envelope>
+
+  </tt:template>
+
+</tt:transform>

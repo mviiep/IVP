@@ -1,0 +1,46 @@
+@Metadata.layer: #PARTNER
+annotate view ZEXI_EXPORT_RODTEP_DT
+    with 
+{
+ 
+  @UI                :{lineItem: [{ position: 10,label: 'SAP_UUID' }]}
+  SAP_UUID;
+@UI                :{lineItem: [{ position: 20,label: 'ID' }]}
+  ID;
+  
+  
+  @UI                :{lineItem: [{ position: 20,label: 'Closing Date' }]}
+  ClosingDate;
+  
+  @UI                :{lineItem: [{ position: 20,label: 'Eligible ROD Amount' }]}
+  EligibleRODAmount;
+  
+  @UI                :{lineItem: [{ position: 20,label: 'RODTEP Amount SB' }]}
+  RODTEPAmountSB;
+  
+  @UI                :{lineItem: [{ position: 20,label: 'Scroll No' }]}
+  ScrollNo;
+  
+  @UI                :{lineItem: [{ position: 20,label: 'Scroll Date' }]}
+  ScrollDate;
+  
+  @UI                :{lineItem: [{ position: 20,label: 'RODTEP Scroll Amount' }]}
+  RODTEPScrollAmount;
+  
+    @UI                :{lineItem: [{ position: 20,label: 'Cheque No' }]}
+  ChequeNo;
+  
+    @UI                :{lineItem: [{ position: 20,label: 'Cheque Date' }]}
+  ChequeDate;
+  
+    @UI                :{lineItem: [{ position: 120,label: 'Status' }]}
+  Status; 
+    @UI                :{lineItem: [{ position: 130,label: 'Created By' }]}
+  CreatedBy;
+  @UI                :{lineItem: [{ position: 140,label: 'Created At' }]}
+  CreatedAt;
+  @UI                :{lineItem: [{ position: 150,label: 'Last Changed By' }]}
+  LastChangedBy;
+  @UI                :{lineItem: [{ position: 160,label: 'Last Changed At' }]}
+  LastChangedAt;   
+}

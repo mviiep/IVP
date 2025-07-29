@@ -1,0 +1,4 @@
+@EndUserText.label: 'Exim Product for Service Definition'
+define service ZEX_PRODUCT_SRD {
+  expose ZEX_Product;
+}

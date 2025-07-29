@@ -1,0 +1,29 @@
+unmanaged implementation in class zbp_i_soapapi unique;
+strict ( 2 );
+
+define behavior for Zi_SOAPAPI //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) Companycode, Documentreferenceid;
+  association item { create; }
+}
+
+define behavior for Zi_SOAPAPI_item //alias <alias_name>
+//persistent table zadvlicappitem
+lock dependent by header
+authorization dependent by header
+//etag master <field_name>
+{
+
+  create;
+  update;
+  delete;
+  field ( readonly : update ) referencedocumentitem, companycode, documentreferenceid, accountingdocument;
+  association header;
+}

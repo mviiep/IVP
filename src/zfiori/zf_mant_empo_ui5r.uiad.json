@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain Email Address - Digital Purchase Order",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfmaintemailpo"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_21FC9D4C293515A87C57910BF97F8F0A0315DFCD_TM",
+    "semanticObject": "ZFMAINTEMPO",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_21FC9D4C293515A87C57910BF97F8F0A0315DFCD_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Maintain Email Address - Digital Purchase Order"
+      }
+    }
+  ]
+}

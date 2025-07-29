@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Table ZI_REGION_MAP",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "tableziregionmap"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_C00DCC11634E7B291847CDAB38DF7363A8ECFEC4_TM",
+    "semanticObject": "ZI_REGION_MAP",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_C00DCC11634E7B291847CDAB38DF7363A8ECFEC4_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Table ZI_REGION_MAP"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Vendor E-Inv Validation",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "vendeinv.zvendeinv"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_14D57503B5A3D7F1F0F3068507E8DDD1A144B23A_TM",
+    "semanticObject": "zvend_einv",
+    "action": "view",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_14D57503B5A3D7F1F0F3068507E8DDD1A144B23A_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Vendor E-Inv Validation",
+        "subtitle": "Vendor E-Inv Validation"
+      }
+    }
+  ]
+}

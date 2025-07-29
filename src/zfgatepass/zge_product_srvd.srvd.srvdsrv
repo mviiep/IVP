@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass -Product Service Definition'
+define service ZGE_PRODUCT_SRVD {
+  expose ZGE_PRODUCT;
+}

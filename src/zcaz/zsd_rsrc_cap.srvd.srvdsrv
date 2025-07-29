@@ -1,0 +1,5 @@
+@EndUserText.label: 'service defination for resource capacity'
+define service Zsd_rsrc_cap {
+  expose ZI_RSRC_CAP;
+  expose ZTB_RESOURCE_CAP1;
+}

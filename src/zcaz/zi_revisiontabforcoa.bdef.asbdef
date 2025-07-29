@@ -1,0 +1,19 @@
+managed implementation in class zbp_i_revisiontabforcoa unique;
+strict ( 2 );
+
+define behavior for Zi_RevisiontabforCOA //alias <alias_name>
+persistent table ztableforcoa
+lock master
+authorization master ( instance )
+{
+
+  field ( readonly : update ) plant, Formatno, Formatetype, Refsopno, Revno, VALIDTO, Validfrom;
+  field ( readonly ) LastChangedAt, LocalLastChangedBy, LocalLastChangedAt, LocalCreatedBy,
+  LocalCreatedAt;
+
+  create;
+  update;
+  delete;
+
+
+}

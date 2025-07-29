@@ -1,0 +1,25 @@
+unmanaged implementation in class zbp_letter_of_crdt_cds unique;
+//strict ( 2 );
+
+define behavior for zletter_of_crdt_CDS //alias <alias_name>
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) Bukrs, Lcnum, Businesspartner, Extlcnum;
+  association _CRDT_ITM_CDS { create; }
+}
+
+define behavior for ZLETTER_CRDT_ITM_CDS //alias <alias_name>
+lock dependent by _header
+authorization dependent by _header
+{
+
+  create;
+  update;
+  delete;
+  field ( readonly : update ) Bukrs, Lcnum, Businesspartner, Item, Extlcnum;
+  association _header;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'label table'
+define service Zsd_zfg_label {
+  expose zc_zfg_table;
+}

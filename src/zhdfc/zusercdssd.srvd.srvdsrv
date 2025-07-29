@@ -1,0 +1,4 @@
+@EndUserText.label: 'ZUser Service Defination'
+define service ZUSERCDSSD {
+  expose ZUSERCDS;
+}

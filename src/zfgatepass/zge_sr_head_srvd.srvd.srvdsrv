@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass -SR Head Service  Definition'
+define service ZGE_SR_HEAD_SRVD {
+  expose ZGE_SR_HEAD;
+}

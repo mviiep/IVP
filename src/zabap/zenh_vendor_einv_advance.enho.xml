@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Vendor Einvoice Validation in with PO</SHORTTEXT>
+   <SPOT_NAME>MRM_ATTACH_TO_READ_ONLY_CLOUD</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>MRM_ATTACH_TO_READ_ONLY_CLOUD</SPOT_NAME>
+     <BADI_NAME>MRM_ATTACH_TO_READ_ONLY_CLOUD</BADI_NAME>
+     <IMPL_NAME>ZENH_VENDOR_EINV_ADVANCE_IMPL</IMPL_NAME>
+     <IMPL_CLASS>ZCL_VENDOR_EINV_ADVANCE_VALI</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Supplier Invoice Validation Implementation invoice advance</IMPL_SHORTTEXT>
+     <LOCKED_IN_CUSTOMIZING>X</LOCKED_IN_CUSTOMIZING>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

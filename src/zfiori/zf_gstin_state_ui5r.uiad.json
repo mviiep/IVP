@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "GSTIN State Code",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfgstnstatecode"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_C4E348ABB57B432F072ECBEA27CF1E2F42A78DC1_TM",
+    "semanticObject": "ZF_GSTIN_State_Code",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_C4E348ABB57B432F072ECBEA27CF1E2F42A78DC1_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "GSTIN State Code"
+      }
+    }
+  ]
+}

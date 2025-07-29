@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Daily Break Down Report",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfdailybreakdownreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_1018F9F51392A3E33887D4A3B5118AAD2EF1BC25_TM",
+    "semanticObject": "ZDAILYBREAKREPORT",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_1018F9F51392A3E33887D4A3B5118AAD2EF1BC25_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Daily Break Down Report"
+      }
+    }
+  ]
+}

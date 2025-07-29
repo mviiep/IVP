@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Gate Entry",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "gatepassapp"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_072BBEF897902D3CC5F2C8B521AAB44D351280F0_TM",
+    "semanticObject": "gatepass",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_072BBEF897902D3CC5F2C8B521AAB44D351280F0_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Gate Entry"
+      }
+    }
+  ]
+}

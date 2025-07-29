@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass - Man Field Service  Definition'
+define service ZI_GE_MAN_FLD_ASGN_SRV {
+  expose ZI_GE_MAN_FLD_ASGN;
+}

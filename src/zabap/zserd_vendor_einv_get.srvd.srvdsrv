@@ -1,0 +1,4 @@
+@EndUserText.label: 'Vendor EInvoice Service Def'
+define service ZSERD_VENDOR_EINV_GET {
+  expose ZC_VENDOR_EINV_GET;
+}

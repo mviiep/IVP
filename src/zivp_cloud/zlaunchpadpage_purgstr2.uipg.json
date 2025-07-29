@@ -1,0 +1,26 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Launchpad Page for PURGSTR2",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "title": "Purchase Register GSTR2"
+  },
+  "sections": [
+    {
+      "id": "SECTION_1",
+      "title": "SECTION 1",
+      "visualizations": [
+        {
+          "id": "SECTION_1_VIZ_1",
+          "ladiAssignment": {
+            "ladiId": "ZPURGSTR2_UI5R",
+            "tileId": "UI5R_F94CB310A1FED752B40BA756158F52D772821797_AL"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Table ZI_IRN_LINKS",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "tableziirnlinks"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_CDFF9A695A22FBDF7E8FACADCC6A482A626546AA_TM",
+    "semanticObject": "ZI_IRN_LINKS",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_CDFF9A695A22FBDF7E8FACADCC6A482A626546AA_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Table ZI_IRN_LINKS"
+      }
+    }
+  ]
+}

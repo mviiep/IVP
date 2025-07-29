@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Print Sales Order",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfprintsalesorder"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_69870CB07FD1CFE3C1DC480AB62266ADE4C5CAC8_TM",
+    "semanticObject": "ZPRINTSALESODER",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_69870CB07FD1CFE3C1DC480AB62266ADE4C5CAC8_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Print Sales Order"
+      }
+    }
+  ]
+}

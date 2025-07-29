@@ -1,0 +1,15 @@
+managed implementation in class zbp_kmb_inc_pay_cds unique;
+//strict ( 1 );
+
+define behavior for ZKMB_INC_PAY_CDS //alias <alias_name>
+persistent table zcollection_dtls
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+//  create;
+//  update;
+//  delete;
+  field ( readonly : update ) Utr_no;
+  action ( features : instance ) createaccdoc result [1] $self;
+}

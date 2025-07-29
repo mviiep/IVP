@@ -1,0 +1,5 @@
+@EndUserText.label: 'customer ageing report'
+define service ZSD_Supplier_Ageing {
+  expose ZC_CUSTOMER_AGEING_NEW;
+  expose ZCHILD_CUSTOMER_AGEING_NEW;
+}

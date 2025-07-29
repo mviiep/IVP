@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_digital_sign unique;
+strict ( 2 );
+
+define behavior for Zi_Digital_Sign //alias <alias_name>
+persistent table zdigi_sign_table
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) Systemid, Cs, Pfxid, Pfxpwd, Signannotation, Signer;
+}

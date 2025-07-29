@@ -1,0 +1,27 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+<tt:root name="wa_materialdocument"/>
+
+<tt:template>
+
+<LabelPrinting>
+
+<Header>
+<Product><tt:value ref=".wa_materialdocument.inspectionlotobjecttext"/></Product>
+<Supplier><tt:value ref=".wa_materialdocument.Supplier"/></Supplier>
+<Batch><tt:value ref=".wa_materialdocument.Batch"/></Batch>
+<GRNQuantity><tt:value ref=".wa_materialdocument.quantityinbaseunit"/></GRNQuantity>
+<GRNDate><tt:value ref=".wa_materialdocument.postingdate"/></GRNDate>
+<Manufacturing_Date><tt:value ref=".wa_materialdocument.manufacturedate"/></Manufacturing_Date>
+<ExpiryDate><tt:value ref=".wa_materialdocument.shelflifeexpirationdate"/></ExpiryDate>
+<!--<NoofContainer><tt:value ref=".wa_materialdocument.inspectionlotobjecttext"/></NoofContainer>-->
+<!--<Status><tt:value ref=".wa_materialdocument.inspectionlotobjecttext"/></Status>-->
+</Header>
+
+</LabelPrinting>
+
+
+</tt:template>
+
+</tt:transform>

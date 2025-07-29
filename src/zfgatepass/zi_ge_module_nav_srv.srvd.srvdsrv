@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass - Module Navigat Service  Definition'
+define service ZI_GE_MODULE_NAV_SRV {
+  expose ZI_GE_MODULE_NAV;
+}

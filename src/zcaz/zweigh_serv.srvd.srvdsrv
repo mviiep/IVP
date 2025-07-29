@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for ZWEIGB_API'
+define service ZWEIGH_SERV {
+  expose ZWEIGB_API;
+}

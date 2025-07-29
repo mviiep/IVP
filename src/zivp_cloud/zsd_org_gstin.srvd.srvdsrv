@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ORG GSTIN'
+define service ZSD_ORG_GSTIN {
+  expose ZC_ORG_GSTIN;
+}

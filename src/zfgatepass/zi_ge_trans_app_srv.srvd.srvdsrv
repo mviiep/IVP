@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass - Trans  Definition'
+define service ZI_GE_TRANS_APP_SRV {
+  expose ZI_GE_TRANS_APP;
+}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Defination for Email Table'
+@AbapCatalog.extensibility.extensible: true
+define service Zsd_emailtable {
+  expose zi_emailtable as emailtab;
+}

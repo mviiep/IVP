@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass - Business Partner Service Definition'
+define service ZGE_BUSINESS_PARTNER_ROLE_SRVD {
+  expose ZGE_BUSINESS_PARTNER_ROLE;
+}

@@ -1,0 +1,14 @@
+managed implementation in class zbp_i_poemailadd unique;
+strict ( 2 );
+
+define behavior for zi_poemailadd //alias <alias_name>
+persistent table zdb_poemailadd
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( numbering : managed ) SapUuid;
+}

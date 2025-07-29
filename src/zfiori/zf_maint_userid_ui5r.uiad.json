@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain Plant specific User Id",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfmaintainplantuserid"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_CA7BE48A5FFBAB2C6F1ED095AD1A038F7338FF0A_TM",
+    "semanticObject": "ZFMAINTID",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_CA7BE48A5FFBAB2C6F1ED095AD1A038F7338FF0A_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Maintain Plant specific User Id"
+      }
+    }
+  ]
+}

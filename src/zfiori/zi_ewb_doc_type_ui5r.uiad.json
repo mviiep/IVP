@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "table ZI_EWB_DOC_TYPE",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "tableziewbdoctype"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_51DF59DC16952E05E5576989F1F40AF95F73E1CF_TM",
+    "semanticObject": "ZI_EWB_DOC_TYPE",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_51DF59DC16952E05E5576989F1F40AF95F73E1CF_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "table ZI_EWB_DOC_TYPE"
+      }
+    }
+  ]
+}

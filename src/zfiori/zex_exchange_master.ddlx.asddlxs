@@ -1,0 +1,35 @@
+@Metadata.layer: #PARTNER
+annotate entity ZEX_EXCHANGE_MASTER
+    with 
+{
+@UI                :{lineItem: [{ position: 10,label: 'SAP_UUID' }]}
+  SAP_UUID;
+  
+
+@UI                :{lineItem: [{ position: 20,label: 'ID' }]}
+  ID;
+
+    @UI                :{lineItem: [{ position: 30,label: 'Currency' }]}
+  Currency;
+  
+  @UI                :{lineItem: [{ position: 40,label: 'Exchange From' }]}
+  ExcFrom;
+  
+    @UI                :{lineItem: [{ position: 50,label: 'Exchange Rate' }]}
+  ExcRate;
+  
+  @UI                :{lineItem: [{ position: 60,label: 'Status' }]}
+  Status;
+  
+  @UI                :{lineItem: [{ position: 70,label: 'Created By' }]}
+  CreatedBy;
+
+  @UI                :{lineItem: [{ position: 80,label: 'Created At' }]}
+  CreatedAt;
+
+  @UI                :{lineItem: [{ position: 90,label: 'Last Changed By' }]}
+  LastChangedBy;
+
+  @UI                :{lineItem: [{ position: 100,label: 'Last Changed At' }]}
+  LastChangedAt;
+}

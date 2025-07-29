@@ -1,0 +1,57 @@
+@Metadata.layer: #PARTNER
+annotate view  ZEX_DBK_MASTER
+    with 
+{
+
+@UI                :{lineItem: [{ position: 10,label: 'SAP_UUID' }]}
+  SAP_UUID;
+  
+
+@UI                :{lineItem: [{ position: 20,label: 'ID' }]}
+  ID;
+  
+  @UI                :{lineItem: [{ position: 30,label: 'Company Code' }]}
+  CompanyCode;
+  
+  @UI                :{lineItem: [{ position: 40,label: 'Company Name' }]}
+  CompanyName;
+  
+  
+  @UI                :{lineItem: [{ position: 50,label: 'Material Code' }]}
+  MaterialCode;
+  
+  @UI                :{lineItem: [{ position: 60,label: 'Material Description' }]}
+  MaterialDescription;
+  
+  @UI                :{lineItem: [{ position: 70,label: 'DBK Code' }]}
+  DBKCode;
+  
+  @UI                :{lineItem: [{ position: 80,label: 'DBK From' }]}
+  DBKFrom;
+  
+  @UI                :{lineItem: [{ position: 90,label: 'DBK Rate' }]}
+  DBKRate;
+  
+  @UI                :{lineItem: [{ position: 100,label: 'Value Cap' }]}
+  ValueCap;
+  
+  @UI                :{lineItem: [{ position: 110,label: 'Description' }]}
+  Description;
+  
+    @UI                :{lineItem: [{ position: 120,label: 'Status' }]}
+  Status;
+  
+  
+  @UI                :{lineItem: [{ position: 130,label: 'Created By' }]}
+  CreatedBy;
+
+  @UI                :{lineItem: [{ position: 140,label: 'Created At' }]}
+  CreatedAt;
+
+  @UI                :{lineItem: [{ position: 150,label: 'Last Changed By' }]}
+  LastChangedBy;
+
+  @UI                :{lineItem: [{ position: 160,label: 'Last Changed At' }]}
+  LastChangedAt;
+    
+}

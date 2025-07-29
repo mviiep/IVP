@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service for Purchase Register'
+define service ZMM_PURCHASE_REGISTER_SRV {
+  expose ZMM_PURCHASE_REGISTER;
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain Digital Signature",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfmaintaindigsign"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_3A14BF9970E5E43E755CB61F80ABAE0BF033CE42_TM",
+    "semanticObject": "maintaindigitalsign",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_3A14BF9970E5E43E755CB61F80ABAE0BF033CE42_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Maintain Digital Signature"
+      }
+    }
+  ]
+}

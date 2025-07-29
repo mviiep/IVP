@@ -1,0 +1,4 @@
+@EndUserText.label: 'test fr'
+define service Zsd_ztest_weigh_fr {
+  expose ZTEST_WEIGH_FR;
+}

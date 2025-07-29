@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass - Billing Doucment Service Definition'
+define service ZGE_BD_HEAD_SD {
+  expose ZGE_BD_HEAD;
+}

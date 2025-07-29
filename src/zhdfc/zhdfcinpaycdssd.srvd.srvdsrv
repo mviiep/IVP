@@ -1,0 +1,4 @@
+@EndUserText.label: 'HDFC bank incoming pay ser def'
+define service ZHDFCINPAYCDSSD {
+  expose ZHDFCINPAYCDS;
+}

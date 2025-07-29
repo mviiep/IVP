@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass -CUSTOMER Service Definition'
+define service ZGE_CUSTOMER_SD {
+  expose ZGE_CUSTOMER;
+}

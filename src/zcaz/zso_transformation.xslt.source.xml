@@ -1,0 +1,333 @@
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="HEADER"/>
+  <tt:root name="watermark"/>
+  <tt:root name="watermark1"/>
+  <tt:root name="incoterms"/>
+  <tt:root name="ourref"/>
+  <tt:root name="soheading"/>
+  <tt:root name="CreatedByUser"/>
+  <tt:root name="plant"/>
+  <tt:root name="company"/>
+  <tt:root name="shipto"/>
+  <tt:root name="billto"/>
+  <tt:root name="ITEM"/>
+  <tt:root name="ITEM.IT_SCHEDULE"/>
+  <tt:root name="total"/>
+  <tt:root name="remarks"/>
+  <tt:root name="salesperson"/>
+  <tt:root name="transportername"/>
+
+
+  <tt:template>
+
+    <Form>
+      <YY1_salesorder>
+        <salesorderheader>
+          <tt:value ref=".soheading"/>
+        </salesorderheader>
+        <salesorder>
+          <tt:value ref=".HEADER.SalesDocument"/>
+        </salesorder>
+        <salesperson>
+          <tt:value ref=".salesperson"/>
+        </salesperson>
+        <salesorderdate>
+          <tt:value ref=".HEADER.SalesOrderDate"/>
+        </salesorderdate>
+        <ourreference>
+          <tt:value ref=".ourref"/>
+        </ourreference>
+        <partyreferencenumber>
+          <tt:value ref=".HEADER.CustomerPONO"/>
+        </partyreferencenumber>
+
+        <destination>
+          <tt:value ref=".HEADER.DeliveryTerm1"/>
+        </destination>
+
+        <requesteddeliverydate>
+          <tt:value ref=".HEADER.requesteddeliverydate"/>
+        </requesteddeliverydate>
+
+        <transporter>  </transporter>
+
+        <paymentterms>
+          <tt:value ref=".HEADER.PaymentTerm"/>
+        </paymentterms>
+
+        <currency>
+          <tt:value ref=".HEADER.transactioncurrency"/>
+        </currency>
+
+        <Createdby>
+          <tt:value ref=".CreatedByUser"/>
+        </Createdby>
+
+        <lrinstruction/>
+
+        <Watermark>
+          <tt:value ref=".watermark"/>
+        </Watermark>
+
+        <Watermark1>
+          <tt:value ref=".watermark1"/>
+        </Watermark1>
+
+        <transportername>
+          <tt:value ref=".transportername"/>
+        </transportername>
+
+        <deliveryterms>
+          <tt:value ref=".incoterms"/>
+        </deliveryterms>
+
+        <remarks>
+          <tt:value ref=".remarks"/>
+        </remarks>
+
+        <ourref>
+          <tt:value ref=".ourref"/>
+        </ourref>
+
+
+        <placeofsupply>
+          <tt:value ref=".HEADER.ShipToState"/>
+        </placeofsupply>
+
+        <company_address>
+          <company_street>
+            <tt:value ref=".company.street"/>
+          </company_street>
+          <company_street2>
+            <tt:value ref=".company.street2"/>
+          </company_street2>
+          <company_city>
+            <tt:value ref=".company.city"/>
+          </company_city>
+          <company_postalcode>
+            <tt:value ref=".company.postalcode"/>
+          </company_postalcode>
+          <company_state>
+            <tt:value ref=".company.state"/>
+          </company_state>
+        </company_address>
+
+        <plant_address>
+          <plant_street>
+            <tt:value ref=".plant.street"/>
+          </plant_street>
+
+          <plant_street2>
+            <tt:value ref=".plant.street2"/>
+          </plant_street2>
+
+          <plant_city>
+            <tt:value ref=".plant.city"/>
+          </plant_city>
+
+          <plant_name>
+            <tt:value ref=".plant.name"/>
+          </plant_name>
+
+          <plant_postalcode>
+            <tt:value ref=".plant.postalcode"/>
+          </plant_postalcode>
+          <plant_state>
+
+            <tt:value ref=".plant.state"/>
+          </plant_state>
+
+          <plant_postalcode>
+            <tt:value ref=".plant.postalcode"/>
+          </plant_postalcode>
+
+          <plant_statecode><tt:value ref=".plant.statecode"/></plant_statecode>
+          <plant_gstid><tt:value ref=".plant.gstin"/> </plant_gstid>
+          <plant_pano> </plant_pano>
+        </plant_address>
+
+        <billtoaddress>
+          <bp_street>
+            <tt:value ref=".billto.street"/>
+          </bp_street>
+          <bp_name>
+            <tt:value ref=".billto.name"/>
+          </bp_name>
+          <bp_street2>
+            <tt:value ref=".billto.street2"/>
+          </bp_street2>
+          <bp_city>
+            <tt:value ref=".billto.city"/>
+          </bp_city>
+
+          <bp_postalcode>
+            <tt:value ref=".billto.postalcode"/>
+          </bp_postalcode>
+          <bp_state>
+            <tt:value ref=".billto.state"/>
+          </bp_state>
+          <bp_statecode>
+            <tt:value ref=".billto.statecode"/>
+          </bp_statecode>
+          <bp_acc_name>  </bp_acc_name>
+          <bp_gstid>
+            <tt:value ref=".billto.gstin"/>
+          </bp_gstid>
+          <bp_pano>
+            <tt:value ref=".billto.panno"/>
+          </bp_pano>
+        </billtoaddress>
+
+        <shiptoaddress>
+          <sp_name>
+            <tt:value ref=".shipto.name"/>
+          </sp_name>
+          <sp_street2>
+            <tt:value ref=".shipto.street2"/>
+          </sp_street2>
+          <sp_street>
+            <tt:value ref=".shipto.street"/>
+          </sp_street>
+          <sp_city>
+            <tt:value ref=".shipto.city"/>
+          </sp_city>
+          <sp_postalcode>
+            <tt:value ref=".shipto.postalcode"/>
+          </sp_postalcode>
+          <sp_state>
+            <tt:value ref=".shipto.state"/>
+          </sp_state>
+          <sp_statecode>
+            <tt:value ref=".shipto.statecode"/>
+          </sp_statecode>
+          <sp_acc_name> </sp_acc_name>
+          <sp_gstid>
+            <tt:value ref=".shipto.gstin"/>
+          </sp_gstid>
+          <sp_pano>
+            <tt:value ref=".shipto.panno"/>
+          </sp_pano>
+        </shiptoaddress>
+
+
+        <Table>
+          <tt:loop name="wa_ITEM" ref="ITEM">
+            <Row>
+              <mat_decp>
+                <tt:value ref="$wa_item.ProductDiscription"/>
+              </mat_decp>
+              <HSN>
+                <tt:value ref="$wa_item.HSNCode"/>
+              </HSN>
+              <Plant>
+                <tt:value ref="$wa_item.Plant"/>
+              </Plant>
+              <typeofpkgs>
+                <tt:value ref="$wa_item.typeofpkgs"/>
+              </typeofpkgs>
+              <noofpkgs>
+                <tt:value ref="$wa_item.nofpkgs"/>
+              </noofpkgs>
+              <contpkgs>
+                <tt:value ref="$wa_item.avgcontperpkg"/>
+              </contpkgs>
+              <quantity>
+                <tt:value ref="$wa_item.OrderQuantity"/>
+              </quantity>
+              <rate>
+                <tt:value ref="$wa_item.Rate"/>
+              </rate>
+              <unit>
+                <tt:value ref="$wa_item.UNIT1"/>
+              </unit>
+              <dispatchdate>
+                <tt:value ref="$wa_item.dispatchdate"/>
+              </dispatchdate>
+
+
+              <IT_SCHEDULE>
+                <tt:loop name="wa_schedule" ref="$wa_item.IT_SCHEDULE">
+                  <Row>
+                    <scheduledispatchdate>
+                      <tt:value ref="$wa_schedule.scheduledispatchdate"/>
+                    </scheduledispatchdate>
+
+                    <scheduleqty>
+                      <tt:value ref="$wa_schedule.scheduleqty"/>
+                    </scheduleqty>
+
+                    <schedulenofpkgs>
+                      <tt:value ref="$wa_schedule.no_of_pkgs"/>
+                    </schedulenofpkgs>
+
+                    <scheduleavgcontperpkgs>
+                      <tt:value ref="$wa_schedule.avgcontperpkg"/>
+                    </scheduleavgcontperpkgs>
+
+
+                  </Row>
+                </tt:loop>
+              </IT_SCHEDULE>
+
+            </Row>
+          </tt:loop>
+        </Table>
+
+        <total>
+          <SubTotal>
+            <tt:value ref=".total.SubTotal"/>
+          </SubTotal>
+          <LessDiscount>
+            <tt:value ref=".total.LessDiscount"/>
+          </LessDiscount>
+          <AddFreight>
+            <tt:value ref=".total.AddFreight"/>
+          </AddFreight>
+          <AddInsurance>
+            <tt:value ref=".total.AddInsurance"/>
+          </AddInsurance>
+          <TaxableAmount>
+            <tt:value ref=".total.TaxableAmount"/>
+          </TaxableAmount>
+          <IGSTr>
+            <tt:value ref=".total.IGSTr"/>
+          </IGSTr>
+          <CGSTr>
+            <tt:value ref=".total.CGSTr"/>
+          </CGSTr>
+          <SGSTr>
+            <tt:value ref=".total.SGSTr"/>
+          </SGSTr>
+          <UGSTr>
+            <tt:value ref=".total.UGSTr"/>
+          </UGSTr>
+          <IGSTamount>
+            <tt:value ref=".total.IGSTamount"/>
+          </IGSTamount>
+          <CGSTamount>
+            <tt:value ref=".total.CGSTamount"/>
+          </CGSTamount>
+          <SGSTamount>
+            <tt:value ref=".total.SGSTamount"/>
+          </SGSTamount>
+          <UGSTamount>
+            <tt:value ref=".total.UGSTamount"/>
+          </UGSTamount>
+          <TCSamount>
+            <tt:value ref=".total.TCSamount"/>
+          </TCSamount>
+          <TotalAmount>
+            <tt:value ref=".total.TotalAmount"/>
+          </TotalAmount>
+          <addduty>
+            <tt:value ref=".total.addduty"/>
+          </addduty>
+        </total>
+
+      </YY1_salesorder>
+    </Form>
+
+  </tt:template>
+
+</tt:transform>

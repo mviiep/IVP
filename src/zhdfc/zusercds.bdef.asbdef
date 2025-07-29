@@ -1,0 +1,13 @@
+managed implementation in class zbp_usercds unique;
+strict ( 2 );
+
+define behavior for ZUSERCDS //alias <alias_name>
+persistent table zuser
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

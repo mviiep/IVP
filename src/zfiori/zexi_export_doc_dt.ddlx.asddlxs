@@ -1,0 +1,67 @@
+@Metadata.layer: #PARTNER
+annotate view ZEXI_EXPORT_DOC_DT
+    with 
+{
+
+  @UI                :{lineItem: [{ position: 10,label: 'SAP_UUID' }]}
+  SAP_UUID;
+  
+  @UI                :{lineItem: [{ position: 20,label: 'ID' }]}
+  ID;
+  
+  @UI                :{lineItem: [{ position: 30,label: 'Modify bill Date' }]}
+  ModbillDate;
+  
+  @UI                :{lineItem: [{ position: 40,label: 'Payment Terms' }]}
+  PaymentTerms;
+    
+  @UI                :{lineItem: [{ position: 40,label: 'Payment Terms Description' }]}
+  PaymentTermsDesc;
+  
+  @UI                :{lineItem: [{ position: 50,label: 'Company Code' }]}
+  CompanyCode;
+  
+  @UI                :{lineItem: [{ position: 60,label: 'Inco Terms' }]}
+  IncoTerms;
+  
+  @UI                :{lineItem: [{ position: 70,label: 'Billing Date' }]}
+  BillingDate;
+  
+  @UI                :{lineItem: [{ position: 80,label: 'Quantity' }]}
+  Quantity;
+  
+  @UI                :{lineItem: [{ position: 90,label: 'Net Weight' }]}
+  NetWeight;
+  @UI                :{lineItem: [{ position: 100,label: 'Invoice Amount' }]}
+  InvoiceAmount;
+  @UI                :{lineItem: [{ position: 120,label: 'Billing Type' }]}
+  BillingType;
+  @UI                :{lineItem: [{ position: 130,label: 'Gross Weight' }]}
+  GrossWeight;
+  @UI                :{lineItem: [{ position: 140,label: 'Other Ref' }]}
+  OtherRef;
+  @UI                :{lineItem: [{ position: 150,label: 'Volume' }]}
+  Volume;
+  @UI                :{lineItem: [{ position: 160,label: 'Carton Length' }]}
+  CartonLength;
+  @UI                :{lineItem: [{ position: 170,label: 'Carton Width' }]}
+  CartonWidth;
+  
+    @UI                :{lineItem: [{ position: 180,label: 'Carton Height' }]}
+ CartonHeight;
+  
+        @UI                :{lineItem: [{ position: 190,label: 'Status' }]}
+  Status; 
+    @UI                :{lineItem: [{ position: 200,label: 'Created By' }]}
+  CreatedBy;
+
+  @UI                :{lineItem: [{ position: 210,label: 'Created At' }]}
+  CreatedAt;
+
+  @UI                :{lineItem: [{ position: 220,label: 'Last Changed By' }]}
+  LastChangedBy;
+
+  @UI                :{lineItem: [{ position: 230,label: 'Last Changed At' }]}
+  LastChangedAt;
+    
+}

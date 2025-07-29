@@ -1,0 +1,87 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="wa_header"/>
+  <tt:root name="it_item"/>
+  <tt:template>
+
+    <Form>
+      <Z_DEBITCREDIT_NOTE>
+        <supplierdetails>
+          <suppliername>
+            <tt:value ref=".wa_header.suppliername"/>
+          </suppliername>
+          <pannumber>
+            <tt:value ref=".wa_header.pannumber"/>
+          </pannumber>
+          <gst>
+            <tt:value ref=".wa_header.gst"/>
+          </gst>
+          <ACCOUNTINGDOCUMENT>
+            <tt:value ref=".wa_header.ACCOUNTINGDOCUMENT"/>
+          </ACCOUNTINGDOCUMENT>
+          <postingdate>
+            <tt:value ref=".wa_header.postingdate"/>
+          </postingdate>
+          <supplier1>
+            <tt:value ref=".wa_header.supplier1"/>
+          </supplier1>
+          <addresss1>
+            <tt:value ref=".wa_header.addresss1"/>
+          </addresss1>
+          <BPAddrstreetName>
+            <tt:value ref=".wa_header.BPAddrstreetName"/>
+          </BPAddrstreetName>
+          <DocumentText>
+            <tt:value ref=".wa_header.DocumentText"/>
+          </DocumentText>
+        </supplierdetails>
+
+        <Table>
+          <tt:loop name="wa_item" ref="it_item">
+            <Row>
+              <ACCOUNTINGDOCUMENT>
+                <tt:value ref="$wa_item.ACCOUNTINGDOCUMENT"/>
+              </ACCOUNTINGDOCUMENT>
+              <HSNCODE>
+                <tt:value ref="$wa_item.HSNCODE"/>
+              </HSNCODE>
+              <DocumentItemText>
+                <tt:value ref="$wa_item.DocumentItemText"/>
+              </DocumentItemText>
+               <CGSTRATE>
+                <tt:value ref="$wa_item.cgstrate"/>
+              </CGSTRATE>
+               <IGSTRATE>
+                <tt:value ref="$wa_item.igstrate"/>
+              </IGSTRATE>
+              <CGST>
+                <tt:value ref="$wa_item.CGST"/>
+              </CGST>
+              <IGST>
+                <tt:value ref="$wa_item.IGST"/>
+              </IGST>
+              <TDS>
+                <tt:value ref="$wa_item.TDS"/>
+              </TDS>
+              <taxcode>
+                <tt:value ref="$wa_item.taxcode"/>
+              </taxcode>
+              <taxable>
+                <tt:value ref="$wa_item.taxable"/>
+              </taxable>
+              <AccountingDocumentType>
+                <tt:value ref="$wa_item.AccountingDocumentType"/>
+              </AccountingDocumentType>
+              <total>
+              <tt:value ref="$wa_item.total"/>
+              </total>
+
+            </Row>
+          </tt:loop>
+        </Table>
+      </Z_DEBITCREDIT_NOTE>
+    </Form>
+  </tt:template>
+
+</tt:transform>

@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_ge_iw_head unique;
+strict ( 2 );
+
+define behavior for ZI_GE_IW_HEAD //alias <alias_name>
+persistent table zge_iw_head
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

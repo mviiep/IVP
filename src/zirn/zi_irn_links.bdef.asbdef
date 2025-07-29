@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_irn_links unique;
+strict ( 2 );
+
+define behavior for ZI_IRN_LINKS //alias <alias_name>
+persistent table zirn_login
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

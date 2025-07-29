@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Vendor E-Invoice Details",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "project2v4"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_B6C857E5CCD979219FF427BF2C0119A05F02E36F_TM",
+    "semanticObject": "ZVENDOREINV",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_B6C857E5CCD979219FF427BF2C0119A05F02E36F_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Vendor E-Invoice Details"
+      }
+    }
+  ]
+}

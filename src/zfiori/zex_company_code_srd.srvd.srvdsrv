@@ -1,0 +1,4 @@
+@EndUserText.label: 'Exim Company Code for Service Definition'
+define service ZEX_COMPANY_CODE_SRD {
+  expose ZEX_COMPANY_CODE;
+}

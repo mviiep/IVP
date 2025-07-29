@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass - Inward Head Service Definition'
+define service ZI_GE_IW_HEAD_SRV {
+  expose ZI_GE_IW_HEAD;
+}

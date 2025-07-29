@@ -1,0 +1,4 @@
+@EndUserText.label: 'Manual Payment new  Service Defination'
+define service ZMPAYCDS_APNEW {
+  expose ZMANUALPAYCDS_APNEW;
+}

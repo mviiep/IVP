@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Goods Issue'
+define service ZSD_GoodsIssue_Tile {
+  expose ZI_GoodsIssue_Tile;
+}

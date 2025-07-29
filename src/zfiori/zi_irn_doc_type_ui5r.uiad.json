@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ZI_IRN_DOC_TYPE",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "tableziirndoctype"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_472BAC4405D4AA332DEFE6D55A06552DE9C1D484_TM",
+    "semanticObject": "ZI_IRN_DOC_TYPE",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_472BAC4405D4AA332DEFE6D55A06552DE9C1D484_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZI_IRN_DOC_TYPE",
+        "subtitle": "Table"
+      }
+    }
+  ]
+}

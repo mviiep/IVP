@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass -Supplier Service  Definition'
+define service ZGE_SUPPLIER_SRVD {
+  expose ZGE_SUPPLIER;
+}

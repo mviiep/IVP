@@ -1,0 +1,4 @@
+@EndUserText.label: 'EXIM RODTEP SERVICE DEFINITION'
+define service ZEX_RODTEP_MASTER_SD {
+  expose ZEX_RODTEP_MASTER;
+}

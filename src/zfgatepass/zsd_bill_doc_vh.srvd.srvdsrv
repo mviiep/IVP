@@ -1,0 +1,4 @@
+@EndUserText.label: 'Billing Doc Service definition'
+define service Zsd_bill_doc_vh {
+  expose ZGE_BILLING_DOC_VH_r2;
+}

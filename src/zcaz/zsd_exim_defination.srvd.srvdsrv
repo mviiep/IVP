@@ -1,0 +1,4 @@
+@EndUserText.label: 'exim defination'
+define service Zsd_exim_defination {
+  expose zc_exim_report;
+}

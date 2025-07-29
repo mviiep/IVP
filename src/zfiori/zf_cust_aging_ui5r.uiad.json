@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Customer Ageing Due Date wise",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfcustomeragingreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_5E4F3FC4DB8F9CFBF827085B3DEC13BF374CC114_TM",
+    "semanticObject": "zfcustomeraging",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_5E4F3FC4DB8F9CFBF827085B3DEC13BF374CC114_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Customer Ageing Due Date wise",
+        "subtitle": "Report"
+      }
+    }
+  ]
+}

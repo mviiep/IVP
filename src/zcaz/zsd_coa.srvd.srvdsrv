@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Defination for COA'
+define service ZSD_COA {
+  expose ZI_COA_TILE_Delivery;
+  expose ZI_COA_TILE_Plant;
+  expose ZI_COA_TILE_inspection;
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ZI_GSTIN_USER",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "tablezigstinuser"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_633D8972C84D00B118A029A981B614AC8B796BB0_TM",
+    "semanticObject": "ZI_GSTIN_USER",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_633D8972C84D00B118A029A981B614AC8B796BB0_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ZI_GSTIN_USER",
+        "subtitle": "table"
+      }
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Sales Register GSTR1",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "salesregistergstr1.salesregistergstr1"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_FB205B8F4BFBD935A0FC54FF3114E52B212D8BB6_TM",
+    "semanticObject": "SALESGSTR1",
+    "action": "Send",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_FB205B8F4BFBD935A0FC54FF3114E52B212D8BB6_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Sales Register GSTR1"
+      }
+    }
+  ]
+}

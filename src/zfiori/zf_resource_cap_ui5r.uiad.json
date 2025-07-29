@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Resource Capacity",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfresourcescapacityreport"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_62B5636B16CCD3F940FB417F218D2273D6315E92_TM",
+    "semanticObject": "ZF_Resource_Capacity",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_62B5636B16CCD3F940FB417F218D2273D6315E92_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Resource Capacity",
+        "subtitle": "Report"
+      }
+    }
+  ]
+}

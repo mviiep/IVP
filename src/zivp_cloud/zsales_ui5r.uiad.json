@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Sales Report GST",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "gstsales.gstsales"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_0165C429B900D58D6A0F1A5AB6BF5F0457A4BBF8_TM",
+    "semanticObject": "SALES",
+    "action": "Send",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_0165C429B900D58D6A0F1A5AB6BF5F0457A4BBF8_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Sales Report GST",
+        "subtitle": "Sales Report GST"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SIA6" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SIA6>
+    <MAIN_OBJECT>
+     <NAME>ZF_PETTYCASH_PR_EXT</NAME>
+     <TYPE>SIA6</TYPE>
+     <DESCRIPTION>IAM - Print petty cash voucher</DESCRIPTION>
+     <RESPONSIBLE>CB9980000012</RESPONSIBLE>
+     <MASTER_LANGUAGE>EN</MASTER_LANGUAGE>
+     <MASTER_SYSTEM>JNY</MASTER_SYSTEM>
+     <PACKAGE_REF>
+      <PACKAGE_NAME>ZFIORI</PACKAGE_NAME>
+     </PACKAGE_REF>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </MAIN_OBJECT>
+    <APP_ID>ZF_PETTYCASH_PR_EXT</APP_ID>
+    <APP_TYPE>EXT</APP_TYPE>
+    <ABAP_LANGUAGE_VERSION>5</ABAP_LANGUAGE_VERSION>
+    <UI_APP_ID>ZF_PETTYCASH_PR_UI5R</UI_APP_ID>
+    <SERVICE>
+     <item>
+      <REL_NAME>ZPETTY_CASH_VOUCHER</REL_NAME>
+      <REL_TYPE>HTTP</REL_TYPE>
+      <APP_ID>ZF_PETTYCASH_PR_EXT</APP_ID>
+      <SRVC_NAME>424B77E4D2799EE22C66C901959D44</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <TEXT>HTTP Service for Petty Cash Voucher</TEXT>
+      <TYPE_TEXT>HTTP Service</TYPE_TEXT>
+     </item>
+     <item>
+      <REL_NAME>ZSB_PETTYCASH_V2UI                 0001</REL_NAME>
+      <REL_TYPE>IWSV</REL_TYPE>
+      <APP_ID>ZF_PETTYCASH_PR_EXT</APP_ID>
+      <SRVC_NAME>BF51DEB2DFB9172DDE88725DBB325A</SRVC_NAME>
+      <SRVC_TYPE>HT</SRVC_TYPE>
+      <UIAD_SRC>ZF_PETTYCASH_PR_UI5R</UIAD_SRC>
+      <TYPE_TEXT>OData V2</TYPE_TEXT>
+     </item>
+    </SERVICE>
+    <PUBLISH_STATUS>p</PUBLISH_STATUS>
+   </SIA6>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Bank Detail'
+define service ZSD_LC_BankDetail {
+  expose ZILC_Bank_Detail;
+}

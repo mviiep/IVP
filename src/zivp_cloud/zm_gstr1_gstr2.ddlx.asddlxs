@@ -1,0 +1,286 @@
+@Metadata.layer: #PARTNER
+
+@EndUserText.label: 'Purchase'
+@UI:{
+headerInfo: { typeName: 'Purchase',
+              typeNamePlural: 'Purchase',
+            //  title: { type: #STANDARD, label: 'Purchase', value: 'ReferenceDocumentMIRO' } }
+            title: { type: #STANDARD, label: 'Purchase' } }
+}
+annotate view ZC_GSTR2_DETAILS with 
+{
+  @UI.facet: [{ id : 'GSTR2', purpose: #STANDARD, type: #IDENTIFICATION_REFERENCE, label: 'Purchase', position: 10 }]
+
+  //  @UI:{ lineItem: [{ position: 01, label: 'Business Area' },
+  //  { type: #FOR_ACTION, dataAction: 'status_update', label: 'Send to Portal', position: 02 }],
+  //    identification: [{ position: 01, label: 'Business Area' },
+  //    { type: #FOR_ACTION, dataAction: 'status_update', label: 'Send to Portal', position: 02 }] }
+  //  BusinessArea;
+
+  @UI:{ lineItem: [{ position: 01, label: 'Business Place' },
+  { type: #FOR_ACTION, dataAction: 'status_update', label: 'Send to Portal', position: 01 }],
+  identification: [{ position: 01, label: 'Business Place' },
+  { type: #FOR_ACTION, dataAction: 'status_update', label: 'Send to Portal', position: 01 }] }
+  business_place;
+
+  @UI:{ lineItem: [{ position: 02, label: 'Plant' }],
+  identification: [{ position: 02, label: 'Plant' }] }
+  Plant;
+
+  @UI:{ lineItem: [{ position: 03, label: 'Profit Center' }],
+  identification: [{ position: 03, label: 'Profit Center' }] }
+  ProftCenter;
+
+  @UI:{ lineItem: [{ position: 04, label: 'Doc Type' }],
+  identification: [{ position: 04, label: 'Doc Type' }] }
+  Doctype;
+
+  @UI:{ lineItem: [{ position: 05, label: 'MIRO No' }],
+  identification: [{ position: 05, label: 'MIRO No' }],
+  selectionField: [{ position: 01 }]}
+  ReferenceDocumentMIRO;
+
+  @UI:{ lineItem: [{ position: 06, label: 'Posting Date' }],
+  identification: [{ position: 06, label: 'Posting Date' }],
+  selectionField: [{ position: 02 }] }
+  @Consumption.filter.mandatory: true
+  PostingDate;
+
+  @UI:{ lineItem: [{ position: 07, label: 'Journal Entry No' }],
+  identification: [{ position: 07, label: 'Journal Entry No' }],
+  selectionField: [{ position: 03 }] }
+  AccountingDocument;
+
+  @UI:{ lineItem: [{ position: 08, label: 'Reverse Ref' }],
+  identification: [{ position: 08, label: 'Reverse Ref' }] }
+  Reverse;
+
+  @UI:{ lineItem: [{ position: 09, label: 'REF DOC NO' }],
+  identification: [{ position: 09, label: 'REF DOC NO' }] }
+  RefDocNo;
+
+  @UI:{ lineItem: [{ position: 10, label: 'Invoice Date' }],
+  identification: [{ position: 10, label: 'Invoice Date' }] }
+  InvoiceDate;
+
+  @UI:{ lineItem: [{ position: 11, label: 'Vendor' }],
+  identification: [{ position: 11, label: 'Vendor' }] }
+  Vendor;
+
+  @UI:{ lineItem: [{ position: 12, label: 'Vendor Name' }],
+  identification: [{ position: 12, label: 'Vendor Name' }] }
+  VendorName;
+
+  @UI:{ lineItem: [{ position: 13, label: 'Vendor GSTIN' }],
+  identification: [{ position: 13, label: 'Vendor GSTIN' }] }
+  GSTIN;
+
+  @UI:{ lineItem: [{ position: 13.5, label: 'Buyer GSTIN' }],
+  identification: [{ position: 13.5, label: 'Buyer GSTIN' }] }
+  buyergstin;
+
+  @UI:{ lineItem: [{ position: 14, label: 'Vendors PAN No' }],
+  identification: [{ position: 14, label: 'Vendors PAN No' }] }
+  PANNO;
+
+  @UI:{ lineItem: [{ position: 15, label: 'Vendor Region' }],
+  identification: [{ position: 15, label: 'Vendor Region' }] }
+  VendorRegion;
+
+  @UI:{ lineItem: [{ position: 16, label: 'Vendor Satate' }],
+  identification: [{ position: 16, label: 'Vendor Satate' }] }
+  RegionName;
+
+  @UI:{ lineItem: [{ position: 17, label: 'Material Code' }],
+  identification: [{ position: 17, label: 'Material Code' }] }
+  MaterialCode;
+
+  @UI:{ lineItem: [{ position: 18, label: 'Material Description' }],
+  identification: [{ position: 18, label: 'Material Description' }] }
+  MaterialDescription;
+
+  @UI:{ lineItem: [{ position: 19, label: 'Billing QTY' }],
+  identification: [{ position: 19, label: 'Billing QTY' }] }
+  QuantityInPurchaseOrderUnit;
+
+  @UI:{ lineItem: [{ position: 20, label: 'Rate' }],
+  identification: [{ position: 20, label: 'Rate' }] }
+  Rate;
+
+  @UI:{ lineItem: [{ position: 21, label: 'Base Amount' }],
+  identification: [{ position: 21, label: 'Base Amount' }] }
+  BaseAmount;
+
+  @UI:{ lineItem: [{ position: 22, label: 'UOM' }],
+  identification: [{ position: 22, label: 'UOM' }] }
+  UOM;
+
+  @UI:{ lineItem: [{ position: 23, label: 'HSN Code' }],
+  identification: [{ position: 23, label: 'HSN Code' }] }
+  HSNCode;
+
+  //  @UI:{ lineItem: [{ position: 24, label: 'PO Date' }],
+  //  identification: [{ position: 24, label: 'PO Date' }] }
+  //  PurchaseOrderDate;
+  //
+  //  @UI:{ lineItem: [{ position: 25, label: 'PO Number' }],
+  //  identification: [{ position: 25, label: 'PO Number' }] }
+  //  PurchasingDocument;
+  //
+  //  @UI:{ lineItem: [{ position: 26, label: 'PO QTY' }],
+  //  identification: [{ position: 26, label: 'PO QTY' }] }
+  //  POrderQuantity;
+
+  @UI:{ lineItem: [{ position: 27, label: 'RE GL Code' }],
+  identification: [{ position: 27, label: 'RE GL Code' }] }
+  GL_Code;
+
+  @UI:{ lineItem: [{ position: 28, label: 'CGST GL Code' }],
+  identification: [{ position: 28, label: 'CGST GL Code' }] }
+  cgst_gl;
+
+  @UI:{ lineItem: [{ position: 29, label: 'SGST GL Code' }],
+  identification: [{ position: 29, label: 'SGST GL Code' }] }
+  sgst_gl;
+
+  @UI:{ lineItem: [{ position: 30, label: 'IGST GL Code' }],
+  identification: [{ position: 30, label: 'IGST GL Code' }] }
+  igst_gl;
+
+  @UI:{ lineItem: [{ position: 31, label: 'TAX Code' }],
+  identification: [{ position: 31, label: 'TAX Code' }] }
+  TAXCODE;
+
+  @UI:{ lineItem: [{ position: 32, label: 'Taxable Rs' }],
+  identification: [{ position: 32, label: 'Taxable Rs' }] }
+  NetInvoiceAmount;
+
+  @UI:{ lineItem: [{ position: 33, label: 'CGST %' }],
+  identification: [{ position: 33, label: 'CGST %' }] }
+  CGST_per;
+
+  @UI:{ lineItem: [{ position: 34, label: 'SGST %' }],
+  identification: [{ position: 34, label: 'SGST %' }] }
+  SGST_per;
+
+  @UI:{ lineItem: [{ position: 35, label: 'IGST %' }],
+  identification: [{ position: 35, label: 'IGST %' }] }
+  IGST_per;
+
+  @UI:{ lineItem: [{ position: 36, label: 'CGST Amount' }],
+  identification: [{ position: 36, label: 'CGST Amount' }] }
+  CGST;
+
+  @UI:{ lineItem: [{ position: 37, label: 'SGST Amount' }],
+  identification: [{ position: 37, label: 'SGST Amount' }] }
+  SGST;
+
+  @UI:{ lineItem: [{ position: 38, label: 'IGST Amount' }],
+  identification: [{ position: 38, label: 'IGST Amount' }] }
+  IGST;
+
+  @UI:{ lineItem: [{ position: 39, label: 'RCGST %' }],
+  identification: [{ position: 39, label: 'RCGST %' }] }
+  RCGST_per;
+
+  @UI:{ lineItem: [{ position: 40, label: 'RSGST %' }],
+  identification: [{ position: 40, label: 'RSGST %' }] }
+  RSGST_per;
+
+  @UI:{ lineItem: [{ position: 41, label: 'RIGST %' }],
+  identification: [{ position: 41, label: 'RIGST %' }] }
+  RIGST_per;
+
+  @UI:{ lineItem: [{ position: 42, label: 'RCM CGST Input Amount' }],
+  identification: [{ position: 42, label: 'RCM CGST Input Amount' }] }
+  RCGST;
+
+  @UI:{ lineItem: [{ position: 43, label: 'RCM SGST Input Amount' }],
+  identification: [{ position: 43, label: 'RCM SGST Input Amount' }] }
+  RSGST;
+
+  @UI:{ lineItem: [{ position: 44, label: 'RCM IGST Input Amount' }],
+  identification: [{ position: 44, label: 'RCM IGST Input Amount' }] }
+  RIGST;
+
+  @UI:{ lineItem: [{ position: 45, label: 'Total Tax Amount' }],
+  //      { type: #FOR_ACTION, dataAction: 'response', label: 'Reverse Response', position: 02 }],  "cmntd by krishna 25/09/24
+  identification: [{ position: 45, label: 'Total Tax Amount' }]}
+  //      { type: #FOR_ACTION, dataAction: 'response', label: 'Reverse Response', position: 02 }] }  "cmntd by krishna 25/09/24
+  TotaltaxAmount;
+
+  @UI:{ lineItem: [{ position: 46, label: 'Total Invoice Value' }],
+  identification: [{ position: 46, label: 'Total Invoice Value' }] }
+  Tot_Inv;
+
+  //  @UI:{ lineItem: [{ position: 47, label: 'TDS TAX Code' }],
+  //  identification: [{ position: 47, label: 'TDS TAX Code' }] }
+  //  tds_tax_code;
+  //
+  //  @UI:{ lineItem: [{ position: 48, label: 'Less TDS' }],
+  //  identification: [{ position: 48, label: 'Less TDS' }] }
+  //  less_TDS;
+  //
+  //  @UI:{ lineItem: [{ position: 49, label: 'MIGO Doc No' }],
+  //  identification: [{ position: 49, label: 'MIGO Doc No' }] }
+  //  ReferenceDocumentMIGO;
+  //
+  //  @UI:{ lineItem: [{ position: 50, label: 'Narration' }],
+  //  identification: [{ position: 50, label: 'Narration' }] }
+  //  Narration;
+
+  @UI:{ lineItem: [{ position: 51, label: 'Response' }],
+  identification: [{ position: 51, label: 'Response' }] }
+  Status;
+
+  @UI:{ lineItem: [{ position: 52, label: 'Reconciliation Response' }],
+  identification: [{ position: 52, label: 'Reconciliation Response' }],
+  selectionField: [{ position: 04 }] }
+  @Search.defaultSearchElement: true
+  @Consumption.valueHelpDefinition: [{ entity:
+  { name: 'ZRECO_ACTION_HELP', element: 'ReverseResponsefilter' }
+  }]
+  reco_action;
+
+  @UI:{ lineItem: [{ position: 53, label: 'Reverse Response' }],
+  identification: [{ position: 53, label: 'Reverse Response' }] }
+  reason;
+
+  @UI:{ lineItem: [{ position: 54, label: 'Retension Posting Doc' }],
+  identification: [{ position: 54, label: 'Retension Posting Doc' }] }
+  retensionpostingdocno;
+
+  @UI:{ lineItem: [{ position: 55, label: 'Reverse Retension Posting Doc' }],
+  identification: [{ position: 55, label: 'Reverse Retension Posting Doc' }] }
+  revrseretensionpostingdocno;
+
+
+
+
+  //@Consumption.hidden: true
+  @UI:{ lineItem: [{ position: 18, label: 'Ref Doc Item' }],
+  identification: [{ position: 18, label: 'Ref Doc Item' }] }
+  ReferenceDocumentItem;
+
+  @Consumption.hidden: true
+  @UI:{ lineItem: [{ position: 25, label: 'TIN' }],
+  identification: [{ position: 25, label: 'TIN' }] }
+  TIN;
+
+  @Consumption.hidden: true
+  @UI:{ lineItem: [{ position: 26, label: 'Department' }],
+  identification: [{ position: 26, label: 'Department' }] }
+
+  Department;
+
+  @Consumption.hidden: true
+  @UI:{ lineItem: [{ position: 27, label: 'Department Description' }],
+  identification: [{ position: 27, label: 'Department Description' }] }
+  departmentdescreption;
+
+  @Consumption.hidden: true
+  @UI:{ lineItem: [{ position: 36, label: 'Document Currency' }],
+  identification: [{ position: 36, label: 'Document Currency' }] }
+  documentcurrency;
+
+}

@@ -1,0 +1,14 @@
+unmanaged implementation in class zbp_letter_crdt_itm_cds unique;
+//strict ( 2 );
+
+define behavior for ZLETTER_CRDT_ITM_CDS //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) Bukrs, Lcnum, Businesspartner, So_Po, Item;
+}

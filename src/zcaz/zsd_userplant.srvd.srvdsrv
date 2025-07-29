@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Zi_userplant'
+define service ZSD_userplant {
+  expose Zi_userplant;
+}

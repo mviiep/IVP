@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "HDFC Batch Log",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "hdfcbatchlog"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_2A643A5388F71196AAC604084B885B5FADCD8E13_TM",
+    "semanticObject": "zhdfcbankapp",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_2A643A5388F71196AAC604084B885B5FADCD8E13_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "HDFC Batch Log",
+        "subtitle": "Custom Application"
+      }
+    }
+  ]
+}

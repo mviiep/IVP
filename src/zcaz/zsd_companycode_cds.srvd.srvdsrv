@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Company Code'
+define service ZSD_COMPANYCODE_CDS {
+  expose ZI_COMPANYCODE_CDS as CompanyCode;
+}

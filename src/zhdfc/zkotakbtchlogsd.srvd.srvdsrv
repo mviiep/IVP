@@ -1,0 +1,4 @@
+@EndUserText.label: 'Kotak auto batch log Service defination'
+define service ZKOTAKBTCHLOGSD {
+  expose ZKOTAKBTCHLOGCDS;
+}

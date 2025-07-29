@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain Email Address",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zmaintainemailaddress"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_5A3AB82076A5761BC198200C109EE0C9EB1E4A44_TM",
+    "semanticObject": "zmainemailadd",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_5A3AB82076A5761BC198200C109EE0C9EB1E4A44_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Maintain Email Address",
+        "subtitle": "Custom Application"
+      }
+    }
+  ]
+}

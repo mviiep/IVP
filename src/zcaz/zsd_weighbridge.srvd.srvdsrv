@@ -1,0 +1,4 @@
+@EndUserText.label: 'service defination for weighbridge'
+define service Zsd_weighbridge {
+  expose zcds_Weighbridge;
+}

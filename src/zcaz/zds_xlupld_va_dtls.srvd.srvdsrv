@@ -1,0 +1,4 @@
+@EndUserText.label: 'excel upload vertual account details serv def'
+define service ZDS_XLUPLD_VA_DTLS {
+  expose ZXLUPLD_VA_DTLS;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Sales Register'
+define service ZSD_SALES_REGISTER {
+  expose ZC_SALE_REGISTER;
+}

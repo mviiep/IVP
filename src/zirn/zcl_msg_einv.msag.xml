@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZCL_MSG_EINV</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Class for Einvoice success and error message</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>IRN Created &amp;1 .</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>IRN not created because &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>IRN Cancelled successfully.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>IRN Not cancelled because &amp;1 .</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Eway Bill &amp;1 generated successfully.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Eway Bill not genereated because &amp;1.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Eway Cancelled successfully.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Eway not cancelled because &amp;1.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Server Down.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Billing Document is cancelled.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Eway Bill is not cancelled.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZCL_MSG_EINV</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>E-Way is allready cancelled.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Maintain Digital Signature Json Table",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfmaintdigsignjsontab"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_473231AE4C03470DD0F0DC3B7CDA40A28F9B8E2F_TM",
+    "semanticObject": "ZFDIGJSONTAB",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_473231AE4C03470DD0F0DC3B7CDA40A28F9B8E2F_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Maintain Digital Signature Json Table"
+      }
+    }
+  ]
+}

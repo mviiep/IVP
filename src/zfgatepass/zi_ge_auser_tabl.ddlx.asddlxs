@@ -1,0 +1,20 @@
+@Metadata.layer: #PARTNER
+annotate entity ZI_GE_AUSER_TABL
+    with 
+{
+@UI                :{lineItem: [{ position: 10,label: 'User Id' }]}
+  UserId;
+  @UI                :{lineItem: [{ position: 20,label: 'User Name' }]}
+  UserName;
+  @UI                :{lineItem: [{ position: 30,label: 'Status' }]}
+  Status;
+  @UI                :{lineItem: [{ position: 40,label: 'Created By' }]}
+  CreatedBy;
+  @UI                :{lineItem: [{ position: 50,label: 'Created At' }]}
+  CreatedAt;
+  @UI                :{lineItem: [{ position: 60,label: 'Last Changed By' }]}
+  LastChangedBy;
+  @UI                :{lineItem: [{ position: 70,label: 'Last Changed At' }]}
+  LastChangedAt;
+    
+}

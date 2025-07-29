@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZMC_DS</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Mesaage Class for Digital Signature</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMC_DS</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Already Digitally Signed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMC_DS</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>IRN Not Generated for this Invoice cannot Digitally Sign</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMC_DS</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Digitally Signed Successfully</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMC_DS</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Function Print Preview not Available for this Purchase Order</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

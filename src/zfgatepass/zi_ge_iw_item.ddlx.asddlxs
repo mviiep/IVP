@@ -1,0 +1,179 @@
+@Metadata.layer: #PARTNER
+annotate entity ZI_GE_IW_ITEM
+    with 
+{
+
+  @UI                :{lineItem: [{ position: 10,label: 'SAP_UUID' }]}
+  SAP_UUID;
+
+  @UI                :{lineItem: [{ position: 20,label: 'Id' }]}
+  Id;
+
+  @UI                :{lineItem: [{ position: 30,label: 'itemno' }]}
+  ItemNo;
+
+  @UI                :{lineItem: [{ position: 40,label: 'referencedocument' }]}
+  ReferenceDocument;
+
+  @UI                :{lineItem: [{ position: 50,label: 'referencedocumenttype' }]}
+  ReferenceDocumentType;
+
+  @UI                :{lineItem: [{ position: 60,label: 'Productcode' }]}
+  ProductCode;
+
+  @UI                :{lineItem: [{ position: 70,label: 'Productname' }]}
+  ProductName;
+
+  @UI                :{lineItem: [{ position: 80,label: 'Producttype' }]}
+  ProductType;
+
+  @UI                :{lineItem: [{ position: 90,label: 'orderquantity' }]}
+  OrderQuantity;
+
+  @UI                :{lineItem: [{ position: 100,label: 'uom' }]}
+  UOM;
+
+  @UI                :{lineItem: [{ position: 110,label: 'openquantity' }]}
+  OpenQuantity;
+
+  @UI                :{lineItem: [{ position: 120,label: 'openquantityuom' }]}
+  OpenQuantityUOM;
+
+  @UI                :{lineItem: [{ position: 130,label: 'quantityinge' }]}
+  QuantityInGE;
+
+  @UI                :{lineItem: [{ position: 140,label: 'quantityingeuom' }]}
+  QuantityInGEUOM;
+
+
+  @UI                :{lineItem: [{ position: 150,label: 'plantcode' }]}
+  PlantCode;
+
+  @UI                :{lineItem: [{ position: 160,label: 'plantname' }]}
+  PlantName;
+  @UI                :{lineItem: [{ position: 170,label: ' suppliercode' }]}
+  SupplierCode;
+
+  @UI                :{lineItem: [{ position: 180,label: 'suppliername ' }]}
+  SupplierName;
+
+  @UI                :{lineItem: [{ position: 190,label: '  suppliertype' }]}
+  SupplierType;
+
+  @UI                :{lineItem: [{ position: 200,label: 'customercode ' }]}
+  CustomerCode;
+
+  @UI                :{lineItem: [{ position: 210,label: 'customername' }]}
+  CustomerName;
+
+  @UI                :{lineItem: [{ position: 220,label: 'customertype' }]}
+  CustomerType;
+
+  @UI                :{lineItem: [{ position: 230,label: 'ewaybill' }]}
+  EWayBill;
+
+  @UI                :{lineItem: [{ position: 240,label: 'gateentrydate' }]}
+  GateEntryDate;
+
+  @UI                :{lineItem: [{ position: 250,label: 'vehicletype' }]}
+  VehicleType;
+
+  @UI                :{lineItem: [{ position: 260,label: 'vehicleno' }]}
+  VehicleNo;
+
+  @UI                :{lineItem: [{ position: 270,label: 'invoiceno' }]}
+  InvoiceNo;
+
+  @UI                :{lineItem: [{ position: 280,label: 'invoicedate' }]}
+  InvoiceDate;
+
+  @UI                :{lineItem: [{ position: 290,label: 'transporter' }]}
+  Transporter;
+
+  @UI                :{lineItem: [{ position: 300,label: 'transportermode' }]}
+  TransporterMode;
+
+  @UI                :{lineItem: [{ position: 310,label: 'lrno' }]}
+  LRNo;
+
+  @UI                :{lineItem: [{ position: 320,label: 'lrdate' }]}
+  LRDate;
+
+  @UI                :{lineItem: [{ position: 330,label: 'grossweight' }]}
+  GrossWeight;
+
+
+  @UI                :{lineItem: [{ position: 340,label: 'tareweight' }]}
+  TareWeight;
+
+  @UI                :{lineItem: [{ position: 350,label: 'netweight' }]}
+  NetWeight;
+
+  @UI                :{lineItem: [{ position: 360,label: 'weightdatetime' }]}
+  WeightDateTime;
+
+  @UI                :{lineItem: [{ position: 370,label: 'noofpackages' }]}
+  NoOfPackages;
+
+  @UI                :{lineItem: [{ position: 380,label: 'remarks' }]}
+  Remarks;
+
+  @UI                :{lineItem: [{ position: 390,label: 'status' }]}
+  Status;
+
+
+  @UI                :{lineItem: [{ position: 400,label: 'itemsstatus' }]}
+  ItemsStatus;
+
+  @UI                :{lineItem: [{ position: 410,label: 'approvestatus' }]}
+  ApproveStatus;
+
+  @UI                :{lineItem: [{ position: 420,label: 'purchaseorderno' }]}
+  PurchaseOrderNo;
+
+  @UI                :{lineItem: [{ position: 430,label: 'deliverydocumentno' }]}
+  DeliveryDocumentNo;
+
+  @UI                :{lineItem: [{ position: 440,label: 'salesreturnno' }]}
+  SalesReturnNo;
+
+  @UI                :{lineItem: [{ position: 450,label: 'screencode' }]}
+  ScreenCode;
+
+  @UI                :{lineItem: [{ position: 460,label: 'postingdate' }]}
+  PostingDate;
+
+  @UI                :{lineItem: [{ position: 470,label: 'Referencedocumentyear' }]}
+  ReferenceDocumentYear;
+
+  @UI                :{lineItem: [{ position: 480,label: 'Created By' }]}
+  CreatedBy;
+
+  @UI                :{lineItem: [{ position: 490,label: 'Created At' }]}
+  CreatedAt;
+
+  @UI                :{lineItem: [{ position: 500,label: 'Last Changed By' }]}
+  LastChangedBy;
+
+  @UI                :{lineItem: [{ position: 510,label: 'Last Changed At' }]}
+  LastChangedAt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,157 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+  <tt:root name="header"/>
+  <tt:root name="item"/>
+
+  <tt:template>
+
+    <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sfin="http://sap.com/xi/SAPSCORE/SFIN">
+      <soapenv:Header/>
+      <soapenv:Body>
+        <sfin:JournalEntryBulkCreateRequest>
+          <MessageHeader>
+            <CreationDateTime>2024-07-23T12:00:00.1234567Z</CreationDateTime>
+            <BusinessScope>
+              <TypeCode listAgencyID="?" listID="?" listVersionID="?">?</TypeCode>
+              <InstanceID schemeAgencyID="?" schemeID="?">?</InstanceID>
+              <ID schemeAgencyID="?" schemeID="?">?</ID>
+            </BusinessScope>
+          </MessageHeader>
+          <JournalEntryCreateRequest>
+            <MessageHeader>
+              <CreationDateTime>2024-07-23T12:00:00.1234567Z</CreationDateTime>
+              <SenderParty/>
+            </MessageHeader>
+
+
+            <JournalEntry>
+
+              <tt:loop name="wa_Item" ref="item">
+
+                <OriginalReferenceDocumentType>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </OriginalReferenceDocumentType>
+
+                <OriginalReferenceDocumentLogicalSystem>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </OriginalReferenceDocumentLogicalSystem>
+
+                <BusinessTransactionType>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </BusinessTransactionType>
+
+                <AccountingDocumentType>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </AccountingDocumentType>
+
+                <DocumentReferenceID>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </DocumentReferenceID>
+
+                <DocumentHeaderText/>
+
+                <CreatedByUser>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </CreatedByUser>
+
+                <CompanyCode>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </CompanyCode>
+
+                <DocumentDate>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </DocumentDate>
+
+                <PostingDate>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </PostingDate>
+
+                <PostingFiscalPeriod>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </PostingFiscalPeriod>
+
+                <TaxReportingDate>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </TaxReportingDate>
+
+                <TaxDeterminationDate>
+                  <tt:value ref="$wa_Item.housebank"/>
+                </TaxDeterminationDate>
+
+
+                <Item>
+                  <ReferenceDocumentItem>
+                    <tt:value ref="$wa_Item.referencedocumentitem"/>
+                  </ReferenceDocumentItem>
+
+                  <CompanyCode>
+                    <tt:value ref="$wa_Item.companycode"/>
+                  </CompanyCode>
+
+                  <GLAccount>
+                    <tt:value ref="$wa_Item.glaccount"/>
+                  </GLAccount>
+
+                  <AmountInTransactionCurrency currencyCode="INR">
+                    <tt:value ref="$wa_Item.amountintransactioncurrency"/>
+                  </AmountInTransactionCurrency>
+
+                  <DebitCreditCode>
+
+                  </DebitCreditCode>
+
+                  <DocumentItemText>
+                    <tt:value ref="$wa_Item.AlertSequenceNo"/>
+                  </DocumentItemText>
+
+                  <HouseBank>
+                    <tt:value ref="$wa_Item.housebank"/>
+                  </HouseBank>
+
+                  <HouseBankAccount>
+                    <tt:value ref="$wa_Item.housebankaccount"/>
+                  </HouseBankAccount>
+
+                  <AccountAssignment>
+
+                    <ProfitCenter>
+                      <tt:value ref="$wa_Item.profitcenter"/>
+                    </ProfitCenter>
+
+                  </AccountAssignment>
+                </Item>
+
+                <DebtorItem>
+                       
+                  <ReferenceDocumentItem>
+                    <tt:value ref="$wa_Item.profitcenter"/>
+                  </ReferenceDocumentItem>
+
+                       
+                  <Debtor>
+
+                  </Debtor>
+
+                       
+                  <AmountInTransactionCurrency currencyCode="INR">
+                    <tt:value ref="$wa_Item.profitcenter"/>
+                  </AmountInTransactionCurrency>
+
+                       
+                  <DocumentItemText/>
+
+                   
+                </DebtorItem>
+
+              </tt:loop>
+
+            </JournalEntry>
+          </JournalEntryCreateRequest>
+        </sfin:JournalEntryBulkCreateRequest>
+      </soapenv:Body>
+    </soapenv:Envelope>
+
+  </tt:template>
+
+</tt:transform>

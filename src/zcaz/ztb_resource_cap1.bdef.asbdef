@@ -1,0 +1,14 @@
+managed implementation in class zbp_tb_resource_cap1 unique;
+strict ( 2 );
+
+define behavior for ZTB_RESOURCE_CAP1 //alias <alias_name>
+persistent table ztb_resource_cap
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly : update ) Plant, Resrce, Design_Cap;
+}

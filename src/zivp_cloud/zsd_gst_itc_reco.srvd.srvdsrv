@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for GST ITC Reco'
+define service ZSD_GST_ITC_RECO {
+  expose ZGST_ITC_RECO;
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Print COA",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zfcoaprint"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_A1E9C1ADB8B350A25453407AFA685793FCD1582F_TM",
+    "semanticObject": "zfprintcoa",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_A1E9C1ADB8B350A25453407AFA685793FCD1582F_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Print COA",
+        "subtitle": "PDF"
+      }
+    }
+  ]
+}

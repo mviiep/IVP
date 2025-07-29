@@ -1,0 +1,46 @@
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+@EndUserText.label: 'Exim for Export RODTEP Detail'
+@Metadata.allowExtensions: false
+define root view entity ZEXI_EXPORT_RODTEP_DT as select from zexi_expt_rod_dt
+
+{
+    key sap_uuid as SAP_UUID,
+    id as ID,
+    closingdate as ClosingDate,
+    eligiblerodtepamount as EligibleRODAmount,
+    rodtepamountsb as RODTEPAmountSB,
+    scrollno as ScrollNo,
+    scrolldate as ScrollDate,
+    rodtepscrollamount as RODTEPScrollAmount,
+    chequeno as ChequeNo,
+    chequedate as ChequeDate,
+    status as Status,
+    exprodcloseindicat as ExprdCloseIndicat,
+rodcenvatfacility as RodCenvatFacility,
+dtsplcurracc1 as DtSplCurrAcc1,
+balrodamount1 as BalRodAmount1,
+rodsuppclaimamt as RodSuppClaimAmt,
+rodsuppclaimdate as RodSuppClaimDate,
+rodsuppclaimfile as RodSuppClaimFile,
+rodsuppclaimfiledate as RodSuppClaimFileDate,
+rodscrollno2 as RodScrollNo2, 
+rodscrolldate2 as RodScrollDate2,
+rodscrollamount2 as RodScrollAmount2,
+dtsplcurracc2 as DtSplCurrAcc2,
+rodchequeno2 as RodChequeNo2, 
+rodchequedate2 as RodChequeDate2,
+balrodamount2 as BalRodAmount2,
+rodscrollno3 as RodScrollNo3, 
+rodscrolldate3 as RodScrollDate3,
+rodscrollamount3 as RodScrollAmount3,
+dtsplcurracc3 as DtSplCurrAcc3,
+rodchequeno3 as RodChequeNo3,
+rodchequedate3 as RodChequeDate3,
+balrodamount3 as  BalRodAmount3,
+    created_by as CreatedBy,
+    created_at as CreatedAt,
+    last_changed_by as LastChangedBy,
+    last_changed_at as LastChangedAt,
+    rodtep_acount_doc as RODTEPAcountDoc,
+    rodtepamt as rodtepamt
+}

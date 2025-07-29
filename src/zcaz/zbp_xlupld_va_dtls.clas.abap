@@ -1,0 +1,5 @@
+CLASS zbp_xlupld_va_dtls DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zxlupld_va_dtls.
+ENDCLASS.
+
+CLASS zbp_xlupld_va_dtls IMPLEMENTATION.
+ENDCLASS.

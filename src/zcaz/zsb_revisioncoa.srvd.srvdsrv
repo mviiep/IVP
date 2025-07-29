@@ -1,0 +1,4 @@
+@EndUserText.label: 'Revision COA'
+define service ZSB_revisioncoa {
+  expose Zi_RevisiontabforCOA;
+}

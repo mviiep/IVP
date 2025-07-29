@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Label Print FG",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "labelprintfg"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D30F29E141E31C3CA3E0B79EAEB484E7D69AD1FE_TM",
+    "semanticObject": "ZFLABELPRINT",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D30F29E141E31C3CA3E0B79EAEB484E7D69AD1FE_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Label Print FG",
+        "subtitle": "Application"
+      }
+    }
+  ]
+}

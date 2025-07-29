@@ -1,0 +1,5 @@
+@EndUserText.label: 'Service Defination for Daily Yeild Report'
+define service ZSD_DAILY_YEILD_REPORT {
+  expose ZC_DAILY_YEILD_REPORT;
+  expose ZI_POINPUTQTY_YIELD;
+}

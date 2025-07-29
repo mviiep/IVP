@@ -1,0 +1,5 @@
+@EndUserText.label: 'For INWARD - ITEMBased report'
+define service ZI_GE_IW_REPORT_SRVD {
+  expose ZI_GE_IW_REPORT;
+  expose ZI_GE_MATDOC_FILTER;
+}

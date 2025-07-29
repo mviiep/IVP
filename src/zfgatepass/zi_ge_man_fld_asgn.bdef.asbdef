@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_ge_man_fld_asgn unique;
+strict ( 2 );
+
+define behavior for ZI_GE_MAN_FLD_ASGN //alias <alias_name>
+persistent table zge_man_fld_asgn
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Defination for Daily breakdown'
+define service ZSD_Daily_Breaksdown {
+  expose ZC_DAILY_Breakdown;
+}

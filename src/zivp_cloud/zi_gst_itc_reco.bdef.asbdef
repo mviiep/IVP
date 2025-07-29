@@ -1,0 +1,16 @@
+unmanaged implementation in class zbp_i_gst_itc_reco unique;
+//strict ( 2 );
+
+define behavior for ZI_GST_ITC_RECO //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) Inum, Idt, PrInum, PrIdt, SupplierGstin, Accountingdocument;
+  static action (features : global ) reverse_response parameter ZPOPUP result [1] $self;
+  static action ( features : global ) delete_reco_response result [1] $self;
+}

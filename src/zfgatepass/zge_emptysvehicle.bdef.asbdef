@@ -1,0 +1,13 @@
+managed implementation in class zbp_ge_emptysvehicle unique;
+strict ( 2 );
+
+define behavior for ZGE_EMPTYSVEHICLE //alias <alias_name>
+persistent table zge_emptsvehicle
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

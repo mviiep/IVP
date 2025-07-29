@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_irn_doc_type unique;
+strict ( 2 );
+
+define behavior for ZI_IRN_DOC_TYPE //alias <alias_name>
+persistent table zsd_irn_doc_typ
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

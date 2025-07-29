@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_region_map unique;
+strict ( 2 );
+
+define behavior for ZI_REGION_MAP //alias <alias_name>
+persistent table zgst_region_map
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

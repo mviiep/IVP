@@ -1,0 +1,16 @@
+unmanaged implementation in class zbp_i_billingdetails unique;
+//strict ( 2 );
+
+define behavior for ZI_BILLINGDETAILS //alias <alias_name>
+//late numbering
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+  field ( readonly ) billingdocument, billingdocumentitem;
+
+  action ( features : instance ) send_to_portal result [1] $self;
+}

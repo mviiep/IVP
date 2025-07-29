@@ -1,0 +1,7 @@
+@EndUserText.label: 'Zexim_portofdischarge'
+define service ZSD_exim_portofdischarge {
+  expose Zexim_portofdischarge;
+  expose Ziexim_transporter;
+  expose Zexim_portofloading;
+  expose ziexim_transporter_f4;
+}

@@ -1,0 +1,21 @@
+CLASS zcl_ukm DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+
+    INTERFACES if_badi_interface .
+    INTERFACES if_ex_ukm_bd_formula .
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_UKM IMPLEMENTATION.
+
+
+  METHOD if_ex_ukm_bd_formula~execute.
+  ENDMETHOD.
+ENDCLASS.

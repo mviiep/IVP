@@ -1,0 +1,187 @@
+<?sap.transform simple?>
+<tt:transform xmlns:tt="http://www.sap.com/transformation-templates">
+
+<tt:root name="Header"/>
+<tt:root name="lv_billingno"/>
+<tt:root name="lutno"/>
+<tt:root name="shippingexim"/>
+<tt:root name="PlantAddress"/>
+<tt:root name="ShiptoAddress"/>
+<tt:root name="SoldtoAddress"/>
+<tt:root name="BilltoAddress"/>
+<tt:root name="Notifyaddress"/>
+<tt:root name="Item"/>
+<tt:root name="ItemTotal"/>
+<tt:root name="paymenttermstext"/>
+
+
+<tt:template>
+
+<BilllingDocument>
+
+<Header>
+<InvoiceNumber><tt:value ref=".Header.DocumentReferenceID"/></InvoiceNumber>
+<InvoiceDate><tt:value ref=".Header.BillingDocumentDate"/></InvoiceDate>
+<CustomerInv><tt:value ref=".Header.PurchaseOrderByCustomer"/></CustomerInv>
+<CustomerInvDate><tt:value ref=".Header.BillingDocumentDate"/></CustomerInvDate>
+<OtherReference></OtherReference>
+<VesselFlight><tt:value ref=".shippingexim.ship_dt.shipvessel"/></VesselFlight>
+<PortofLoading><tt:value ref=".shippingexim.ship_dt.shipportofloading"/></PortofLoading>
+<CountryofOrigin><tt:value ref=".shippingexim.ship_dt.shipCountryoforgin"/></CountryofOrigin>
+<CountryofOriginofGoods><tt:value ref=".shippingexim.ship_dt.shipcountryoforgin"/></CountryofOriginofGoods>
+<CountryofFinalDestination><tt:value ref=".shippingexim.ship_dt.shipdestcountry"/></CountryofFinalDestination>
+<PortofDischarge><tt:value ref=".shippingexim.ship_dt.shipportofdischarge"/></PortofDischarge>
+<FinalDestination><tt:value ref=".ShiptoAddress.city"/></FinalDestination>
+<IncoTerms> <tt:value ref=".shippingexim.export_doc_dt.IncoTerms"/></IncoTerms>
+<IncoTermsLocation> <tt:value ref=".shippingexim.export_doc_dt.IncoTermsCode"/></IncoTermsLocation>
+<PaymentTermsDescription> <tt:value ref=".shippingexim.export_doc_dt.PaymentTermsDesc"/></PaymentTermsDescription>
+<ShippingType> <tt:value ref=".shippingexim.ship_dt.ShipmentType"/></ShippingType>
+<LutARNNo><tt:value ref=".lutno.Lutno"/></LutARNNo>
+<LutARNDate><tt:value ref=".lutno.Fromdate"/></LutARNDate>
+<VehicleNo></VehicleNo>
+<PlaceofLoading></PlaceofLoading>
+<PlaceofDischarge></PlaceofDischarge>
+<Currency><tt:value ref=".Header.TransactionCurrency"/></Currency>
+</Header>
+
+<PaymentTermsDescription> <tt:value ref=".paymenttermstext"/> </PaymentTermsDescription>
+
+<Plant>
+<PlantName> <tt:value ref=".plantaddress.Name"/></PlantName>
+<PlantStreet><tt:value ref=".plantaddress.Street1"/></PlantStreet>
+<PlantStreet2><tt:value ref=".plantaddress.Street2"/></PlantStreet2>
+<PlantState><tt:value ref=".plantaddress.State"/></PlantState>
+<PlantCity><tt:value ref=".plantaddress.city"/></PlantCity>
+<PlantPostalCode><tt:value ref=".plantaddress.PostalCode"/></PlantPostalCode>
+<PlantStateCode><tt:value ref=".plantaddress.StateCode"/></PlantStateCode>
+<PlantGSTIN><tt:value ref=".plantaddress.gstin"/></PlantGSTIN>
+
+</Plant>
+
+<ShiptoParty>
+<ShiptoPartyName><tt:value ref=".ShiptoAddress.Name"/></ShiptoPartyName>
+<ShiptoPartyStreet><tt:value ref=".ShiptoAddress.Street1"/></ShiptoPartyStreet>
+<ShiptoPartyStreet2><tt:value ref=".ShiptoAddress.Street2"/></ShiptoPartyStreet2>
+<ShiptoPartyCity><tt:value ref=".ShiptoAddress.city"/></ShiptoPartyCity>
+<ShiptoPartyPostalCode><tt:value ref=".ShiptoAddress.PostalCode"/></ShiptoPartyPostalCode>
+<ShiptoPartyState><tt:value ref=".ShiptoAddress.State"/></ShiptoPartyState>
+<ShiptoPartyTelePhoneNumber><tt:value ref=".ShiptoAddress.TelePhoneNumber"/></ShiptoPartyTelePhoneNumber>
+<ShiptoPartyFaxNo><tt:value ref=".ShiptoAddress.FaxNo"/></ShiptoPartyFaxNo>
+<ShiptoPartyVATNo><tt:value ref=".ShiptoAddress.VATNo"/></ShiptoPartyVATNo>
+<ShiptoPartyCountry><tt:value ref=".ShiptoAddress.Country"/></ShiptoPartyCountry>
+</ShiptoParty>
+
+<SoldtoParty>
+<SoldtoPartyName><tt:value ref=".SoldtoAddress.Name"/></SoldtoPartyName>
+<SoldtoPartyStreet><tt:value ref=".SoldtoAddress.Street1"/></SoldtoPartyStreet>
+<SoldtoPartyStreet2><tt:value ref=".SoldtoAddress.Street2"/></SoldtoPartyStreet2>
+<SoldtoPartyCity><tt:value ref=".SoldtoAddress.city"/></SoldtoPartyCity>
+<SoldtoPartyPostalCode><tt:value ref=".SoldtoAddress.PostalCode"/></SoldtoPartyPostalCode>
+<SoldtoPartyCountry><tt:value ref=".SoldtoAddress.Country"/></SoldtoPartyCountry>
+</SoldtoParty>
+
+<BillToParty>
+<BillToPartyName><tt:value ref=".billtoaddress.Name"/></BillToPartyName>
+<BillToPartyStreet><tt:value ref=".billtoaddress.Street1"/></BillToPartyStreet>
+<BillToPartyStreet2><tt:value ref=".billtoaddress.Street2"/></BillToPartyStreet2>
+<BillToPartyCity><tt:value ref=".billtoaddress.city"/></BillToPartyCity>
+<BillToPartyPostalCode><tt:value ref=".billtoaddress.PostalCode"/></BillToPartyPostalCode>
+<BilltoPartyCountry><tt:value ref=".billtoaddress.Country"/></BilltoPartyCountry>
+</BillToParty>
+
+<NotifyParty>
+<NotifyPartyName><tt:value ref=".notifyaddress.Name"/></NotifyPartyName>
+<NotifyPartyStreet><tt:value ref=".notifyaddress.Street1"/></NotifyPartyStreet>
+<NotifyPartyStreet2><tt:value ref=".notifyaddress.Street2"/></NotifyPartyStreet2>
+<NotifyPartyCity><tt:value ref=".notifyaddress.city"/></NotifyPartyCity>
+<NotifyPartyPostalCode><tt:value ref=".notifyaddress.PostalCode"/></NotifyPartyPostalCode>
+<NotifyPartyCountry><tt:value ref=".notifyaddress.Country"/></NotifyPartyCountry>
+</NotifyParty>
+
+
+
+     <ItemTable>
+       <tt:loop name="wa_Item" ref="Item">
+          <ItemRow>
+
+            <MarkandNos>
+             <tt:value ref="$wa_Item.MarkandNos"/>
+            </MarkandNos>
+
+            <NoofKindofPkgs>
+             <tt:value ref="$wa_Item.NoofKindofPkgs"/>
+            </NoofKindofPkgs>
+
+            <HSNCode>
+             <tt:value ref="$wa_Item.HSNCode"/>
+            </HSNCode>
+
+            <HSNText>
+             <tt:value ref="$wa_Item.HSNText"/>
+            </HSNText>
+
+            <MatDesc>
+             <tt:value ref="$wa_Item.MatDesc"/>
+            </MatDesc>
+
+            <Qty>
+             <tt:value ref="$wa_Item.qty"/>
+            </Qty>
+
+            <UOM>
+             <tt:value ref="$wa_Item.UOM"/>
+            </UOM>
+
+            <Rate>
+             <tt:value ref="$wa_Item.Rate"/>
+            </Rate>
+
+            <Amount>
+             <tt:value ref="$wa_Item.Amount"/>
+            </Amount>
+
+          </ItemRow>
+            </tt:loop>
+      </ItemTable>
+
+
+
+<ItemTotal>
+            <GrossWT>
+            <tt:value ref=".shippingexim.export_doc_dt.GrossWeight"/>
+            </GrossWT>
+
+            <NetWT>
+             <tt:value ref=".shippingexim.export_doc_dt.NetWeight"/>
+            </NetWT>
+
+            <TareWT>
+             <tt:value ref=".shippingexim.export_doc_dt.Volume"/>
+            </TareWT>
+
+             <Pallets>
+              <tt:value ref=".shippingexim.export_doc_dt.CBM"/>
+            </Pallets>
+
+             <Frieght>
+              <tt:value ref=".ItemTotal.Frieght"/>
+            </Frieght>
+
+             <Insurance>
+              <tt:value ref=".ItemTotal.Insurance"/>
+            </Insurance>
+
+
+</ItemTotal>
+
+
+
+
+
+
+</BilllingDocument>
+
+
+</tt:template>
+
+</tt:transform>

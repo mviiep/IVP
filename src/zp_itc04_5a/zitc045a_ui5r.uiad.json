@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "ITC04_5A",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "itc045a.zitc045a"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_9E946BECCF96C530B31E5807A1A43B4F4FA0BCC4_TM",
+    "semanticObject": "zitc045a",
+    "action": "Send",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_9E946BECCF96C530B31E5807A1A43B4F4FA0BCC4_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "ITC04_5A",
+        "subtitle": "ITC04_5A"
+      }
+    }
+  ]
+}

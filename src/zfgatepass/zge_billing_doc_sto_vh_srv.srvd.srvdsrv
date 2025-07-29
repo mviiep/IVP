@@ -1,0 +1,4 @@
+@EndUserText.label: 'Serviec for STO Billing Document VH'
+define service Zge_Billing_doc_sto_vh_srv {
+  expose ZGE_BILLING_DOC_VH_sto;
+}

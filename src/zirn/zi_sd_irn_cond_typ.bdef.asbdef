@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_sd_irn_cond_typ unique;
+strict ( 2 );
+
+define behavior for zi_sd_irn_cond_typ //alias <alias_name>
+persistent table zsd_irn_cond_typ
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

@@ -1,0 +1,6 @@
+@EndUserText.label: 'Service Defination for Petty Cash Voucher'
+define service ZSD_PETTYCASH {
+  expose ZI_Petty_Cash_Tile;
+  expose ZI_CompanyCode;
+  expose ZI_Payment_Advice_Tile;
+}

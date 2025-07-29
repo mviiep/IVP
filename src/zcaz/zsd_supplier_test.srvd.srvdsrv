@@ -1,0 +1,4 @@
+@EndUserText.label: 'TEST DEF'
+define service ZSD_SUPPLIER_TEST {
+  expose ZCE_SUPPLIER_TEST;
+}

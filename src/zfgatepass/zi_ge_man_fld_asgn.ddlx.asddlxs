@@ -1,0 +1,145 @@
+@Metadata.layer: #PARTNER
+annotate entity ZI_GE_MAN_FLD_ASGN
+    with 
+{
+  @UI                :{lineItem: [{ position: 10,label: 'User Id' }]}
+  UserId;
+
+  @UI                :{lineItem: [{ position: 20,label: 'referencedocument' }]}
+  ReferenceDocument;
+
+  @UI                :{lineItem: [{ position: 30,label: 'referencedocumenttype' }]}
+  ReferenceDocumentType;
+
+  @UI                :{lineItem: [{ position: 40,label: 'plant' }]}
+  Plant;
+
+  @UI                :{lineItem: [{ position: 50,label: 'supplier' }]}
+  Supplier;
+
+  @UI                :{lineItem: [{ position: 60,label: 'suppliertype' }]}
+  SupplierType;
+
+
+  @UI                :{lineItem: [{ position: 70,label: 'customer' }]}
+  Customer;
+
+  @UI                :{lineItem: [{ position: 80,label: 'customertype' }]}
+  CustomerType;
+
+  @UI                :{lineItem: [{ position: 90,label: 'ewaybill' }]}
+  EWayBill;
+
+  @UI                :{lineItem: [{ position: 100,label: 'gateentrydate ' }]}
+  GateEntryDate;
+
+  @UI                :{lineItem: [{ position: 110,label: 'vehicletype' }]}
+  VehicleType;
+
+  @UI                :{lineItem: [{ position: 120,label: 'vehicleno' }]}
+  VehicleNo;
+
+  @UI                :{lineItem: [{ position: 130,label: 'invoiceno' }]}
+  InvoiceNo;
+
+  @UI                :{lineItem: [{ position: 140,label: 'invoicedate' }]}
+  InvoiceDate;
+
+  @UI                :{lineItem: [{ position: 150,label: 'transporter' }]}
+  Transporter;
+
+  @UI                :{lineItem: [{ position: 160,label: 'transportermode' }]}
+  TransporterMode;
+
+  @UI                :{lineItem: [{ position: 170,label: 'lrno' }]}
+  LRNo;
+
+  @UI                :{lineItem: [{ position: 180,label: 'lrdate' }]}
+  LRDate;
+
+  @UI                :{lineItem: [{ position: 190,label: 'grossweight' }]}
+  GrossWeight;
+
+
+  @UI                :{lineItem: [{ position: 200,label: 'tareweight' }]}
+  TareWeight;
+
+  @UI                :{lineItem: [{ position: 210,label: 'netweight' }]}
+  NetWeight;
+
+  @UI                :{lineItem: [{ position: 220,label: 'remarks' }]}
+  Remarks;
+
+  @UI                :{lineItem: [{ position: 230,label: 'purchaseorderno' }]}
+  PurchaseOrderNo;
+
+  @UI                :{lineItem: [{ position: 240,label: 'deliverydocumentno' }]}
+  DeliveryDocumentNo;
+
+  @UI                :{lineItem: [{ position: 250,label: 'salesreturnno' }]}
+  SalesReturnNo;
+
+  @UI                :{lineItem: [{ position: 260,label: 'customerreturnno' }]}
+  CustomerReturnNo;
+
+  @UI                :{lineItem: [{ position: 270,label: 'username' }]}
+  UserName;
+
+  @UI                :{lineItem: [{ position: 280,label: 'Userstatus' }]}
+  UserStatus;
+
+  @UI                :{lineItem: [{ position: 290,label: 'Moduleid' }]}
+  ModuleId;
+
+  @UI                :{lineItem: [{ position: 290,label: 'Modulename' }]}
+  ModuleName;
+
+  @UI                :{lineItem: [{ position: 290,label: 'Modulestatus' }]}
+  ModuleStatus;
+
+  @UI                :{lineItem: [{ position: 300,label: 'appid' }]}
+  AppId;
+
+
+  @UI                :{lineItem: [{ position: 310,label: 'appname' }]}
+  AppName;
+
+  @UI                :{lineItem: [{ position: 320,label: 'appstatus' }]}
+  AppStatus;
+
+  @UI                :{lineItem: [{ position: 330,label: 'Status' }]}
+  Status;
+
+  @UI                :{lineItem: [{ position: 340,label: 'postingdate' }]}
+  PostingDate;
+
+
+  @UI                :{lineItem: [{ position: 350,label: 'id' }]}
+  ID;
+
+  @UI                :{lineItem: [{ position: 360,label: 'noofpackages' }]}
+  NoOfPackages;
+
+
+  @UI                :{lineItem: [{ position: 370,label: 'requestor' }]}
+  Requestor;
+
+  @UI                :{lineItem: [{ position: 380,label: 'defaultapprove' }]}
+  defaultapprove;
+
+  @UI                :{lineItem: [{ position: 390,label: 'challanno' }]}
+  ChallanNo;
+
+  @UI                :{lineItem: [{ position: 400,label: 'challandate' }]}
+  ChallanDate;
+
+  @UI                :{lineItem: [{ position: 410,label: 'Created By' }]}
+  CreatedBy;
+  @UI                :{lineItem: [{ position: 420,label: 'Created At' }]}
+  CreatedAt;
+  @UI                :{lineItem: [{ position: 430,label: 'Last Changed By' }]}
+  LastChangedBy;
+  @UI                :{lineItem: [{ position: 440,label: 'Last Changed At' }]}
+  LastChangedAt;
+
+}

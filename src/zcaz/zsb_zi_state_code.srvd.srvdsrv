@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service Binding for State Code'
+define service ZSB_ZI_State_Code {
+  expose ZI_State_Code;
+}

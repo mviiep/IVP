@@ -1,0 +1,4 @@
+@EndUserText.label: 'Gate Pass - User Service  Definition'
+define service ZI_GE_AUSER_TABL_SRV {
+  expose ZI_GE_AUSER_TABL;
+}

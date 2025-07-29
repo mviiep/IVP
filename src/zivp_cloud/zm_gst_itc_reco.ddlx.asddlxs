@@ -1,0 +1,304 @@
+@Metadata.layer: #PARTNER
+@EndUserText.label: 'GST ITC Reconciliation'
+@UI:{
+headerInfo: { typeName: 'GST ITC Reconciliation',
+              typeNamePlural: 'GST ITC Reconciliation',
+              title: { type: #STANDARD, label: 'GST ITC Reconciliation' } } }
+annotate view ZGST_ITC_RECO with
+{
+
+  @UI.facet: [{ id : 'GSTR2', purpose: #STANDARD, type: #IDENTIFICATION_REFERENCE,
+              label: 'GST ITC Reconciliation', position: 10 }]
+ 
+  // 2A fields
+  @UI:{ lineItem: [{ position: 01, label: 'Reco Action' }],
+  identification: [{ position: 01, label: 'Reco Action' }] }
+  @UI.selectionField: [{ position: 06 }]
+  @EndUserText.label: 'Reco Action'
+  RecoAction;
+
+  @UI:{ lineItem: [{ position: 02, label: 'Match Status' }],
+  identification: [{ position: 02, label: 'Match Status' }] }
+  @UI.selectionField: [{ position: 05 }]
+  @EndUserText.label: 'Match Status'
+  Status;
+
+  @UI:{ lineItem: [{ position: 03, label: 'Action Date' }],
+  identification: [{ position: 03, label: 'Action Date' }] }
+  ActionDate;
+
+  @UI:{ lineItem: [{ position: 04, label: 'Mismatch Reason' }],
+  identification: [{ position: 04, label: 'Mismatch Reason' }] }
+  @UI.selectionField: [{ position: 07 }]
+  @EndUserText.label: 'Mismatch Reason'
+  Reason;
+
+  @UI:{ lineItem: [{ position: 04.5, label: 'GST2A Doc. Number' }],
+  identification: [{ position: 04.5, label: 'GST2A Doc. Number' }] }
+  Inum;
+
+  @UI:{ lineItem: [{ position: 05, label: 'GST2A Doc. Date' }],
+  identification: [{ position: 05, label: 'GST2A Doc. Date' }] }
+  Idt;
+
+  @UI:{ lineItem: [{ position: 06, label: 'Supplier GSTIN' }],
+  identification: [{ position: 06, label: 'Supplier GSTIN' }] }
+  SupplierGstin;
+
+  @UI:{ lineItem: [{ position: 07, label: 'Accounting Doc. Number' }],
+  identification: [{ position: 07, label: 'Accounting Doc. Number' }] }
+  @UI.selectionField: [{ position: 02 }]
+  @EndUserText.label: 'Accounting Doc. Number'
+  Accountingdocument;
+
+  @UI:{ lineItem: [{ position: 08, label: 'Auto Reconciliation ID' }],
+  identification: [{ position: 08, label: 'Auto Reconciliation ID' }] }
+  Autorecoid;
+
+  @UI:{ lineItem: [{ position: 09, label: 'Value' }],
+  identification: [{ position: 09, label: 'Value' }] }
+  Val;
+
+  @UI:{ lineItem: [{ position: 10, label: '2A Note Number' }],
+  identification: [{ position: 10, label: '2A Note Number' }] }
+  NtNum;
+
+  @UI:{ lineItem: [{ position: 11, label: '2A Note date' }],
+  identification: [{ position: 11, label: '2A Note date' }] }
+  NtDt;
+
+  @UI:{ lineItem: [{ position: 12, label: 'Inv Type' }],
+  identification: [{ position: 12, label: 'Inv Type' }] }
+  InvTyp;
+
+  @UI:{ lineItem: [{ position: 13, label: 'POS' }],
+  identification: [{ position: 13, label: 'POS' }] }
+  Pos;
+
+  @UI:{ lineItem: [{ position: 14, label: 'R Chrg' }],
+  identification: [{ position: 14, label: 'R Chrg' }] }
+  Rchrg;
+
+  @UI:{ lineItem: [{ position: 15, label: 'Month' }],
+  identification: [{ position: 15, label: 'Month' }] }
+  Imonth;
+
+  @UI:{ lineItem: [{ position: 16, label: 'Supplier Name' }],
+  identification: [{ position: 16, label: 'Supplier Name' }] }
+  SupplierName;
+
+  @UI:{ lineItem: [{ position: 17, label: 'Supplier GSTIN Status' }],
+  identification: [{ position: 17, label: 'Supplier GSTIN Status' }] }
+  SupplierGstinStatus;
+
+  @UI:{ lineItem: [{ position: 18, label: 'Supplier Return Type' }],
+  identification: [{ position: 18, label: 'Supplier Return Type' }] }
+  SupplierReturnType;
+
+  @UI:{ lineItem: [{ position: 19, label: 'Contact Name' }],
+  identification: [{ position: 19, label: 'Contact Name' }] }
+  ContactName;
+
+  @UI:{ lineItem: [{ position: 20, label: '2A Buyer GSTIN' }],
+  identification: [{ position: 20, label: '2A Buyer GSTIN' }] }
+  BuyerGstin;
+
+  @UI:{ lineItem: [{ position: 21, label: 'CFS' }],
+  identification: [{ position: 21, label: 'CFS' }] }
+  Cfs;
+
+  @UI:{ lineItem: [{ position: 22, label: 'Invoice Type' }],
+  identification: [{ position: 22, label: 'Invoice Type' }] }
+  InvoiceType;
+
+  @UI:{ lineItem: [{ position: 23, label: 'GSTR1 Filling Date' }],
+  identification: [{ position: 23, label: 'GSTR1 Return Date' }] }
+  Gstr1FillingDate;
+
+  @UI:{ lineItem: [{ position: 24, label: 'Tot. Tax Value' }],
+  identification: [{ position: 24, label: 'Tot. Tax Value' }] }
+  Ttxval;
+
+  @UI:{ lineItem: [{ position: 25, label: 'Net Amount' }],
+  identification: [{ position: 25, label: 'Net Amount' }] }
+  NetAmount;
+
+  @UI:{ lineItem: [{ position: 26, label: 'ITC Elg' }],
+  identification: [{ position: 26, label: 'ITC Elg' }] }
+  ItcAlg;
+
+  @UI:{ lineItem: [{ position: 27, label: 'Transaction Number' }],
+  identification: [{ position: 27, label: 'Transaction Number' }] }
+  TransactionNumber;
+
+  @UI:{ lineItem: [{ position: 28, label: 'Acc. Doc. Date' }],
+  identification: [{ position: 28, label: 'Acc. Doc. Date' }] }
+  @UI.selectionField: [{ position: 01 }]
+  @EndUserText.label: 'Acc. Doc. Date'
+  ErpDocumentDate;
+
+  @UI:{ lineItem: [{ position: 29, label: 'Total IGST' }],
+  identification: [{ position: 29, label: 'Total IGST' }] }
+  TotalIgst;
+
+  @UI:{ lineItem: [{ position: 30, label: 'Total CGST' }],
+  identification: [{ position: 30, label: 'Total CGST' }] }
+  TotalCgst;
+
+  @UI:{ lineItem: [{ position: 31, label: 'Total SGST' }],
+  identification: [{ position: 31, label: 'Total SGST' }] }
+  TotalSgst;
+
+  @UI:{ lineItem: [{ position: 32, label: 'Total CESS' }],
+  identification: [{ position: 32, label: 'Total CESS' }] }
+  TotalCess;
+
+  @UI:{ lineItem: [{ position: 33, label: 'Fiscal Year' }],
+  identification: [{ position: 33, label: 'Fiscal Year' }] }
+  @UI.selectionField: [{ position: 04 }]
+  @EndUserText.label: 'Fiscal Year'
+  @Consumption.filter.mandatory: true
+  Fiscalyear;
+
+  @UI:{ lineItem: [{ position: 34, label: 'Retention Posting' }],
+  identification: [{ position: 34, label: 'Retention Posting' }] }
+//  @UI.hidden: true
+  RetenPost;
+
+  @UI:{ lineItem: [{ position: 35, label: 'Retention Post Doc.' }],
+  identification: [{ position: 35, label: 'Retention Post Doc.' }] }
+//  @UI.hidden: true
+  RetenPostDoc;
+  
+  @UI:{ lineItem: [{ position: 35.5, label: 'Reverse Retention' }],
+  identification: [{ position: 35.5, label: 'Reverse Retention' }] }
+  ReverseRetFlag;
+
+  @UI:{ lineItem: [{ position: 36, label: 'Reverse Retention Doc' }],
+  identification: [{ position: 36, label: 'Reverse Retention Doc' }] }
+//  @UI.hidden: true
+  ReverseRet;
+
+  @UI:{ lineItem: [{ position: 37, label: 'GSTR3b Filling Status' }],
+  identification: [{ position: 37, label: 'GSTR3b Filling Status' }] }
+  Gstr3bFillingStatus;
+
+  // PR fields
+  @UI:{ lineItem: [{ position: 39, label: 'PR Doc. Number' },
+      { type: #FOR_ACTION, dataAction: 'reverse_response', label: 'Reverse Response', position: 01 },
+      { type: #FOR_ACTION, dataAction: 'delete_reco_response', label: 'Delete Reco', position: 10 }],
+  identification: [{ position: 39, label: 'PR Doc. Number'},
+      { type: #FOR_ACTION, dataAction: 'reverse_response', label: 'Reverse Response', position: 01 },
+      { type: #FOR_ACTION, dataAction: 'delete_reco_response', label: 'Delete Reco', position: 10 }] }
+  PrInum;
+
+  @UI:{ lineItem: [{ position: 40, label: 'PR Doc. Date' }],
+  identification: [{ position: 40, label: 'PR Doc. Date' }] }
+  PrIdt;
+
+  @UI:{ lineItem: [{ position: 41, label: 'PR Supplier Name' }],
+  identification: [{ position: 41, label: 'PR Supplier Name'}] }
+  PrSupplierName;
+
+  @UI:{ lineItem: [{ position: 42, label: 'PR Buyer GSTIN' }],
+  identification: [{ position: 42, label: 'PR Buyer GSTIN' }] }
+  PrBuyerGstin;
+
+  @UI:{ lineItem: [{ position: 43, label: 'PR GL Code' }],
+  identification: [{ position: 43, label: 'PR GL Code' }] }
+  PrGlCode;
+
+  @UI:{ lineItem: [{ position: 44, label: 'PR Supplier GSTIN' }],
+  identification: [{ position: 44, label: 'PR Supplier GSTIN' }] }
+  PrSupplierGstin;
+
+  @UI:{ lineItem: [{ position: 45, label: 'PR Invoice Type' }],
+  identification: [{ position: 45, label: 'PR Invoice Type' }] }
+  PrInvoiceType;
+
+  @UI:{ lineItem: [{ position: 46, label: 'PR Net Amount' }],
+  identification: [{ position: 46, label: 'PR Net Amount' }] }
+  PrNetAmount;
+
+  @UI:{ lineItem: [{ position: 47, label: 'PR Value' }],
+  identification: [{ position: 47, label: 'PR Value' }] }
+  PrVal;
+
+  @UI:{ lineItem: [{ position: 48, label: 'PR Note Number' }],
+  identification: [{ position: 48, label: 'PR Note Number' }] }
+  PrNtNum;
+
+  @UI:{ lineItem: [{ position: 49, label: 'PR Note Date' }],
+  identification: [{ position: 49, label: 'PR Note Date' }] }
+  PrNtDt;
+
+  @UI:{ lineItem: [{ position: 50, label: 'PR Ntty' }],
+  identification: [{ position: 50, label: 'PR Ntty' }] }
+  PrNtty;
+
+  @UI:{ lineItem: [{ position: 51, label: 'PR Location' }],
+  identification: [{ position: 51, label: 'PR Location' }] }
+  PrLocation;
+
+  @UI:{ lineItem: [{ position: 53, label: 'PR Total IGST' }],
+  identification: [{ position: 53, label: 'PR Total IGST' }] }
+  PrTotalIgst;
+
+  @UI:{ lineItem: [{ position: 54, label: 'PR Total CGST' }],
+  identification: [{ position: 54, label: 'PR Total CGST' }] }
+  PrTotalCgst;
+
+  @UI:{ lineItem: [{ position: 55, label: 'PR Total SGST' }],
+  identification: [{ position: 55, label: 'PR Total SGST' }] }
+  PrTotalSgst;
+
+  @UI:{ lineItem: [{ position: 56, label: 'PR Total CESS' }],
+  identification: [{ position: 56, label: 'PR Total CESS' }] }
+  PrTotalCess;
+
+  @UI:{ lineItem: [{ position: 57, label: 'Org. PR Doc. Number' }],
+  identification: [{ position: 57, label: 'Org. PR Doc. Number' }] }
+  PrOrgInum;
+
+  @UI:{ lineItem: [{ position: 58, label: 'Org. PR Doc. Date' }],
+  identification: [{ position: 58, label: 'Org. PR Doc. Date' }] }
+  PrOrgIdt;
+
+  @UI:{ lineItem: [{ position: 59, label: 'PR ITC Alg' }],
+  identification: [{ position: 59, label: 'PR ITC Alg' }] }
+  PrItcAlg;
+
+  @UI:{ lineItem: [{ position: 60, label: 'GSTR2 Return Period' }],
+  identification: [{ position: 60, label: 'GSTR2 Return Period' }] }
+  @UI.selectionField: [{ position: 03 }]
+  @EndUserText.label: 'GSTR2 Return Period'
+  PrGstr2ReturnPeriod;
+
+  @UI:{ lineItem: [{ position: 61, label: 'PR ERP Doc. No' }],
+  identification: [{ position: 61, label: 'PR ERP Doc. No' }] }
+  PrErpDocumentNumber;
+
+  @UI:{ lineItem: [{ position: 62, label: 'PR ERP Doc. Date' }],
+  identification: [{ position: 62, label: 'PR ERP Doc. Date' }] }
+  PrErpDocumentDate;
+
+  @UI:{ lineItem: [{ position: 63, label: 'PR Fiscal Year' }],
+  identification: [{ position: 63, label: 'PR Fiscal Year' }] }
+  PrFiscalyear;
+
+  @UI:{ lineItem: [{ position: 64, label: 'PR Month' }],
+  identification: [{ position: 64, label: 'PR Month' }] }
+  PrImonth;
+
+  @UI:{ lineItem: [{ position: 65, label: 'PR Pos' }],
+  identification: [{ position: 65, label: 'PR Pos' }] }
+  PrPos;
+
+  @UI:{ lineItem: [{ position: 66, label: 'PR Rchrg' }],
+  identification: [{ position: 66, label: 'PR Rchrg' }] }
+  PrRchrg;
+
+  @UI:{ lineItem: [{ position: 67, label: 'PR Tot. Tax Value' }],
+  identification: [{ position: 67, label: 'PR Tot. Tax Value' }] }
+  PrTtxval;
+}

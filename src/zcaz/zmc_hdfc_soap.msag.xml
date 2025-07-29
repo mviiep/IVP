@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZMC_HDFC_SOAP</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message Class for HDFC SOAP API</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMC_HDFC_SOAP</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Accounting Document &amp;1 Posted Successfully.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMC_HDFC_SOAP</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>&amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMC_HDFC_SOAP</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Accounting Document Already Posted.</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

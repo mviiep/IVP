@@ -1,0 +1,13 @@
+managed implementation in class zbp_i_ge_ow_team unique;
+strict ( 2 );
+
+define behavior for ZI_GE_OW_TEAM //alias <alias_name>
+persistent table zge_ow_team
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+  update;
+  delete;
+}

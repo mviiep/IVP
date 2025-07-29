@@ -1,0 +1,7 @@
+@EndUserText.label: 'Service Defination for DPR'
+define service ZSD_DPR {
+  expose ZC_DPR;
+  expose ZCE_DPR_Month;
+  expose ZSH_MRPController;
+  expose ZI_PrdAcheived_DPR;
+}

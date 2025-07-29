@@ -1,0 +1,26 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Launchpad Page for GSTR2",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "title": "Purchase GSTR2"
+  },
+  "sections": [
+    {
+      "id": "SECTION_1",
+      "title": "SECTION 1",
+      "visualizations": [
+        {
+          "id": "SECTION_1_VIZ_1",
+          "ladiAssignment": {
+            "ladiId": "ZPURCHASE_UI5R",
+            "tileId": "UI5R_9E484183FB122E3E4A3F5500A3BEA5166F1A4510_AL"
+          }
+        }
+      ]
+    }
+  ]
+}
